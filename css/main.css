@@ -175,6 +175,15 @@ section code {
   color: #596068;
 }
 
+/* Styling for Product Description Text*/
+.description-text {
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.03rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
 /* Styling for the Bullet List*/
 .bullet-list {
   line-height: 1.8em;
@@ -209,24 +218,7 @@ section code {
 
 /* Styling for Product Listing*/
 .p-listing {
-  width: 25%;
-}
-
-.p-listing ul {
-  padding-left: 0 !important; 
-
-}
-
-.p-listing li {
-  border-top: 1px solid #D4D9DF;
-  border-bottom: 1px solid #D4D9DF;
-  list-style-type:none; 
-  padding: 1.2em;
-}
-
-.p-listing li:hover {
-  background-color: #efc88b;
-  color: white;
+  width: 22%;
 }
 
 /* Contact Form */
