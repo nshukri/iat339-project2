@@ -87,6 +87,36 @@
 
       </section>
 
+      <!-- Subscribe Button styling section -->
+      <section>
+        <h2>Subscribe Button</h2>
+
+        <h3>CSS selector</h3>
+        <p>.subscribe-button</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;button class="subscribe-button"&gt;subscribe&lt;/button&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <button class="subscribe-button">subscribe</button>
+
+      </section>
+
+      <!-- Learn More Button styling section -->
+      <section>
+        <h2>Learn More Button</h2>
+
+        <h3>CSS selector</h3>
+        <p>.learn-more-button</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;button class="learn-more-button"&gt;learn more&lt;/button&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <button class="learn-more-button">learn more</button>
+
+      </section>
+
       <!-- Default Text Input Field styling section -->
       <section>
         <h2>Text Input Field</h2>
@@ -196,6 +226,17 @@
         <p>.numbered-list</p>
 
         <h3>Sample code:</h3>
+        <code>
+          &lt;ol class="numbered-list">
+          <br>
+            &lt;li&gt;item a&lt;/li&gt;
+            <br>
+            &lt;li&gt;item b&lt;/li&gt;
+            <br>
+            &lt;li&gt;item c&lt;/li&gt;
+          <br>
+          &lt;/ol&gt;
+        </code>
 
         <h3>Rendered element:</h3>
         <ol class="numbered-list">
@@ -247,32 +288,30 @@
         <h2>Product Listing</h2>
 
         <h3>CSS selector</h3>
+        <p>.p-listing</p>
         <p>.heading3</p>
-        <p>.bullet-list</p>
+        <p>.price</p>
+        <p>.subscribe-button</p>
+        <p>learn-more-button</p>
 
         <h3>Sample code:</h3>
         <code>
-          &lt;h3 class="heading3">item&lt;/h3&gt;
-          <br>
-          &lt;ul class="bullet-list"&gt;
-          <br>
-            &lt;li&gt;Chicken Pasta&lt;/li&gt;
-            <br>
-            &lt;li&gt;Buddha Bowl&lt;/li&gt;
-            <br>
-            &lt;li&gt;Chickpea fries with Mushroom Burger&lt;/li&gt;
-            <br>
-          &lt;/ul&gt;
+          &lt;div class="p-listing"&gt;<br>
+            &lt;img src="img/picture1.jpg" alt="buddha-bowl"&gt;<br>
+            &lt;h3 class="heading3">Buddha Bowl&lt;/h3&gt;<br>
+            &lt;p class="price"&gt;$47.00&lt;/p&gt;<br>
+            &lt;button class="subscribe-button">subscribe&lt;/button&gt;<br>
+            &lt;button class="learn-more-button">learn more&lt;/button&gt;<br>
+          &lt;/div&gt;
         </code>
 
         <h3>Rendered element:</h3>
         <div class="p-listing">
-          <h3 class="heading3">Item</h3>
-          <ul class="bullet-list">
-            <li>Chicken Pasta</li>
-            <li>Buddha Bowl</li>
-            <li>Chickpea fries with Mushroom Burger</li>
-          </ul>
+          <img src="img/picture1.jpg" alt="buddha-bowl">
+          <h3 class="heading3">Buddha Bowl</h3>
+          <p class="price">$47.00</p>
+          <button class="subscribe-button">subscribe</button>
+          <button class="learn-more-button">learn more</button>
         </div>
       </section>
 

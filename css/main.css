@@ -89,6 +89,47 @@ section code {
   background-color: #aa4c2d;
 }
 
+/* Styling for the Subscribe button*/
+.subscribe-button {
+  background-color: #efc88b;
+  color: white; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0.4em;
+  border-style: none;
+  padding: 0.5rem 1.2rem;
+  margin-right: .75rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.subscribe-button:hover {
+  background-color: #ecb35a;
+}
+
+/* Styling for the Learn More button*/
+.learn-more-button {
+  background-color: white;
+  color: #07080a; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: 1px solid #d4d9df;
+  border-radius: 0.4em;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.learn-more-button:hover {
+  background-color: #d4d9df;
+}
+
 /* Styling for the Text Input Field*/
 .textInput-field {
   border: solid 0.1em #d4d9df;
@@ -120,6 +161,7 @@ section code {
   font-weight: 600;
   font-size:1.2em;
   color: #24272b;
+  margin-top: .25rem;
 }
 
 /* Styling for Paragraph*/
@@ -140,6 +182,12 @@ section code {
 /* Styling for Numbered List*/
 .numbered-list {
   line-height: 1.8em;
+  color: #596068;
+}
+
+/* Styling for Price Numbers*/
+.price {
+  font-size: 0.85em;
   color: #596068;
 }
 
