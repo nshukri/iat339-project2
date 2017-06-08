@@ -2,7 +2,6 @@
 <html>
 
   <head>
-
     <meta charset="utf-8">
     <title>MealBox Style Guide</title>
 
@@ -11,15 +10,11 @@
     <!-- Import fonts from google -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
-
-    
-
-
-  </head>
+</head>
 
   <body>
      <h1>Mealbox Style Guide</h1>
-     <p>Nadhirah Shukri, 301192085, IAT 339 D101</p>
+     <p>IAT 339 D101: Nadhirah Shukri (301192085), Michelle Cheung (301237218), Snow Liu ()</p>
 
       <nav id="page-nav">
         <a class="button-nav" href="wireframes.html">Wireframes</a>
@@ -342,17 +337,18 @@
 
         <h3>Sample code:</h3>
         <code>
-          &lt;div class="container"&gt;<br>
+          &lt;div class="form-container"&gt;<br>
+            &lt;h2 class="heading2"&gt;Contact Form&lt;/h2&gt;<br>
             &lt;form action="/action_page.php"&gt;<br>
-              &lt;label for="name"&gt;Name&lt;/label&gt;<br>
-              &lt;input type="text" id="name" placeholder="Your name.."&gt;<br>
+              &lt;label for="name"&gt;Your Name&lt;/label&gt;<br>
+              &lt;input type="text" id="name" placeholder="Enter your Full Name"&gt;<br>
 
-              &lt;label for="email"&gt;Email&lt;/label&gt;<br>
-              &lt;input type="text" id="email" placeholder="Your email.."&gt;<br>
+              &lt;label for="email"&gt;Your Email&lt;/label&gt;<br>
+              &lt;input type="text" id="email" placeholder="Enter your E-mail"&gt;<br>
 
               &lt;div&gt;
               &lt;label for="message"&gt;Message&lt;/label&gt;<br>
-              &lt;textarea id="message" placeholder="Write something.." style="height:200px &gt;&lt;/textarea&gt;<br>
+              &lt;textarea id="message" placeholder="Type your message here"&gt;&lt;/textarea&gt;<br>
               &lt;/div&gt;<br>
 
               &lt;button class="default-button"&gt;submit&lt;/button&gt;<br>
@@ -361,18 +357,21 @@
           &lt;/div&gt;<br>
         </code>
 
+        <!-- W3 Schools -->
         <h3>Rendered element:</h3>
-        <div class="container">
-          <form action="/action_page.php">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Full Name">
+        <div class="form-container">
+          <h2 class="heading2">Contact Form</h2>
+          <form class="form" action="/action_page.php">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="textInput-field" placeholder="Enter Your Full Name">
 
-            <label for="email">E-mail</label>
-            <input type="text" id="email" placeholder="E-mail">
+
+            <label for="email">Your E-mail</label>
+            <input type="text" id="email" class="textInput-field" placeholder="Enter Your E-mail">
 
             <div>
               <label for="message">Message</label>
-              <textarea id="message" placeholder="Write something.."></textarea> 
+              <textarea id="message" class="textInput-field" placeholder="Type your message here"></textarea> 
             </div>
 
             <button class="default-button">submit</button>

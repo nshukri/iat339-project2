@@ -67,7 +67,6 @@ section code {
 .inText-Link:hover {
   text-decoration: underline;
   color: #aa4c2d;
-
 }
 
 /* Styling for the Submit/Reset button*/
@@ -133,10 +132,14 @@ section code {
 
 /* Styling for the Text Input Field*/
 .textInput-field {
+  width: 15rem;
   border: solid 0.1em #d4d9df;
-  border-radius: 0.25em;
+  border-radius: 0.4em;
   font-size: 0.8em;
-  padding: 0.4em;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 /* 
@@ -226,7 +229,13 @@ section code {
   color: white;
 }
 
-/* Grid Structure*/
+/* Contact Form */
+label {
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+/* Grid Structure */
 
 * {
   box-sizing: border-box;
