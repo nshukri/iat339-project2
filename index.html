@@ -330,6 +330,56 @@
         </div>
       </section>
 
+
+      <!-- contact form section which learnt from https://www.w3schools.com/howto/howto_css_contact_form.asp-->
+      <section>
+        <h2> Contact </h2>
+
+        <h3>CSS selector</h3>
+        <p>input</p>
+        <p>textarea</p>
+        <p>.container</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="container"&gt;<br>
+            &lt;form action="/action_page.php"&gt;<br>
+              &lt;label for="name"&gt;Name&lt;/label&gt;<br>
+              &lt;input type="text" id="name" placeholder="Your name.."&gt;<br>
+
+              &lt;label for="email"&gt;Email&lt;/label&gt;<br>
+              &lt;input type="text" id="email" placeholder="Your email.."&gt;<br>
+
+              &lt;div&gt;
+              &lt;label for="message"&gt;Message&lt;/label&gt;<br>
+              &lt;textarea id="message" placeholder="Write something.." style="height:200px &gt;&lt;/textarea&gt;<br>
+              &lt;/div&gt;<br>
+
+              &lt;input type="submit" value="Submit"&gt;<br>
+
+            &lt;/form&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+
+        <h3>Rendered element:</h3>
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Your email..">
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Write something.." style="height:200px"></textarea> 
+            </div>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+
       <!-- Website Grid Section -->
       <section>
         <h2>Grid</h2>
