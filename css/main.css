@@ -238,9 +238,12 @@ section code {
 
 .grid-item {
   flex: 1 1 auto;
-  border: 1px solid #333333;
+  background-color: #d4d9df;
+  color: #596068;
+  /*border: 1px solid #333333;*/
   text-align: center;
   padding: 1em;
+  margin: 0.5rem 0.5rem;
 }
 
 @media (max-width: 30em){
@@ -301,7 +304,6 @@ section code {
 #light-grey {
   background-color: #d4d9df;
 }
-
 
 
 /*-------------Wireframe page---------------*/
