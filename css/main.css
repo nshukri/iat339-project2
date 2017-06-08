@@ -201,7 +201,8 @@ section code {
 /* Styling for Price Numbers*/
 .price {
   font-size: 0.85em;
-  color: #596068;
+  font-weight: 700;
+  color: #cf5c36;
 }
 
 /* 
