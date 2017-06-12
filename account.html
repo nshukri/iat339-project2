@@ -14,6 +14,8 @@
 	</head>
 
 	<body>
+
+		<h1>MealBox</h1>
 		<nav id="page-nav">
 	        <a class="button-nav" href="home.html">Home</a>
 	        <a class="button-nav" href="menu.html">Menu</a>
@@ -22,13 +24,13 @@
 
       	<div class="grid">
 			<button class="learn-more-button grid-item" onclick="window.location.href='#profile'">profile</button>
-			<button class="learn-more-button grid-item" onclick="window.location.href='#setting'">setting</button>
+			<button class="learn-more-button grid-item" onclick="window.location.href='account_setting.html'">setting</button>
         </div>
 
         <section id="profile">
+        	<h2>Account</h2>
         	<div class="grid-col-4of5">   
 		        <div class="grid-col-1of2 form-container">
-		          <h2>Account</h2>
 		          <form class="form" action="/action_page.php">
 		            <label for="name">Name</label>
 		            <input type="text" id="name" class="textInput-field" placeholder="James Smith">
@@ -37,22 +39,6 @@
 		            <input type="text" id="email" class="textInput-field" placeholder="aaaaaa">
 		            <button class="default-button">Save Changes</button>
 		          </form>
-		        </div>
-	        </div>
-        </section>
-
-        <section id="setting"> 
-        	<div class="grid-col-4of5"> 	
-				<div class="grid-col-1of2 form-container">
-				  <h2>Setting</h2>
-		          <div class="p-listing">
-			          <img src="img/picture1.jpg" alt="buddha-bowl">
-			          <h3 class="heading3">Buddha Bowl</h3>
-			          <p class="price">$47.00</p>
-			          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.</p>
-			          <button class="default-button">Unsubscribe</button>
-			          <button class="default-button" onclick="window.location.href='menu.html'">Change Plan</button>
-			      </div>
 		        </div>
 	        </div>
         </section>
