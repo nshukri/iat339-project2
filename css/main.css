@@ -132,10 +132,10 @@ section code {
 
 /* Styling for the Text Input Field*/
 .textInput-field {
-  width: 15rem;
+  width: 20em;
   border: solid 0.1em #d4d9df;
   border-radius: 0.4em;
-  font-size: 0.8em;
+  font-size: 1em;
   padding: 0.5rem;
   margin-top: 0.3rem;
   margin-bottom: 1rem;
@@ -224,7 +224,7 @@ section code {
 
 /* Contact Form */
 label {
-  font-size: .85rem;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -250,11 +250,33 @@ label {
 }
 
 @media (max-width: 30em){
-  .grid-item {
+  .grid-item{
   flex: 0 0 100%;
   }
 }
  /*source: from Week 3 lab*/
+
+.grid-col-4of5{
+  width:80%;
+  margin: 0.5em 0.5em;
+}
+
+.grid-col-1of2{
+  width:50%;
+  margin: 0.5em 0.5em;
+}
+
+.form-container{
+    float:right;
+  }
+
+@media (max-width: 30em){
+  .form-container{
+    float:left;
+    flex:0 0 100%;
+  }
+}
+
 
 /*Colour Scheme*/
 
