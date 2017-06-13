@@ -41,6 +41,8 @@
 
 			            <label for="message">Country</label>
 			            <select>
+			            	<option value="" disabled selected>Country</option>
+			            	<!-- select tag placeholder: https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
 							<option value="canada">Canada</option>
 							<option value="china">China</option>
 							<option value="japan">Japan</option>
@@ -49,6 +51,7 @@
 
 						<label for="message">Province</label>
 			            <select>
+			            	<option value="" disabled selected>Province</option>
 							<option value="alberta">Alberta</option>
 							<option value="bc">British Columbia</option>
 							<option value="manitoba">Manitoba</option>
@@ -65,15 +68,19 @@
 
 						<label for="email">Postal Code</label>
 			            <input type="text" id="postal-code" class="textInput-field" min="6" max="6">
-
-			            <button class="default-button">continue</button>
           			</form>
        			 </div>
 			</div>
+			
 			<div class="grid-item-registration">
 				<h3>Payment Details</h3>
 				<div class="form-container">
          			<form class="form" action="/action_page.php">
+						<label for="card-type">Method</label>
+						<input type="radio" name="card-type" value="visa"> Visa
+						<input type="radio" name="card-type" value="mastercard"> Mastercard
+						<input type="radio" name="card-type" value="other"> Other<br>
+
 						<label for="card-name">Cardholder Name</label>
 						<input type="text" id="cardholder-name" class="textInput-field">
 
@@ -82,7 +89,8 @@
 
 						<div class="exp-date">
 							<label for="card-name">Expiration Date</label>
-							<select>
+							<select >
+								<option value="" disabled selected>Month</option>
 								<option value="jan">01</option>
 								<option value="feb">02</option>
 								<option value="mar">03</option>
@@ -90,10 +98,11 @@
 							</select>
 							<p>/</p>
 							<select>
-								<option value="01">01</option>
-								<option value="02">02</option>
-								<option value="03">03</option>
-								<option value="04">04</option>
+								<option value="" disabled selected>Year</option>
+								<option value="2017">17</option>
+								<option value="2018">18</option>
+								<option value="2019">19</option>
+								<option value="2020">20</option>
 							</select>
 
 							<label for="cvv">CVV</label>
@@ -102,6 +111,28 @@
 					</form>
 				</div>
 			</div>
+
+			<div class="grid-item-registration">
+				<h3>Meal Plan</h3>
+
+				<div class="p-listing">
+					<img src="img/picture1.jpg" alt="buddha-bowl">
+					<h3 class="heading3">Buddha Bowl</h3>
+					<p class="price">$47.00 / month</p>
+					<button class="subscribe-button">select</button>
+        		</div>
+
+        		<div class="p-listing">
+					<img src="img/picture1.jpg" alt="buddha-bowl">
+					<h3 class="heading3">Buddha Bowl</h3>
+					<p class="price">$47.00</p>
+					<button class="subscribe-button">select</button>
+        		</div>
+
+			</div>
         </div>
+
+        <button class="default-button">continue</button>
+
 	</body>
 </html>
