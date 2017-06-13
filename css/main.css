@@ -70,7 +70,7 @@ section code {
 }
 
 /* Styling for the Submit/Reset button*/
-.default-button {
+.default-button, .continue-button {
   background-color: #cf5c36;
   color: white; 
   font-weight: 600;
@@ -133,7 +133,7 @@ section code {
 /* Styling for the Text Input Field*/
 .textInput-field, select {
   width: 20em;
-  border: solid 0.1em #d4d9df;
+  border: solid 0.05em #d4d9df;
   border-radius: 0.4em;
   font-size: 1em;
   padding: 0.5rem;
@@ -298,17 +298,23 @@ label {
 .grid-item-registration {
   width: 100%;
   flex: 3 1 auto;
-  background-color: #eee;
+  flex-direction:;
   text-align: left;
   padding-left: 5em;
   margin: 0.5rem 0.5rem;
 }
 
-.grid-item-registration .form-container {
+/*
+.form-container form input[type='text'] {
+  display: inline;
+}
+*/
 
+#postal-code {
+  width: 7em;
 }
 
-.exp-date {
+.exp-date select option{
   display: inline;
 }
 
@@ -318,6 +324,10 @@ label {
 
 .grid-item-registration .price {
   margin-top: -1rem;
+}
+
+.continue-button {
+  float: right;
 }
 
 /*Colour Scheme*/
