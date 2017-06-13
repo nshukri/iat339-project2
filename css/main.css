@@ -131,7 +131,7 @@ section code {
 }
 
 /* Styling for the Text Input Field*/
-.textInput-field {
+.textInput-field, select {
   width: 20em;
   border: solid 0.1em #d4d9df;
   border-radius: 0.4em;
@@ -215,6 +215,7 @@ section code {
   background-color: #8acb88;
   text-align: left;
   border-radius: 0.5em;
+  margin-bottom: 3rem;
 }
 
 /* Styling for Product Listing*/
@@ -244,7 +245,16 @@ label {
   /*background-color: #d4d9df;*/
   color: #596068;
   /*border: 1px solid #333333;*/
-  /*text-align: center;*/
+  text-align: left;
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+}
+
+.grid-item-registration {
+  flex: 1 1 auto;
+  flex-direction: row;
+  background-color: #eee;
+  text-align: left;
   padding: 1em;
   margin: 0.5rem 0.5rem;
 }
@@ -261,13 +271,17 @@ label {
   width:40%;
 }
 
+.form-container{
+    float:center;
+  }
+
 @media (max-width: 30em){
   .grid-col-4of10{
     width:100%;
   }
 }
 
-.portrait{
+.portrait {
   margin-top:2em;
   margin-bottom:1em;
   width:150px;
@@ -275,13 +289,23 @@ label {
   border: 1px solid #333333;
 }
 
-.form{
+/* messing up placement of things
+.form {
   margin-left:20em;
 }
-@media (max-width: 65em){
-  .form{
+
+@media (max-width: 65em) {
+  .form {
   margin-left:0;
   }
+}*/
+
+/* 
+  REIGSTERATION PAGE -------------------
+*/
+
+.exp-date {
+  display: inline-block;
 }
 
 /*Colour Scheme*/

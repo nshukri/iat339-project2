@@ -2,11 +2,106 @@
 
 <html lang="en">
 	<head>
-		<title>P02</title> 
+		<title>Mealbox Registration</title> 
 		<meta charset="utf-8">
+		
+		<link href="css/main.css" rel="stylesheet">
 	</head>
 
 	<body>
+		<nav class="navigation">
+	    	<a class="button-nav" href="#">Menu</a>
+	        <a class="button-nav" href="#">About</a>
+	        <a class="button-nav" href="#">Contact</a>
+	    </nav>
 
+		<h2 class="heading2">Register</h2>
+		
+
+		<div class="grid">
+			<div class="grid-item-registration">
+				<h3>Basic Information</h3>
+				<div class="form-container">
+         			<form class="form" action="/action_page.php">
+			            <label for="name">First Name</label>
+			            <input type="text" id="name" class="textInput-field" placeholder="Enter your full name">
+
+			            <label for="name">Last Name</label>
+			            <input type="text" id="name" class="textInput-field" placeholder="Enter your full name">
+
+			            <label for="email">E-mail</label>
+			            <input type="text" id="email" class="textInput-field" placeholder="Enter your e-mail">
+
+			            <label for="email">Confirm Your E-mail</label>
+			            <input type="text" id="email" class="textInput-field" placeholder="Enter your e-mail">
+
+						<label for="email">Address</label>
+			            <input type="text" id="email" class="textInput-field" placeholder="Line 1">
+			            <input type="text" id="email" class="textInput-field" placeholder="Line 2">
+
+			            <label for="message">Country</label>
+			            <select>
+							<option value="canada">Canada</option>
+							<option value="china">China</option>
+							<option value="japan">Japan</option>
+							<option value="america">United States</option>
+						</select>
+
+						<label for="message">Province</label>
+			            <select>
+							<option value="alberta">Alberta</option>
+							<option value="bc">British Columbia</option>
+							<option value="manitoba">Manitoba</option>
+							<option value="ontario">Ontario</option>
+						</select>
+
+						<label for="message">City</label>
+			            <select>
+							<option value="burnaby">Burnaby</option>
+							<option value="surrey">Surrey</option>
+							<option value="vancouver">Vancouver</option>
+							<option value="victoria">Victoria</option>
+						</select>
+
+						<label for="email">Postal Code</label>
+			            <input type="text" id="postal-code" class="textInput-field" min="6" max="6">
+
+			            <button class="default-button">continue</button>
+          			</form>
+       			 </div>
+			</div>
+			<div class="grid-item-registration">
+				<h3>Payment Details</h3>
+				<div class="form-container">
+         			<form class="form" action="/action_page.php">
+						<label for="card-name">Cardholder Name</label>
+						<input type="text" id="cardholder-name" class="textInput-field">
+
+						<label for="card-num">Card Number</label>
+						<input type="text" id="cardholder-num" class="textInput-field">
+
+						<div class="exp-date">
+							<label for="card-name">Expiration Date</label>
+							<select>
+								<option value="jan">01</option>
+								<option value="feb">02</option>
+								<option value="mar">03</option>
+								<option value="apr">04</option>
+							</select>
+							<p>/</p>
+							<select>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+							</select>
+
+							<label for="cvv">CVV</label>
+							<input type="text" id="cvv" class="textInput-field">
+						</div>
+					</form>
+				</div>
+			</div>
+        </div>
 	</body>
 </html>
