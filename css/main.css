@@ -241,10 +241,10 @@ label {
 
 .grid-item {
   flex: 1 1 auto;
-  background-color: #d4d9df;
+  /*background-color: #d4d9df;*/
   color: #596068;
   /*border: 1px solid #333333;*/
-  text-align: center;
+  /*text-align: center;*/
   padding: 1em;
   margin: 0.5rem 0.5rem;
 }
@@ -256,25 +256,23 @@ label {
 }
  /*source: from Week 3 lab*/
 
-.grid-col-4of5{
-  width:80%;
-  margin: 0.5em 0.5em;
-}
 
-.grid-col-1of2{
-  width:50%;
-  margin: 0.5em 0.5em;
+.grid-col-4of10{
+  width:40%;
 }
-
-.form-container{
-    float:right;
-  }
 
 @media (max-width: 30em){
-  .form-container{
-    float:left;
-    flex:0 0 100%;
+  .grid-col-4of10{
+    width:100%;
   }
+}
+
+.portrait{
+  margin-top:2em;
+  margin-bottom:1em;
+  width:150px;
+  height:150px;
+  border: 1px solid #333333;
 }
 
 
