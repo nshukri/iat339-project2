@@ -330,6 +330,31 @@ label {
   float: right;
 }
 
+/* 
+  ORDER PAGE -------------------
+*/
+
+.shipping-information p {
+  display: inline-block;
+}
+
+.quantity-field {
+  width: 5em;
+  text-align: center;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.meal-plans .price {
+  float: right;
+  font-size: 1.24rem;
+}
+
 /*Colour Scheme*/
 
 .colours {
