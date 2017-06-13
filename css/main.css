@@ -275,6 +275,14 @@ label {
   border: 1px solid #333333;
 }
 
+.form{
+  margin-left:20em;
+}
+@media (max-width: 65em){
+  .form{
+  margin-left:0;
+  }
+}
 
 /*Colour Scheme*/
 
