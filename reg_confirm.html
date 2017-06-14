@@ -21,35 +21,47 @@
 	        <a class="button-nav" href="account.html">My Account</a>
       	</nav>
 
-      	<section class="grid register_confirm">
-      		
-		  	<div class="grid-item form"> 
-			      	<h2>Name: </h2>
-			      	<label>James Smith</label>
-			      	<h2>Payment details</h2>
-					<label>Name&nbsp;On&nbsp;Card:&nbsp;James&nbsp;Smith</label>
-					<br>
-					<label>Card&nbsp;Number:&nbsp;1234&nbsp;5678&nbsp;9012&nbsp;3456</label>
-					<br>
-					<label>Expiry&nbsp;Date:&nbsp;12&nbsp;2025</label>
-					<br>
-					<label>Security&nbsp;Code:&nbsp;123</label>
-					<br>
-			</div>
+      	<section id="register_confirm">
+      		<div class="grid">
+      			<div class="grid-col-3of10">
+      				<div class="grid-item">
+        				<button class="learn-more-button" onclick="window.location.href='#payment_detail'">Payment details</button>
+        			</div>
 
-	  		<div class="p-listing grid-item">
-	  			<h2>Plan review</h2>
-		      	<img src="img/picture1.jpg" alt="buddha-bowl">
-		        <h3 class="heading3">Buddha Bowl</h3>
-		        <p class="price">$47.00</p>
-		        <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.</p>
+        			<div class="grid-item">
+        				<button class="learn-more-button" onclick="window.location.href='#plan_review'">Plan review</button>
+        			</div>
+      			</div>
 
-				<button class="default-button" onclick="window.location.href='registration.html'">Edit</button>
-				<br>
-				<br>
-				<button class="default-button" onclick="window.location.href='register_complete.html'">Submit</button>
-			</div>
-					
+      			<div class="grid-col-7of10">
+      				<div class="grid-item payment_detail"> 
+				      	<h2>Name: </h2>
+				      	<label>James Smith</label>
+				      	<h2>Payment details</h2>
+						<label>Name&nbsp;On&nbsp;Card:&nbsp;James&nbsp;Smith</label>
+						<br>
+						<label>Card&nbsp;Number:&nbsp;1234&nbsp;5678&nbsp;9012&nbsp;3456</label>
+						<br>
+						<label>Expiry&nbsp;Date:&nbsp;12&nbsp;2025</label>
+						<br>
+						<label>Security&nbsp;Code:&nbsp;123</label>
+						<br>
+					</div>
+
+					<div class="p-listing grid-item plan_review">
+			  			<h2>Plan review</h2>
+				      	<img src="img/picture1.jpg" alt="buddha-bowl">
+				        <h3 class="heading3">Buddha Bowl</h3>
+				        <p class="price">$47.00</p>
+				        <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.</p>
+
+						<button class="default-button" onclick="window.location.href='registration.html'">Edit</button>
+						<br>
+						<br>
+						<button class="default-button" onclick="window.location.href='register_complete.html'">Submit</button>
+					</div>
+      			</div>
+      		</div>
       	</section>
 	</body>
 </html>
