@@ -23,29 +23,43 @@
 		    </nav>
 	    </div>
 
-        <section class="grid" id="profile">          
-        	  
-          <form class="form grid-item" action="/action_page.php">
-          	<img class="portrait"><br>
-            <label for="name">Name</label>
-            <input type="text" id="name" class="textInput-field" placeholder="James Smith">
+ 		<section id="profile">
+        	<div class="grid">
+        		<div class="grid-col-3of10">
+        			<div class="grid-item">
+        				<button class="learn-more-button" onclick="window.location.href='#profile'">PROFILE</button>
+        			</div>
+        			<div class="grid-item">
+        				<button class="learn-more-button" onclick="window.location.href='#setting'">SETTING</button>
+        			</div>
+        		</div>
 
-            <label for="password">Password</label>
-            <input type="text" id="email" class="textInput-field" placeholder="aaaaaa">
-            <button class="default-button">Save Changes</button>
-          </form>	          
-		  
-          <div class="p-listing grid-item">
-	          <h3 class="heading3">Buddha Bowl</h3>
-	          <img src="img/picture1.jpg" alt="buddha-bowl">
-	          <p class="price">$47.00</p>
-	          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.</p>
-	          <button class="default-button">Unsubscribe</button>
-	          <br>
-	          <br>
-	          <button class="default-button" onclick="window.location.href='menu.html'">Change Plan</button>
-	      </div>	       
+        		<div class="grid-col-7of10">
+        			<div class="grid-item profile">
+	    				<form class="form" action="/action_page.php">
+					      	<img class="portrait"><br>
+					        <label for="name">Name</label>
+					        <input type="text" id="name" class="textInput-field" placeholder="James Smith">
 
+					        <label for="password">Password</label>
+					        <input type="text" id="email" class="textInput-field" placeholder="aaaaaa">
+					        <button class="default-button">Save Changes</button>
+					     </form>	  
+        			</div>
+
+
+        			<div class="p-listing grid-item setting">
+        				  <h3 class="heading3">Buddha Bowl</h3>
+				          <img src="img/picture1.jpg" alt="buddha-bowl">
+				          <p class="price">$47.00</p>
+				          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.</p>
+				          <button class="default-button">Unsubscribe</button>
+				          <br>
+				          <br>
+				          <button class="default-button" onclick="window.location.href='menu.html'">Change Plan</button>
+        			</div>
+        		</div>
+        	</div>
         </section>
 
 	</body>
