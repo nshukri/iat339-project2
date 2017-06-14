@@ -280,16 +280,15 @@ label {
   border: 1px solid #333333;
 }
 
-/* messing up placement of things
-.form {
-  margin-left:20em;
+.grid-col-3of10{
+  width:30%;
+  float: left；
 }
 
-@media (max-width: 65em) {
-  .form {
-  margin-left:0;
-  }
-}*/
+.grid-col-7of10{
+  width:70%;
+  float: right；
+}
 
 /* 
   REIGSTERATION PAGE -------------------
