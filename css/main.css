@@ -30,6 +30,10 @@ section code {
   background-color: #8acb88;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 /* 
@@ -40,19 +44,20 @@ section code {
 .button-nav {
   display: inline-block;
   padding: 1em;
-  margin-right: -0.3em;
+  margin: auto;
   color: #FFF;
   background-color: #8acb88;
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 0.25em;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 10;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #70B481;
+  color: #cf5c36 ;
 }
 
 /* Styling for the In-text Link */
@@ -171,7 +176,7 @@ section code {
 /* Styling for Paragraph*/
 .paragraph {
   font-weight: 300;
-  width: 50em;
+  width: 100%;
   color: #596068;
 }
 
@@ -202,7 +207,7 @@ section code {
 .price {
   font-size: 0.85em;
   font-weight: 700;
-  color: #cf5c36;
+  color:  ;
 }
 
 /* 
@@ -210,13 +215,33 @@ section code {
 */
 
 /* Styling for Navigation*/
+.nav-logo {
+  text-align: left !important;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  padding-left: 1.5em;
+  z-index: 3;
+  top: 0;
+  color: #FFF;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+}
+
 .navigation {
   width: 100%;
   background-color: #8acb88;
-  text-align: left;
-  border-radius: 0.5em;
-  margin-bottom: 3rem;
+  text-align: right;
+  position: absolute;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  z-index: 1;
+  top:0;
 }
+
+
 
 /* Styling for Product Listing*/
 .p-listing {
@@ -243,10 +268,10 @@ label {
 
 .grid-item {
   flex: 1 1 auto;
-  /*background-color: #d4d9df;*/
+  background-color: #d4d9df;
   color: #596068;
   /*border: 1px solid #333333;*/
-  text-align: left;
+  text-align: center;
   padding: 1em;
   margin: 0.5rem 0.5rem;
 }
@@ -423,4 +448,10 @@ label {
 #console {
   width: 1189px;
   height: 667px;
+}
+
+/*-------------Additional---------------*/
+.copyright {
+  font-size: 0.5em;
+
 }
