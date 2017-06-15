@@ -7,23 +7,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link href="css/main.css" rel="stylesheet">
-
+		<link href="css/template.css" rel="stylesheet">
 	    <!-- Import fonts from google -->
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
 	</head>
 
 	<body>
-		<h1>MealBox</h1>
-		<nav id="page-nav">
-	        <a class="button-nav" href="home.html">Home</a>
-	        <a class="button-nav" href="menu.html">Menu</a>
-	        <a class="button-nav" href="account.html">My Account</a>
-      	</nav>
+	    <section class="header"> 
+			<!-- Company Logo -->
+			<a class="nav-logo" href="#">MealBox</a> 
+
+			<nav class="navigation">
+				<a class="button-nav" href="menu.html">Menu</a> 
+				<a class="button-nav" href="#">Subscription</a> 
+				<a class="button-nav" href="#">Contact</a> 
+				<!-- Login button styling will be different -->
+				<a class="button-nav" href="account.html">My Account</a> 
+			</nav>
+		</section>
 
       	<section class="review">
-      		<h2>Review</h2>
-  		    <div class="grid-col-4of10 grid-item">
+      		
+  		    <div class="grid-col-4of10 confirm-item">
+  		    	<h2>Review</h2>
 	      		<h3>Comments</h3>
 	      		<textarea id="message" class="textInput-field" placeholder="Leave your comments here"></textarea>
 
