@@ -234,11 +234,9 @@ a {
   width: 100%;
   background-color: #8acb88;
   text-align: right;
-  position: absolute;
   padding-right: 1.5em;
   padding-left: 1.5em;
   z-index: 1;
-  top:0;
 }
 
 
