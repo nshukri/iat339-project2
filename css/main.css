@@ -268,14 +268,20 @@ label {
 
 .grid-item {
   flex: 1 1 auto;
-  background-color: #d4d9df;
-  color: #596068;
   /*border: 1px solid #333333;*/
   text-align: center;
   padding: 1em;
   margin: 0.5rem 0.5rem;
 }
-@media (max-width: 30em){
+
+.g-item {
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+  background-color: #d4d9df;
+  color: #596068;
+
+}
+@media (max-width: 50em){
   .grid-item{
   flex: 0 0 100%;
   }
