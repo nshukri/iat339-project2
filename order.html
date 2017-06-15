@@ -2,67 +2,84 @@
 
 <html lang="en">
 	<head>
-		<title>Order</title> 
+		<title>MealBox Home</title> 
 		<meta charset="utf-8">
-		<link href="css/main.css" rel="stylesheet">
+
+
+   		<link href="css/template.css" rel="stylesheet">
+   		<link href="css/main.css" rel="stylesheet">
+
+		 <!-- Import fonts from google -->
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
 	</head>
 
 	<body>
+	<!-- Navigation code -->
+	<section class="header"> 
+		<!-- Company Logo -->
+		<a class="nav-logo" href="#">MealBox</a> 
+
 		<nav class="navigation">
-	    	<a class="button-nav" href="#">Menu</a>
-	        <a class="button-nav" href="#">About</a>
-	        <a class="button-nav" href="#">Contact</a>
-	    </nav>
+			<a class="button-nav" href="menu.html">Menu</a> 
+			<a class="button-nav" href="#">Subscription</a> 
+			<a class="button-nav" href="#">Contact</a> 
+			<!-- Login button styling will be different -->
+			<a class="button-nav" href="#">Login</a> 
+		</nav>
+	</section>
 
-		<h2 class="heading2">Your Orders</h2>
-		<div class="meal-plans">
-			<h3>Selected Plans</h3>
-			<div class="grid">
-				<div class="grid-item">Meal Plan</div>
-	         	<div class="grid-item">Quantity</div>
-	         	<div class="grid-item">Price</div>
-	         	<div class="grid-item"></div>
-	        </div>
+	<h2 class="heading2 title">Your Orders</h2>
 
-	        <hr>
-
-			<div class="grid">
-				<div class="grid-item">
-					<img src="img/picture1.jpg" alt="buddha-bowl">
-				</div>
-	         	<div class="grid-item">
-	         		<input type="number" id="quantity" class="quantity-field" placeholder="1">
-	         	</div>
-	         	<div class="grid-item">
-	         		<p>$47.00</p>
-	         	</div>
-	         	<div class="grid-item">
-	         		<button class="subscribe-button">edit</button>
-	         	</div>
-	        </div>
-	        <hr>
-	        <p class="price">Total Price: $47.00</p>
+	<!-- Selected Plans -->
+	<section class="selected-plans">
+		<h2 class="heading3 sub-title">Selected Plans</h2>
+	<div class="grid cate-titles">
+		<div class="grid-item">Plan</div>
+		<div class="grid-item">Quantity</div>
+		<div class="grid-item">Price</div>
+		<div class="grid-item">Edit</div>
+	</div>
+	<hr>
+	<div class="grid order-items">
+		<div class="grid-item">
+		<img class="image" src="" width="150px" height="100px">
 		</div>
+		<div class="grid-item">
+			<input type="number" id="quantity" class="quantity-field" placeholder="1">
+		</div>
+		<div class="grid-item">
+			<p class="price">$47.00</p>
+		</div>
+		<div class="grid-item">
+			<button class="subscribe-button">edit</button>
+		</div>
+	</div>
+	<hr>
+	<p class="total-price">$47.00</p>
+	</section>
 
-		<div class="shipping-location">
-		<h3>Shipping Information</h3>
+	<!-- Shipping Information -->
+	<section class="shipping-info">
+		<h2 class="heading3 sub-title">Shipping Information</h2>
 		<div class="grid">
 			<div class="grid-item">
 				<h4>John Doe</h4>
-				<p>1234 East 54th Avenue
-				Vancouver, B.C.
-				V5P 2N1
+				<p>Lorem ipsum dolor sit amet, consectetur
 				</p>
+			</div>
 
+			<div class="grid-item">
 				<button class="subscribe-button">select</button>
 			</div>
 		</div>
 		<button class="default-button">add new address</button>
-		</div>
+	</section>
 
-		<div class="del-time">
-		<h3>Delivery Time</h3>
-		<p class="description-text">Select when and what time you want your meal delivered to you!</p>
+	<!-- Delivery Time -->
+	<section class="del-time">
+		<h2 class="heading3 sub-title">Delivery Time</h2>
+		<p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum euismod biben laoreet.</p>
 
 		<form class="form" action="/action_page.php">
 			<select>
@@ -90,9 +107,16 @@
 			</select>
 		</form>
 
-		</div>
+	</section>
 
-	     <button class="continue-button" onclick="window.location.href='confirm-order.html'">Confirm</button>
+	<section class="additional-notes">
+		<h2 class="heading3 sub-title">Additional Notes</h2>
+		<p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum euismod biben laoreet.</p>
+
+		<textarea id="message" class="textInput-field"></textarea> 
+	</section>
+
+	<button class="continue-button" onclick="window.location.href='order-confirm1.html'">Confirm</button>
 
 	</body>
 </html>

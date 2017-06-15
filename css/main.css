@@ -179,7 +179,7 @@ a {
   width: 100%;
   color: #596068;
 }
-
+ 
 /* Styling for Product Description Text*/
 .description-text {
   font-weight: 300;
@@ -354,7 +354,7 @@ label {
 }
 
 /* 
-  REIGSTERATION PAGE -------------------
+  REGISTRATION PAGE -------------------
 */
 
 .grid-item-registration {
@@ -364,24 +364,6 @@ label {
   text-align: left;
   padding-left: 5em;
   margin: 0.5rem 0.5rem;
-}
-
-/*
-.form-container form input[type='text'] {
-  display: inline;
-}
-*/
-
-#postal-code {
-  width: 7em;
-}
-
-.exp-date select option{
-  display: inline;
-}
-
-.exp-date .textInput-field, select {
-  width: 5em;
 }
 
 .grid-item-registration .price {
