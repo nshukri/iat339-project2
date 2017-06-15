@@ -12,6 +12,11 @@ section {
 	text-align: center;
 }
 
+.subtitle {
+	text-align: left;
+	margin-top: 2rem !important; 
+}
+
 .header {
 	margin: 0 !important;
 	background-color: #8acb88;

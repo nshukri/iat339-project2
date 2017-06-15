@@ -17,6 +17,14 @@
 		<h2 class="heading2">Your Orders</h2>
 		<div class="meal-plans">
 			<h3>Selected Plans</h3>
+			<div class="grid">
+				<div class="grid-item">Meal Plan</div>
+	         	<div class="grid-item">Quantity</div>
+	         	<div class="grid-item">Price</div>
+	         	<div class="grid-item"></div>
+	        </div>
+
+	        <hr>
 
 			<div class="grid">
 				<div class="grid-item">
@@ -32,6 +40,7 @@
 	         		<button class="subscribe-button">edit</button>
 	         	</div>
 	        </div>
+	        <hr>
 	        <p class="price">Total Price: $47.00</p>
 		</div>
 
@@ -47,14 +56,8 @@
 
 				<button class="subscribe-button">select</button>
 			</div>
-
-			<div class="grid-item">
-				<button class="default-button">add new address</button>
-			</div>
 		</div>
-
-		
-
+		<button class="default-button">add new address</button>
 		</div>
 
 		<div class="del-time">
@@ -62,7 +65,6 @@
 		<p class="description-text">Select when and what time you want your meal delivered to you!</p>
 
 		<form class="form" action="/action_page.php">
-			<label for="card-name">When</label>
 			<select>
 				<option value="" disabled selected>Month</option>
 				<option value="jan">01</option>
