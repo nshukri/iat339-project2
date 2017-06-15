@@ -287,18 +287,48 @@ label {
  /*source: from Week 3 lab*/
 
 
-.grid-col-4of10{
-  width:40%;
-}
+
 
 .form-container{
     float:center;
   }
 
+
+.grid-col-3of10{
+  width:30%;
+  float: left；
+}
+
+.grid-col-4of10{
+  width:40%;
+  float:center;
+}
+
 @media (max-width: 30em){
   .grid-col-4of10{
     width:100%;
   }
+}
+
+
+.grid-col-5of10{
+  width:50%;
+  float: right；
+}
+
+.grid-col-7of10{
+  width:70%;
+  float: right；
+}
+
+
+/* account page-------------------------- */
+.account-item {
+  flex: 1 1 auto;
+  /*border: 1px solid #333333;*/
+  /*text-align: center;*/
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
 }
 
 .portrait {
@@ -309,14 +339,14 @@ label {
   border: 1px solid #333333;
 }
 
-.grid-col-3of10{
-  width:30%;
-  float: left；
-}
+/* confirm page-------------------------- */
 
-.grid-col-7of10{
-  width:70%;
-  float: right；
+.confirm-item {
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+  /*background-color: #d4d9df;*/
+  color: #596068;
+
 }
 
 /* 
