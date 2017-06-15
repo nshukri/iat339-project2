@@ -293,7 +293,7 @@ section {
 	display: inline;
 }
 
-.exp-date select {
+.exp-date select, .del-time select {
 	width: 5em;
 }
 
