@@ -103,6 +103,10 @@ section {
 	height: 350px;
 }
 
+.more-menu {
+	text-align: center !important;
+}
+
 .news {
 	margin: 0 2.3em !important;
 }
@@ -125,8 +129,9 @@ section {
 
 /*. Menu Page */
 .menu-options {
-	padding-top: 2em !important;
+	/*padding-top: 2em !important;*/
 	padding-bottom: 0 !important;
+	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
 
