@@ -7,19 +7,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link href="css/main.css" rel="stylesheet">
-
+		<link href="css/template.css" rel="stylesheet">
 	    <!-- Import fonts from google -->
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
 	</head>
 
 	<body>
-		<h1>MealBox</h1>
-		<nav id="page-nav">
-	        <a class="button-nav" href="home.html">Home</a>
-	        <a class="button-nav" href="menu.html">Menu</a>
-	        <a class="button-nav" href="account.html">My Account</a>
-      	</nav>
+	    <section class="header"> 
+			<!-- Company Logo -->
+			<a class="nav-logo" href="#">MealBox</a> 
+
+			<nav class="navigation">
+				<a class="button-nav" href="menu.html">Menu</a> 
+				<a class="button-nav" href="#">Subscription</a> 
+				<a class="button-nav" href="#">Contact</a> 
+				<!-- Login button styling will be different -->
+				<a class="button-nav" href="account.html">My Account</a> 
+			</nav>
+		</section>
 
       	<section id="register_confirm">
       		<div class="grid">
@@ -34,7 +40,7 @@
       			</div>
 
       			<div class="grid-col-7of10">
-      				<div class="grid-item payment_detail"> 
+      				<div class="confirm-item payment_detail"> 
 				      	<h2>Name: </h2>
 				      	<label>James Smith</label>
 				      	<h2>Payment details</h2>
@@ -48,7 +54,7 @@
 						<br>
 					</div>
 
-					<div class="p-listing grid-item plan_review">
+					<div class="p-listing confirm-item plan_review">
 			  			<h2>Plan review</h2>
 				      	<img src="img/picture1.jpg" alt="buddha-bowl">
 				        <h3 class="heading3">Buddha Bowl</h3>
@@ -58,7 +64,7 @@
 						<button class="default-button" onclick="window.location.href='registration.html'">Edit</button>
 						<br>
 						<br>
-						<button class="default-button" onclick="window.location.href='register_complete.html'">Submit</button>
+						<button class="default-button" onclick="window.location.href='register_confirm2.html'">Submit</button>
 					</div>
       			</div>
       		</div>
