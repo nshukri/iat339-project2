@@ -309,16 +309,9 @@ label {
   left:30%;
 }
 
-@media (max-width: 30em){
-  .grid-col-4of10{
-    width:100%;
-  }
-}
-
-
 .grid-col-5of10{
   width:50%;
-  float: right；
+  float: left；
 }
 
 .grid-col-7of10{
@@ -328,30 +321,156 @@ label {
 
 
 .account-item {
-  flex: 1 1 auto;
-  /*border: 1px solid #333333;*/
-  /*text-align: center;*/
-  padding: 1em;
-  margin: 0.5rem 0.5rem;
+  flex:1 1 auto;
+  text-align: left;
+  position:relative;
+  top:5em;
+  left:15em;
 }
 
-.portrait {
-  margin-top:2em;
-  margin-bottom:1em;
-  width:150px;
-  height:150px;
-  border: 1px solid #333333;
+
+#circle{
+  width:15px;
+  height:15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border:1px solid black;
+  float:left;
+  margin-top: 0.5em;
+}
+
+#Auto-renew{
+  float:left;
+  font-size: 0.8em;
+  padding-left: 0.2em;
+  padding-top: 0.5em;
+}
+
+.first-col{
+  border-top: 1px solid #333333;
+  float:left;
+}
+
+.second-col{
+  border-top: 1px solid #333333;
+  float:left;
+  padding-top:1.3em;
+  padding-left: 0.8em;
+}
+
+.third-col{
+  border-top: 1px solid #333333;
+  float:left;
+  padding-top:1.3em;
+  padding-left:2em;
+}
+
+.clear{
+  clear:both;
+}
+
+#account-img {
+  width:300px;
+  height:auto;
+  float:left;
+  margin-top: 6em;
+  margin-left: 5em;
+}
+
+.account-button{
+  margin-top:5em; 
+  padding-top: 5em;
 }
 
 /* confirm page-------------------------- */
 
 .confirm-item {
-  padding: 1em;
-  margin: 0.5rem 0.5rem;
-  /*background-color: #d4d9df;*/
+  float:center;
   color: #596068;
+}
+
+.bottom{
+  width:100%;
+  height:auto;
+  position:fixed;
+  bottom:0;
+}
+
+.confirm-img{
+  width:200px;
+  height: auto;
+  float:left;
+  margin-top: 2rem;
+}
+
+.confirm-para{
+  width:50%;
+  float:left;
+  margin-left:3em;
+  margin-top: 2rem;
+}
+
+@media(max-width: 40em){
+  .confirm-para{
+  margin-left:1em;
+  }
+}
+
+
+.order-confirm-img{
+  width:160px;
+  height:160px;
+}
+
+.order-confirm-text{
+  text-align: center;
 
 }
+
+.order-confirm-textInput{
+  width: 100%;
+  height:10em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/*contact page-------------------------*/
+.textInput{
+  width: 30em;
+  height:10em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  display: block;
+  position:absolute;
+  left:0;
+}
+
+.contact-button{
+  position:relative;
+  top:16em;
+  left:31em;
+}
+
+@media (max-width: 40em){
+  .grid-col-4of10{
+  left:4em;
+  }
+}
+
+#name,#email{
+  width:15em;
+}
+
 
 /* 
   REGISTRATION PAGE -------------------
