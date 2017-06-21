@@ -36,41 +36,73 @@
 		</section>
 
  		<section>
-        	<div class="grid">
-        		<div class="grid-col-3of10">
-        			<div class="grid-item">
-        				<button class="learn-more-button" onclick="window.location.href='#profile'">PROFILE</button>
-        			</div>
-        			<div class="grid-item">
-        				<button class="learn-more-button" onclick="window.location.href='#setting'">SETTING</button>
-        			</div>
-        		</div>
-
+ 			<div class="grid">
         		<div class="grid-col-5of10">
         			<div class="account-item">
-	    				<form class="form" action="/action_page.php">
-					      	<img class="portrait"><br>
-					        <label for="name">Name</label>
-					        <input type="text" id="name" class="textInput-field" placeholder="James Smith">
+					   <h2>My Account</h2>
+					   <br>
+					   <div class="grid-col-3of10 first-col">
+ 					     <h3>Name</h3>
+ 					   </div>
+ 					   <div class="grid-col-3of10 second-col">
+ 					   	 <p>James Smith</p>
+ 					   </div>
+ 					   <div class="grid-col-3of10 third-col">
+ 					   	 <a alt="" href="" class="InText-Link">Change name</a>
+ 					   </div>
+ 					   <br class="clear">
 
-					        <label for="password">Password</label>
-					        <input type="text" id="email" class="textInput-field" placeholder="aaaaaa">
-					        <button class="default-button">Save Changes</button>
-					     </form>	  
-        			</div>
+					   <div class="grid-col-3of10 first-col">
+ 					     <h3>Password</h3>
+ 					   </div>
+ 					   <div class="grid-col-3of10 second-col">
+ 					   	 <p>aaaaaa</p>
+ 					   </div>
+ 					   <div class="grid-col-3of10 third-col">
+ 					   	 <a alt="" href="" class="InText-Link">Change password</a>
+ 					   </div>
+ 					   <br class="clear">
 
+					   <div class="grid-col-3of10 first-col">
+ 					     <h3>Payment Details</h3>
+ 					   </div>
+ 					   <div class="grid-col-3of10 second-col">
+ 					   	 <p>Visa ending 1234</p>
+ 					   </div>
+ 					   <div class="grid-col-3of10 third-col">
+ 					   	 <a alt="" href="" class="InText-Link">Update Payment</a>
+ 					   </div>
+ 					   <br class="clear">
 
-        			<div class="p-listing account-item">
-        				  <h3 class="heading3">Buddha Bowl</h3>
-				          <img src="img/picture1.jpg" alt="buddha-bowl">
-				          <p class="price">$47.00</p>
-				          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.</p>
-				          <button class="default-button">Unsubscribe</button>
-				          <br>
-				          <br>
-				          <button class="default-button" onclick="window.location.href='menu.html'">Change Plan</button>
-        			</div>
+					   <div class="grid-col-3of10 first-col">
+ 					      <h3>Current Meal Plan</h3>
+					    
+						  <div id="circle" class="grid-col-5of10"></div>
+					      <p id="Auto-renew" class="grid-col-5of10">Auto-renew</p> 
+					      <br class="clear">						     
+ 					   </div>
+ 					   <div class="grid-col-3of10 second-col">
+ 					   	 <p>1 week trial (ends 5/26)</p>
+ 					   </div>
+ 					   <div class="grid-col-3of10 third-col">
+ 					   	 <a alt="" href="menu.html" class="InText-Link">Change meal plan</a>
+ 					   </div>
+ 					   <br class="clear">
+ 					   <br>
+ 					   <br>
+ 					   <br>
+ 					   <br>
+
+					     <button class="learn-more-button" onclick="window.location.href='menu.html'">Unsubscribe from MealBox</button>
+					</div>     
         		</div>
+
+        			
+
+    			<div class="grid-col-3of10" id="account-img">
+    				<img src="img/account-img.png" alt="">
+    			</div>
+
         	</div>
         </section>
         
