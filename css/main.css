@@ -214,13 +214,14 @@ a {
 .nav-logo {
   left: 0;
   font-size: 1.2em;
-  margin: 0.7em 0;
+  margin: 0.5em 0em;
   z-index: 3;
   top: 0;
   color: #FFF;
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 1.5em;
+  line-height: 3rem;
   display: inline-block;
 }
 
@@ -235,7 +236,7 @@ a {
 
 /*source: http://blog.christopherianmurphy.com/2016/01/responsive-pure-css-menu.html*/
 .navigation ul {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   list-style-type: none;
   width: 40%;
@@ -460,10 +461,10 @@ label {
 }
 
 .confirm-img{
-  width:200px;
+  width:300px;
   height: auto;
-  float:left;
-  margin-top: 2rem;
+  float: left;
+  margin-top: 4rem;
 }
 
 .confirm-para{
@@ -694,12 +695,36 @@ select {
   background-color: #cf5c36;
 } 
 
-/* 
-  ORDER PAGE -------------------
-*/
+/* Order Page */
+.selected-meals, .shipping-info, .del-time, .buttons { 
+  margin: 0 15em !important; 
+} 
 
-.shipping-information p {
-  display: inline-block;
+.selected-meals p {
+  font-size: .85rem;
+  color: #596068;
+}
+
+.selected-meals h4 {
+  margin: 0 auto;
+} 
+
+.shipping-location {
+  margin-left: -2rem;
+}
+
+.shipping-location li{
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    padding-right: 5rem;
+}
+
+.shipping-location li input {
+  margin-right: 0.86rem;
+}
+
+.selected-meals a, .shipping-location li a {
+  font-size: 0.75rem;
 }
 
 .quantity-field {
