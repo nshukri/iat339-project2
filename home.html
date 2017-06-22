@@ -37,20 +37,31 @@
 			</nav>
 		</nav>
 	</section>
+	<!-- end of Navigation code -->
 
 	<!-- Landing section -->
 	<section class="home-section">
-	<div class="container">
-		<div id="img-home"></div>
+	<div class="grid home-container">
+		<img id="img-home" src="img/home-image.jpg" alt="chicken salad">
 
 		<div class="home-content">
-		<h1 class="heading1">We deliver healthy and delicious food right to your door</h1>
+			<h1 class="heading1">We deliver healthy and delicious food right to your door</h1>
 
-		<button class="default-button home-button" onclick="window.location.href='register.html'">Order now</button>
+			<button class="default-button home-button" onclick="window.location.href='menu.html'">Order now</button>
 		</div>
-		
+			
+			
 			<a class="InText-Link" id="about-arrow" href="#">How does it work?</a>
-			<img id="down-arrow">
+
+			<svg id="down-arrow" viewBox="0 0 22 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+			<desc>Created with Sketch.</desc>
+			<defs></defs>
+			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			<polygon id="Back-Chevron" fill="#FFFFFF" transform="translate(11.250000, 6.500000) rotate(-90.341952) translate(-11.250000, -6.500000) " points="5 6.5 15.5 -4 17.5 -2 9 6.5 17.5 15 15.5 17"></polygon>
+			</g>
+			</svg>
+		
 	</div>
 	</section>
 
@@ -59,10 +70,12 @@
 		<div class="grid">
 			<div class="grid-item"></div>
 			<div class="grid-item about-text">
+				<h2 class="heading2">who are we?</h2>
 
-			<h2 class="heading2">who are we?</h2>
-
-			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+				<p class="paragraph">Mealbox is an one-stop solution to get healthy and fresh meals delivered to your door. Instead of spending time shopping and cooking, now you can get your meals delivered straight to your door. 
+	 
+				A meal box that uses fresh and local ingredients to help fuel and energize our customers throughout their day. 
+				</p>
 			</div>
 			<div class="grid-item"></div>
 
@@ -72,7 +85,7 @@
 		<div class="grid">
 			<!-- step 1 -->
 			<div  class=" grid-item">
-				<img class="image" src="img/item.jpeg"> 
+				<img class="image" src="img/step1.jpg" alt=""> 
 			</div>
 			<div class="grid-item step-text">
 				<h3 class="heading3">Step 1: Select your plan</h3>
@@ -81,7 +94,7 @@
 
 			<!-- step 2 -->
 			<div  class=" grid-item">
-				<img class="image" src="img/item.jpeg"> 
+				<img class="image" src="img/step2.jpg"> 
 			</div>
 			<div class="grid-item step-text">
 				<h3 class="heading3">Step 2: Order + Delivery</h3>
@@ -90,7 +103,7 @@
 
 			<!-- step 3 -->
 			<div  class="grid-item">
-				<img class="image" src="img/item.jpeg" alt="image-of-step-3"> 
+				<img class="image" src="img/step3.jpg" alt="image-of-step-3"> 
 			</div>
 			<div class="grid-item step-text">
 				<h3 class="heading3">Step 3: Enjoy!</h3>
@@ -104,19 +117,55 @@
 		<h2 class="heading2 title">Menu</h2>
 
 		<div class="grid"> 
-			<div  class="grid-item menu-item">
-				<img class="image" src="" width="100%" height="100%">
+			<!-- food item 1 -->
+			<div  class="grid-item menu-item container"  id="select" >
+				<h3 class="heading3 item-title" id="active">California Burger</h3>
+
+				<!-- 2nd layer content -->
+				<div id="item-content">
+					<a class="InText-Link review-link" href="#"><img class="rating" src="img/rating-full.png" alt="">Review</a>
+					<p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p> 
+					
+					 <button class="default-button add-item">Add</button>
+				</div>
+
+				<img class="image" src="img/burger.jpg" alt="">
 			</div>
-			<div  class="grid-item menu-item">
-				<img class="image" src="" width="100%" height="100%">
+
+			<!-- food item 2 -->
+			<div  class="grid-item menu-item container">
+				<!-- <div class="item-content">
+					<h3 class="heading3 item-title2">food title</h3> 
+					<a class="InText-Link review-link" href="#"><img class="rating">Review</a>
+					<p class="paragraph">Curabitur ut pellentesque nulla. Fusce facilisis porttitor aliquam. Fusce at odio a arcu lobortis lacinia. Nulla imperdiet, ipsum nec blandit vehicula, nunc risus maximus odio, vitae porta turpis ligula vitae turpis. Nam bibendum consectetur sem ac consequat. Fusce consectetur diam id, tempus dolor.</p> 
+					
+					 <button class="default-button add-item">Add</button>
+				</div> -->
+				<h3 class="heading3 item-title">Zen Spring Rolls</h3>
+				<img class="image" src="img/spring-rolls.jpg" alt="">
 			</div>
-			<div  class="grid-item menu-item">
-				<img class="image" src="" width="100%" height="100%">
+			<!-- food item 3 -->
+			<div  class="grid-item menu-item container">
+				<!-- <div class="item-content">
+					<a class="InText-Link review-back" href="#">< Back</a>
+					<h3 class="heading3 item-title2">Reviews</h3>
+					<img class="rating2">
+					<p class="paragraph">Curabitur ut pellentesque nulla. Fusce facilisis porttitor aliquam. Fusce at odio a arcu lobortis lacinia.</p>
+
+					<img class="rating2 comment2">
+					<p class="paragraph comment2-p">Curabitur ut pellentesque nulla. Fusce facilisis porttitor aliquam. Fusce at odio a arcu lobortis lacinia.</p>
+				</div> -->
+				<h3 class="heading3 item-title">Zesty Salmon Salad</h3>
+				<img class="image" src="img/salmon-food.jpg" alt="">
 			</div>
-			<div  class="grid-item menu-item">
-				<img class="image" src="" width="100%" height="100%">
+
+			<!-- food item 4 -->
+			<div  class="grid-item menu-item container">
+				<h3 class="heading3 item-title">Thai Spring Rolls</h3>
+				<img class="image" src="img/thai-spring-roll.jpg" alt="">
 			</div>
 		</div>
+		
 
 		<div class="grid">
 			<div class="grid-item">
@@ -133,16 +182,16 @@
 			<h2 class="heading2 title">News</h2>
 			<div class="grid">
 				<div class="grid-item news-text">
-					<h3 class="heading3">News 1</h3>
-					<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet.</p>
+					<h3 class="heading3">Delivery to Toronto</h3>
+					<p class="paragraph">Since Mealbox opened two years ago, it has been on a steady rise with thousands of people in Greater Vancouver using our subscription service. Asides from offering our service in Vancouver, our next target is to expand to Toronto!</p>
 				</div>
 				<div class="grid-item news-text">
-					<h3 class="heading3">News 2</h3>
-					<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet.</p>
+					<h3 class="heading3">Thanks, Dad</h3>
+					<p class="paragraph">Before we know it, Father’s Day is approaching soon. What better than to celebrate Father’s Day with our healthy and fresh meal box? Mealbox has designed a special meal for all the dads in Vancouver. Surprise your dads with a specially designed meal box on Father’s Day!</p>
 				</div>
 				<div class="grid-item news-text">
-					<h3 class="heading3">News 3</h3>
-					<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet.</p>
+					<h3 class="heading3">Mealbox is hiring!</h3>
+					<p class="paragraph">Mealbox is looking for graphic designers in the Greater Vancouver area! If you have an eye for design and details than apply for the position!</p>
 				</div>
 			</div>
 			

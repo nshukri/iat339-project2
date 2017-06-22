@@ -25,9 +25,13 @@ section {
 
 #img-home {
 	background-color: #d9d9d9;
-	width: 100vw;
-	height: 78vh;;
-	left:0;
+	/*height: 100%;*/
+	opacity: 0.7;
+	margin: auto;
+	display: block;
+	object-fit: cover;
+	/*source: https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio*/
+
 }
 
 .home-section {
@@ -36,10 +40,19 @@ section {
 	margin-top: 10vh;
 	height: 78vh;
 	text-align: center;
+	background-color: black;
+
 }
 
-.container {
+.home-container {
+
+	/*background-image: url("path/to/img/home-image-2.png");*/
+	width: 100%;
+	height: 78vh;
+	/*background-size: cover;
+    background-repeat: no-repeat;*/
 	position: relative;
+	overflow: hidden;
 }
 
 .home-button {
@@ -57,20 +70,27 @@ section {
 	z-index: 10;
 }
 
+.home-content h1 {
+	color: white;
+}
+
 #about-arrow {
+	color: white !important;
 	position: absolute;
 	width: 100%;
 	bottom: 6vh;
 	left: 0;
+	cursor: pointer;
 }
 
 #down-arrow {
-	width: 80px;
-	height: 40px;
-	background-color: black;
+	width: 2.5em;
+	height: 2em;
 	position: absolute;
-	bottom: 1vh;
-	left: 48%;
+	bottom: 1.5vh;
+	margin: auto;
+	left: 48.5%;
+	cursor: pointer;
 }
 
 #down {
@@ -90,9 +110,7 @@ section {
 }
 
 .image {
-	/*background-color: #262626;*/
-	width: 100%; 
-
+	width: 100%;
 }
 
 .step-text {
@@ -107,9 +125,14 @@ section {
 .menu-item {
 	margin: 0 !important;
 	padding: 0 !important;
-	height: 350px;
+	position: relative;
 }
 
+.menu-item img {
+	overflow: hidden;
+	height: 100%;
+}
+1
 .more-menu {
 	text-align: center !important;
 }
@@ -144,25 +167,31 @@ section {
 
 .item-title {
 	position: absolute;
+	background-color: rgba(0,0,0, 0.6);
 	z-index: 2;
 	color: white !important;
-	bottom: 1em;
-	left: 2.5em;
+	bottom: 0;
+	padding: 0.7em 2.5em;
+	width: 100%;
+	transition: ease 0.5s;
+	cursor: pointer;
 }
-
-.item-title2 {
+/*
+.item-title-active:hover {
 	position: absolute;
 	z-index: 2;
 	color: white !important;
-	top: 1.9em;
-	left: 2em;
-}
+	top:0;
+	padding-top: : 1.9em;
+	padding-left: 2em;
+}*/
 
-.item-content {
+#item-content {
 	width: 100%;
+	display: none;
 }
 
-.item-content p {
+#item-content p {
 	position: absolute;
 	z-index: 2;
 	color: white;
@@ -171,7 +200,7 @@ section {
 	width: 80%;
 }
 
-.item-content button {
+#item-content button {
 	position: absolute;
 	z-index: 2;
 	bottom: 1em !important;
@@ -193,9 +222,9 @@ section {
 }
 
 .rating {
-	background-color: yellow;
 	height: 15px;
 	width: 80px;
+	padding-right: 0.3em;
 }
 
 .rating2 {

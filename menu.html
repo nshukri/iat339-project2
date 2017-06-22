@@ -13,77 +13,109 @@
 	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
 	</head>
 
-	<body>
+	<body onload="initElement()";>
 	<!-- Navigation code -->
 	<section class="header"> 
-		<!-- Company Logo -->
-		<a class="nav-logo" href="home.html">MealBox</a> 
-
+		
 		<nav class="navigation">
-			<a class="button-nav" href="menu.html">Menu</a> 
-			<a class="button-nav" href="register.html">Subscription</a> 
-			<a class="button-nav" href="contact.html">Contact</a> 
-			<!-- Login button styling will be different -->
-			<a class="button-nav" href="account.html">My Account</a> 
+			<nav class="wrapper">
+				<!-- Company Logo -->
+				<a class="nav-logo" href="home.html">MealBox</a> 
+
+				<!-- mobile hamburger icon -->
+				<input type="checkbox" id="menu-toggle">
+	      			<label for="menu-toggle" class="label-toggle"></label>
+				</input>
+
+				<ul>
+					<li><a class="button-nav" href="menu.html">Menu</a></li>
+					<li><a class="button-nav" href="register.html">Subscription</a></li>
+					<li><a class="button-nav" href="contact.html">Contact</a></li>
+					<!-- Login button styling will be different -->
+					<li><a class="button-nav" href="account.html">My Account</a></li>
+				</ul>
+			</nav>
 		</nav>
 	</section>
+	<!-- end of Navigation code -->
 
 	<!-- Menu options -->
 	<section class="menu-options">
 		<h2 class="heading2 title">Menu</h2>
 
 		<div class="grid"> 
-			<div  class="grid-item menu-item container">
-				<h3 class="heading3 item-title">food title</h3>
-				<a href="order.html"><img class="image" src="" width="100%" height="100%"></a>
+			<!-- food item 1 -->
+			<div  class="grid-item menu-item container"  id="select" >
+				<h3 class="heading3 item-title" id="active">California Burger</h3>
+
+				<!-- 2nd layer content -->
+				<div id="item-content">
+					<a class="InText-Link review-link" href="#"><img class="rating" src="img/rating-full.png" alt="">Review</a>
+					<p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p> 
+					
+					 <button class="default-button add-item">Add</button>
+				</div>
+
+				<img class="image" src="img/burger.jpg" alt="">
 			</div>
 
+			<!-- food item 2 -->
 			<div  class="grid-item menu-item container">
-				<div class="item-content">
-					<h3 class="heading3 item-title">food title</h3>
-				</div>
-				<img class="image" src="" width="100%" height="100%">
+				<!-- <div class="item-content">
+					<h3 class="heading3 item-title2">food title</h3> 
+					<a class="InText-Link review-link" href="#"><img class="rating">Review</a>
+					<p class="paragraph">Curabitur ut pellentesque nulla. Fusce facilisis porttitor aliquam. Fusce at odio a arcu lobortis lacinia. Nulla imperdiet, ipsum nec blandit vehicula, nunc risus maximus odio, vitae porta turpis ligula vitae turpis. Nam bibendum consectetur sem ac consequat. Fusce consectetur diam id, tempus dolor.</p> 
+					
+					 <button class="default-button add-item">Add</button>
+				</div> -->
+				<h3 class="heading3 item-title">Zen Spring Rolls</h3>
+				<img class="image" src="img/spring-rolls.jpg" alt="">
+			</div>
+			<!-- food item 3 -->
+			<div  class="grid-item menu-item container">
+				<!-- <div class="item-content">
+					<a class="InText-Link review-back" href="#">< Back</a>
+					<h3 class="heading3 item-title2">Reviews</h3>
+					<img class="rating2">
+					<p class="paragraph">Curabitur ut pellentesque nulla. Fusce facilisis porttitor aliquam. Fusce at odio a arcu lobortis lacinia.</p>
+
+					<img class="rating2 comment2">
+					<p class="paragraph comment2-p">Curabitur ut pellentesque nulla. Fusce facilisis porttitor aliquam. Fusce at odio a arcu lobortis lacinia.</p>
+				</div> -->
+				<h3 class="heading3 item-title">Zesty Salmon Salad</h3>
+				<img class="image" src="img/salmon-food.jpg" alt="">
 			</div>
 
+			<!-- food item 4 -->
 			<div  class="grid-item menu-item container">
-				<div class="item-content">
-					<h3 class="heading3 item-title">food title</h3>
-				</div>
-				<img class="image" src="" width="100%" height="100%">
-			</div>
-
-			<div  class="grid-item menu-item container">
-				<div class="item-content">
-					<h3 class="heading3 item-title">food title</h3>
-				</div>
-				<img class="image" src="" width="100%" height="100%">
+				<h3 class="heading3 item-title">Thai Spring Rolls</h3>
+				<img class="image" src="img/thai-spring-roll.jpg" alt="">
 			</div>
 		</div>
 		
 		<div class="grid"> 
+			<!-- food item 5 -->
 			<div  class="grid-item menu-item container">
-				<div class="item-content">
-					<h3 class="heading3 item-title">food title</h3>
-				</div>
-				<img class="image" src="" width="100%" height="100%">
+				<h3 class="heading3 item-title">Chicken Burrito</h3>
+				<img class="image" src="img/b-burrito.jpg" alt="">
 			</div>
+
+			<!-- food item 6 -->
 			<div  class="grid-item menu-item container">
-				<div class="item-content">
-					<h3 class="heading3 item-title">food title</h3>
-				</div>
-				<img class="image" src="" width="100%" height="100%">
+				<h3 class="heading3 item-title">Steak Salad</h3>
+				<img class="image" src="img/steak-salad.jpg" alt="">
 			</div>
+
+			<!-- food item 7 -->
 			<div  class="grid-item menu-item container">
-				<div class="item-content">
-					<h3 class="heading3 item-title">food title</h3>
-				</div>
-				<img class="image" src="" width="100%" height="100%">
+				<h3 class="heading3 item-title">Almond Butter Tofu Stir Fry</h3>
+				<img class="image" src="img/tofu-fry.jpg" alt="">
 			</div>
+
+			<!-- food item 8 -->
 			<div  class="grid-item menu-item container">
-				<div class="item-content">
-					<h3 class="heading3 item-title">food title</h3>
-				</div>
-				<img class="image" src="" width="100%" height="100%">
+				<h3 class="heading3 item-title">Buffalo Chickpea Burger</h3>
+				<img class="image" src="img/chickpea-burger.jpg" alt="">
 			</div>
 		</div>
 	</section>
@@ -94,6 +126,42 @@
 		<p class="paragraph">Call us at <b>604-334-5678</b> or <a class="InText-Link" href="">send us an email here</a></p>
 		<p class="copyright">Copyright 2017</p>
 	</section>
+
+	<!-- script -->
+	<script>
+		    function initElement()  
+    {  
+        var p = document.getElementById("select");  
+
+        p.onmouseover = showMouseOver;
+        p.onmouseout = showMouseOut;
+        p.onclick = showMouseOver;
+    };  
+
+    function showMouseOver()  
+    {  
+        // var x = document.getElementById("item-content");
+        // x.style.display = "show";
+        document.getElementById("item-content").style.display = "block";
+         console.log ("hello");
+
+        document.getElementById("active").style.paddingTop = "1.9em";
+        document.getElementById("active").style.paddingLeft = "2em";
+        document.getElementById("active").style.top = "0";
+
+    }
+    
+    function showMouseOut()
+    {
+        document.getElementById("item-content").style.display = "none";
+
+        document.getElementById("active").style.paddingTop = "";
+        document.getElementById("active").style.paddingLeft = "";
+        document.getElementById("active").style.top = "";
+    
+    }
+
+	</script>
 
 	</body>
 </html>
