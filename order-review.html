@@ -14,16 +14,26 @@
 	</head>
 
 	<body>
-	    <section class="header"> 
-			<!-- Company Logo -->
-			<a class="nav-logo" href="home.html">MealBox</a> 
-
+		<!-- Navigation code -->
+		<section class="header"> 
 			<nav class="navigation">
-				<a class="button-nav" href="menu.html">Menu</a> 
-				<a class="button-nav" href="register.html">Subscription</a> 
-				<a class="button-nav" href="contact.html">Contact</a> 
-				<!-- Login button styling will be different -->
-				<a class="button-nav" href="account.html">My Account</a> 
+				<nav class="wrapper">
+					<!-- Company Logo -->
+					<a class="nav-logo" href="home.html">MealBox</a> 
+
+					<!-- mobile hamburger icon -->
+					<input type="checkbox" id="menu-toggle">
+		      			<label for="menu-toggle" class="label-toggle"></label>
+					</input>
+
+					<ul>
+						<li><a class="button-nav" href="menu.html">Menu</a></li>
+						<li><a class="button-nav" href="register.html">Subscription</a></li>
+						<li><a class="button-nav" href="contact.html">Contact</a></li>
+						<!-- Login button styling will be different -->
+						<li><a class="button-nav" href="account.html">My Account</a></li>
+					</ul>
+				</nav>
 			</nav>
 		</section>
 

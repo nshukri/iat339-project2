@@ -15,83 +15,84 @@
 	</head>
 
 	<body>
-	<!-- Navigation code -->
-	<section class="header"> 
-		<!-- Company Logo -->
-		<a class="nav-logo" href="home.html">MealBox</a> 
+		<!-- Navigation code -->
+		<section class="header"> 
+			<nav class="navigation">
+				<nav class="wrapper">
+					<!-- Company Logo -->
+					<a class="nav-logo" href="home.html">MealBox</a> 
 
-		<nav class="navigation">
-			<a class="button-nav" href="menu.html">Menu</a> 
-			<a class="button-nav" href="register.html">Subscription</a> 
-			<a class="button-nav" href="contact.html">Contact</a> 
-			<!-- Login button styling will be different -->
-			<a class="button-nav" href="account.html">My Account</a> 
-		</nav>
-	</section>
+					<!-- mobile hamburger icon -->
+					<input type="checkbox" id="menu-toggle">
+		      			<label for="menu-toggle" class="label-toggle"></label>
+					</input>
+
+					<ul>
+						<li><a class="button-nav" href="menu.html">Menu</a></li>
+						<li><a class="button-nav" href="register.html">Subscription</a></li>
+						<li><a class="button-nav" href="contact.html">Contact</a></li>
+						<!-- Login button styling will be different -->
+						<li><a class="button-nav" href="account.html">My Account</a></li>
+					</ul>
+				</nav>
+			</nav>
+		</section>
 
 	<h2 class="heading2 title">Your Orders</h2>
 
+	<!-- Process Bar -->
+	<div class="progress-bar-container">
+		<ul class="progress-bar">
+			<li class="active"><p>Order</p></li>
+			<li><p>Review</p></li>
+			<li><p>Complete</p></li>
+		</ul>
+	</div>
+
 	<!-- Selected Plans -->
-	<section class="selected-plans">
-		<h2 class="heading3 sub-title">Selected Plans</h2>
-	<div class="grid cate-titles">
-		<div class="grid-item">Plan</div>
-		<div class="grid-item">Quantity</div>
-		<div class="grid-item">Price</div>
-		<div class="grid-item">Edit</div>
-	</div>
-	<hr>
-	<div class="grid order-items">
-		<div class="grid-item">
-		<img class="image" src="" width="150px" height="100px">
+	<section class="selected-meals">
+		<h2 class="heading3 sub-title">Your meals</h2>
+
+		<div class="grid">
+			<div class="grid-item">
+				<img class="image" src="img/thai-spring-rolls.jpg">
+			</div>
+			<div class="grid-item">
+				<h4>Thai Spring Rolls</h4>
+				<p>Made with fresh veggies, basil, and tofu, served with a savory-sweet cashew sauce.</p>
+			</div>
+			<div class="grid-item">
+				<h4>Quantity</h4>
+				<input type="number" id="quantity" class="quantity-field" placeholder="1">
+			</div>
 		</div>
-		<div class="grid-item">
-			<input type="number" id="quantity" class="quantity-field" placeholder="1">
-		</div>
-		<div class="grid-item">
-			<p class="price">$47.00</p>
-		</div>
-		<div class="grid-item">
-			<button class="subscribe-button">edit</button>
-		</div>
-	</div>
-	<hr>
-	<p class="total-price">$47.00</p>
+		<a class="InText-Link" href="">Add another meal</a>
 	</section>
 
 	<!-- Shipping Information -->
 	<section class="shipping-info">
 		<h2 class="heading3 sub-title">Shipping Information</h2>
-		<div class="grid">
-			<div class="grid-item">
-				<h4>John Doe</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur
-				</p>
-			</div>
+		<p class="description-text">Where would you want your meal to be shipped to?</p>
 
-			<div class="grid-item">
-				<button class="subscribe-button">select</button>
-			</div>
-		</div>
-		<button class="default-button">add new address</button>
+		<ul class="shipping-location">
+			<li>
+				<input type="radio" name="home">Home
+			</li>
+			<li>
+				<input type="radio" name="office">Office
+			</li>
+			<li><a class="InText-Link" href="">Add new location</a></li>
+		</ul>
 	</section>
 
 	<!-- Delivery Time -->
 	<section class="del-time">
 		<h2 class="heading3 sub-title">Delivery Time</h2>
-		<p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum euismod biben laoreet.</p>
+		<p class="description-text">Would you like your food to be delivered at a specific time? (optional)</p>
 
-		<form class="form" action="/action_page.php">
+		<form class="form">
 			<select>
-				<option value="" disabled selected>Month</option>
-				<option value="jan">01</option>
-				<option value="feb">02</option>
-				<option value="mar">03</option>
-				<option value="apr">04</option>
-			</select>
-			<p>to</p>
-			<select>
-				<option value="" disabled selected>Month</option>
+				<option value="" disabled selected>Hour</option>
 				<option value="jan">01</option>
 				<option value="feb">02</option>
 				<option value="mar">03</option>
@@ -99,24 +100,25 @@
 			</select>
 
 			<select>
-				<option value="" disabled selected>Time</option>
-				<option value="12">12:00PM</option>
-				<option value="1">1:00PM</option>
-				<option value="2">2:00PM</option>
-				<option value="3">3:00PM</option>
+				<option value="" disabled selected>Min</option>
+				<option value="jan">01</option>
+				<option value="feb">02</option>
+				<option value="mar">03</option>
+				<option value="apr">04</option>
+			</select>
+
+			<select>
+				<option value="PM">PM</option>
+				<option value="AM">AM</option>
 			</select>
 		</form>
 
 	</section>
 
-	<section class="additional-notes">
-		<h2 class="heading3 sub-title">Additional Notes</h2>
-		<p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum euismod biben laoreet.</p>
-
-		<textarea id="message" class="textInput-field"></textarea> 
+	<section class="buttons">
+		<button class="next-button" onclick="window.location.href='menu.html'">Cancel</button>
+		<button class="next-button" onclick="window.location.href='order-confirm.html'">Place My Order</button>
 	</section>
-
-	<button class="continue-button" onclick="window.location.href='order-confirm1.html'">Confirm</button>
 
 	</body>
 </html>

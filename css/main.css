@@ -694,12 +694,45 @@ select {
   background-color: #cf5c36;
 } 
 
-/* 
-  ORDER PAGE -------------------
-*/
+/* Order Page */
+.selected-meals, .shipping-info, .del-time, .buttons { 
+  margin: 0 15em !important; 
+} 
+
+.selected-meals p {
+  font-size: .85rem;
+  color: #596068;
+}
+
+.selected-meals h4 {
+  margin: 0 auto;
+} 
+
+.selected-meals img {
+  width: 55%;
+  margin-left: -1rem;
+}
 
 .shipping-information p {
   display: inline-block;
+}
+
+.shipping-location {
+  margin-left: -2rem;
+}
+
+.shipping-location li{
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    padding-right: 5rem;
+}
+
+.shipping-location li input {
+  margin-right: 0.86rem;
+}
+
+.selected-meals a, .shipping-location li a {
+  font-size: 0.75rem;
 }
 
 .quantity-field {

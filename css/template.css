@@ -234,27 +234,3 @@ section {
 .selected-plans, .shipping-info, .del-time, .additional-notes { 
   margin: 0 5em !important; 
 } 
-
-.cate-titles {
-	text-align: center;
-}
-
-.order-items {
-	align-items: center;
-	text-align: center;
-}
- 
-.total-price { 
-	font-weight: 700;
-	font-size: 1.5rem; 
-	text-align: right; 
-} 
-
-/*.exp-date select option{
-  display: inline;
-}
-
-.exp-date .textInput-field, select {
-  width: 5em;
-}*/
-
