@@ -42,14 +42,10 @@ a {
 
 /* Styling for the navigation button */
 .button-nav {
-  display: inline-block;
-  padding: 1em;
-  margin: auto;
   color: #FFF;
   background-color: #8acb88;
   font-weight: 600;
   letter-spacing: 1px;
-  border-radius: 0.25em;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
@@ -216,28 +212,58 @@ a {
 
 /* Styling for Navigation*/
 .nav-logo {
-  text-align: left !important;
-  position: absolute;
   left: 0;
   font-size: 1.2em;
-  padding: 0.5em 1em;
-  padding-left: 1.5em;
+  margin: 0.7em 0;
   z-index: 3;
   top: 0;
   color: #FFF;
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 1.5em;
+  display: inline-block;
 }
 
 .navigation {
   width: 100%;
   background-color: #8acb88;
-  text-align: right;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
+  padding-right: 1em;
+  padding-left: 1em;
   z-index: 1;
+  /*position: fixed;*/
 }
+
+/*source: http://blog.christopherianmurphy.com/2016/01/responsive-pure-css-menu.html*/
+.navigation ul {
+   display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 40%;
+  margin: auto;
+}
+
+.navigation li {
+  list-style: none;
+  display: inline-block;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 2%;
+}
+
+#menu-toggle {display: none;}
+
+.label-toggle {display: none;}
+
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
 
 
 
@@ -261,7 +287,6 @@ label {
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .grid-item {
@@ -277,14 +302,55 @@ label {
   margin: 0.5rem 0.5rem;
   background-color: #d4d9df;
   color: #596068;
-
 }
-@media (max-width: 50em){
+
+
+@media (max-width: 65em){
   .grid-item{
   flex: 0 0 100%;
   }
-}
- /*source: from Week 3 lab*/
+
+  .grid {
+    flex-wrap: wrap;
+  }
+  
+  .navigation ul {
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  .navigation li {
+    border-bottom: 1px solid #ffffff;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%, #ffffff 100%);
+    cursor: pointer;
+    display: inline;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+} 
+/*end of media query*/
+
 
 
 
@@ -309,16 +375,9 @@ label {
   left:30%;
 }
 
-@media (max-width: 30em){
-  .grid-col-4of10{
-    width:100%;
-  }
-}
-
-
 .grid-col-5of10{
   width:50%;
-  float: right；
+  float: left；
 }
 
 .grid-col-7of10{
@@ -328,30 +387,156 @@ label {
 
 
 .account-item {
-  flex: 1 1 auto;
-  /*border: 1px solid #333333;*/
-  /*text-align: center;*/
-  padding: 1em;
-  margin: 0.5rem 0.5rem;
+  flex:1 1 auto;
+  text-align: left;
+  position:relative;
+  top:5em;
+  left:15em;
 }
 
-.portrait {
-  margin-top:2em;
-  margin-bottom:1em;
-  width:150px;
-  height:150px;
-  border: 1px solid #333333;
+
+#circle{
+  width:15px;
+  height:15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border:1px solid black;
+  float:left;
+  margin-top: 0.5em;
+}
+
+#Auto-renew{
+  float:left;
+  font-size: 0.8em;
+  padding-left: 0.2em;
+  padding-top: 0.5em;
+}
+
+.first-col{
+  border-top: 1px solid #333333;
+  float:left;
+}
+
+.second-col{
+  border-top: 1px solid #333333;
+  float:left;
+  padding-top:1.3em;
+  padding-left: 0.8em;
+}
+
+.third-col{
+  border-top: 1px solid #333333;
+  float:left;
+  padding-top:1.3em;
+  padding-left:2em;
+}
+
+.clear{
+  clear:both;
+}
+
+#account-img {
+  width:300px;
+  height:auto;
+  float:left;
+  margin-top: 6em;
+  margin-left: 5em;
+}
+
+.account-button{
+  margin-top:5em; 
+  padding-top: 5em;
 }
 
 /* confirm page-------------------------- */
 
 .confirm-item {
-  padding: 1em;
-  margin: 0.5rem 0.5rem;
-  /*background-color: #d4d9df;*/
+  float:center;
   color: #596068;
+}
+
+.bottom{
+  width:100%;
+  height:auto;
+  position:fixed;
+  bottom:0;
+}
+
+.confirm-img{
+  width:200px;
+  height: auto;
+  float:left;
+  margin-top: 2rem;
+}
+
+.confirm-para{
+  width:50%;
+  float:left;
+  margin-left:3em;
+  margin-top: 2rem;
+}
+
+@media(max-width: 40em){
+  .confirm-para{
+  margin-left:1em;
+  }
+}
+
+
+.order-confirm-img{
+  width:160px;
+  height:160px;
+}
+
+.order-confirm-text{
+  text-align: center;
 
 }
+
+.order-confirm-textInput{
+  width: 100%;
+  height:10em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/*contact page-------------------------*/
+.textInput{
+  width: 30em;
+  height:10em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  display: block;
+  position:absolute;
+  left:0;
+}
+
+.contact-button{
+  position:relative;
+  top:16em;
+  left:31em;
+}
+
+@media (max-width: 40em){
+  .grid-col-4of10{
+  left:4em;
+  }
+}
+
+#name,#email{
+  width:15em;
+}
+
 
 /* 
   REGISTRATION PAGE -------------------
