@@ -130,7 +130,7 @@ section {
 }
 
 .menu-item {
-	margin: 0 !important;
+	margin: 0 15rem !important;
 	padding: 0 !important;
 	position: relative;
 }
@@ -267,6 +267,6 @@ section {
 }
 
 /* Order Page */ 
-.selected-plans, .shipping-info, .del-time, .additional-notes { 
+.selected-plans, .shipping-info, .del-time, .additional-no { 
   margin: 0 5em !important; 
 } 
