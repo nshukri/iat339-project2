@@ -19,6 +19,7 @@ section {
 
 .header {
 	margin: 0 !important;
+	padding: 0 !important;
 	background-color: #8acb88;
 
 }
@@ -90,11 +91,13 @@ section {
 }
 
 .image {
-	background-color: #262626;
+	/*background-color: #262626;*/
+	width: 100%; 
+
 }
 
 .step-text {
-	width: 15em;
+	width: 100%;
 }
 
 .home-menu {
