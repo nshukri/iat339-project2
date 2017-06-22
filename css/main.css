@@ -255,7 +255,11 @@ a {
   padding: 0 2%;
 }
 
-#menu-toggle {display: none;}
+#menu-toggle {
+  display: none;
+
+  
+}
 
 .label-toggle {display: none;}
 
@@ -332,8 +336,12 @@ label {
   }
   nav #menu-toggle:checked ~ ul {
     opacity: 1;
-    height: 100%;
+    height: 100vh;
     visibility: visible;
+    /* Set our transitions up. 
+  -webkit-transition: max-height 0.8s ease;
+  -moz-transition: max-height 0.8s ease;
+  transition: max-height 0.8s ease;*/
   }
   nav .label-toggle {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%, #ffffff 100%);

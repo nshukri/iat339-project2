@@ -193,12 +193,12 @@ section {
 	padding-left: 2em;
 }*/
 
-#item-content {
+.item-content {
 	width: 100%;
 	display: none;
 }
 
-#item-content p {
+.item-content p {
 	position: absolute;
 	z-index: 2;
 	color: white;
@@ -207,10 +207,14 @@ section {
 	width: 80%;
 }
 
-#item-content button {
+.item-content button {
 	position: absolute;
 	z-index: 2;
 	bottom: 1em !important;
+}
+
+#item-layer3 {
+	display: block !important;
 }
 
 .add-item {
@@ -235,13 +239,12 @@ section {
 }
 
 .rating2 {
-	position: absolute;
+	
 	z-index: 2;
-	left: 2.5em;
-	top: 5em;
-	background-color: yellow;
-	height: 15px;
-	width: 80px;
+	left: 2.5em; 
+  	top: 5em;
+  	height: 15px; 
+  	width: 80px; 
 }
 
 .comment2 {
