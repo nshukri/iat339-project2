@@ -362,7 +362,6 @@ label {
     float:center;
   }
 
-
 /* Account Page */
 .grid-col-3of10 {
   width:30%;
@@ -488,7 +487,6 @@ label {
   }
 }
 
-
 .order-confirm-img{
   width:160px;
   height:160px;
@@ -543,19 +541,40 @@ label {
 
 
 /* Registration Page */
-.basic-info, .select-plan, .payment-methods, .newsletter-form, .buttons { 
+/*.basic-info, .select-plan, .payment-methods, .newsletter-form, .buttons { 
   margin: 0 15em !important; 
-} 
+} */
+
+.select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
+  margin: 0em 15em !important;
+}
+
+@media (max-width: 1300px) {
+  .select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
+    margin: 0em 10em !important;
+  }
+}
+
+@media (max-width: 750px){
+  .select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
+    margin: 0em 5em !important;
+  }
+
+  .newsletter-form { 
+    margin-left: 5em !important;
+    font-size: 0.86rem;
+   }
+}
 
 .buttons {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3em !important;
   position: absolute;
 }
 
 .plan-text {
   width: 15em;
-  padding-right: 1.5em !important;
+  padding: 1.5em !important;
   background-color: #eee;
 }
 
@@ -602,7 +621,8 @@ select {
   font-weight: 600;
 }
 .method img {
-  width: 15%;
+  min-width: 10rem;
+  max-width: 10rem;
   margin-top: -0.75rem;
   margin-bottom: 1.5rem;
 }
@@ -704,18 +724,40 @@ select {
 } 
 
 /* Order Page */
-.selected-meals, .shipping-info, .del-time, .buttons { 
+/*.selected-menu, .shipping-info, .del-time, .buttons { 
   margin: 0 15em !important; 
-} 
+}*/
 
-.selected-meals p {
+
+.selected-menu, .shipping-info, .del-time {
+  margin: 0 15rem !important;
+}
+
+@media (max-width: 1300px) {
+  .selected-menu, .shipping-info, .del-time {
+    margin: 0em 10em !important;
+  }
+}
+
+@media (max-width: 750px){
+  .selected-menu, .shipping-info, .del-time {
+    margin: 0em 5em !important;
+  }
+}
+.selected-items {
+  margin: 0 !important;
+  position: relative;
+}
+
+.selected-items img {
+  overflow: hidden;
+  width: 75%;
+}
+
+.selected-items p {
   font-size: .85rem;
   color: #596068;
 }
-
-.selected-meals h4 {
-  margin: 0 auto;
-} 
 
 .shipping-location {
   margin-left: -2rem;
@@ -747,18 +789,8 @@ select {
   display: block;
 }
 
-.meal-plans .price {
-  font-size: 1.24rem;
-  float: right;
-}
-
 .del-time select, .del-time p {
   display: inline;
-}
-
-hr {
-  color: black;
-  margin-top: 0rem;
 }
 
 /*Colour Scheme*/
