@@ -1,0 +1,72 @@
+/*Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA*/
+
+.progress-bar-container {
+	width: 100%;
+}
+
+.progress-bar {
+	counter-reset: step;
+}
+
+.progress-bar li {
+	list-style-type: none;
+	float: left;
+	width: 33.33%;
+	position: relative;
+	text-align: center;
+	font-weight: 700;
+	color: #d4d9df;
+}
+
+.progress-bar li p {
+	color: #d4d9df;
+	margin-top: 0.5rem;
+}
+
+.progress-bar li:before {
+	content: counter(step); /*conuter-rest*/
+	counter-increment: step;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	border: 3px solid #d4d9df;
+	display: block;
+	text-align: center;
+	margin: 0 auto 0.5rem auto;
+	border-radius: 50%;
+	background-color: white;
+}
+
+/*line*/
+.progress-bar li:after {
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #d4d9df;
+	top: 1rem; /*half of the w/h of the circle*/
+	left: -50%;
+	z-index: -1;
+}
+
+/*this makes the line start at the first circle*/
+.progress-bar li:first-child:after {
+	content: none;
+}
+
+.progress-bar li.active {
+	color: white;
+}
+
+.progress-bar li.active p {
+	color: #70B481;
+}
+
+.progress-bar li.active:before  {
+	border-color: red;
+	background-color: red;
+}
+
+.progress-bar li.active:after {
+	background-color: #70B481;
+} 

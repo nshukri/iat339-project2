@@ -33,32 +33,46 @@
 		<h2 class="heading2 title">Register an Account</h2>
 	</section>
 
+	<!-- Process Bar -->
+	<div class="progress-bar-container">
+		<ul class="progress-bar">
+			<li class="active"><p>Register</p></li>
+			<li><p>Review</p></li>
+			<li><p>Complete</p></li>
+		</ul>
+	</div>
+
 	<!-- Select Plan -->
 	<section class="select-plan">
-		<h3 class="heading3 sub-title">Select Plan</h2>
+		<h3 class="heading3 sub-title">1. Select Plan</h2>
 		<div class="grid plan-items">
 			<div class="grid-item plan-text">
-				<h3 class="heading3">1 Month</h3>
-				<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet.</p>
+				<h3 class="heading3">Trial: 1 Week</h3>
+				<h4>$115.00</h4>
+				<p class="paragraph">Try out our trial plan for a week and see how Mealbox works out for you.</p>
 			</div>
 			<div class="grid-item plan-text">
-				<h3 class="heading3">2 Months</h3>
-				<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet.</p>
+				<h3 class="heading3">1 Month</h3>
+				<h4>$445.00</h4>
+				<p class="paragraph">Don’t have time to cook for the next month? Select this short 1 month plan to receive meal boxes and not worry about cooking.</p>
 			</div>
 			<div class="grid-item plan-text">
 				<h3 class="heading3">3 Months</h3>
-				<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet.</p>
+				<h4>$1350.00</h4>
+				<p class="paragraph">Really satisfied with Mealbox? Select this 3 month plan to continue receiving meal boxes!</p>
 			</div>
 			<div class="grid-item plan-text">
-				<h3 class="heading3">4 Months</h3>
-				<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  euismod biben laoreet.</p>
+				<h3 class="heading3">6 Months</h3>
+				<h4>$2745.00</h4>
+				<p class="paragraph">The plan with the best value! Select the 6 month plan to continue receiving meal boxes for half a year.</p>
 			</div>
 		</div>
 	</section>
 
 	<!-- Basic Information -->
 	<section class="basic-info">
-		<h3 class="heading3 sub-title">Basic Information</h2>
+		<h3 class="heading3 sub-title">2. Basic Information</h2>
+		<div class="grid">
 		<form class="form" action="/action_page.php">
 			<div class="name-fields">
 				<label for="f-name">Full Name</label>
@@ -74,24 +88,23 @@
 
 			<div class="address-fields">
 				<label for="address">Address</label>
-				<input type="text" id="email" class="textInput-field" placeholder="Line 1">
-				<input type="text" id="email" class="textInput-field" placeholder="Line 2">
+				<input type="text" id="email" class="textInput-field">
+				<input type="text" id="email" class="textInput-field">
 			</div>
 
-			<label for="email">Postal Code</label>
-				<input type="text" id="postal-code" class="textInput-field" min="6" max="6">
-
-			<label for="message">Country</label>
+			<label for="city">City</label>
 				<select>
-					<option value="" disabled selected>Country</option>
-					<!-- select tag placeholder: https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
-					<option value="canada">Canada</option>
-					<option value="china">China</option>
-					<option value="japan">Japan</option>
-					<option value="america">United States</option>
+					<option value="" disabled selected>City</option>
+					<option value="burnaby">Burnaby</option>
+					<option value="surrey">Surrey</option>
+					<option value="vancouver">Vancouver</option>
+					<option value="victoria">Victoria</option>
 				</select>
 
-				<label for="message">Province</label>
+			<label for="postal-code">Postal Code</label>
+				<input type="text" id="postal-code" class="textInput-field" min="6" max="6">
+
+			<label for="province">Province</label>
 				<select>
 					<option value="" disabled selected>Province</option>
 					<option value="alberta">Alberta</option>
@@ -100,25 +113,26 @@
 					<option value="ontario">Ontario</option>
 				</select>
 
-				<label for="message">City</label>
-					<select>
-						<option value="burnaby">Burnaby</option>
-						<option value="surrey">Surrey</option>
-						<option value="vancouver">Vancouver</option>
-						<option value="victoria">Victoria</option>
-					</select>
+			<label for="country">Country</label>
+				<select>
+					<option value="" disabled selected>Country</option>
+					<!-- select tag placeholder: https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
+					<option value="canada">Canada</option>
+					<option value="china">China</option>
+					<option value="japan">Japan</option>
+					<option value="america">United States</option>
+				</select>
 		</form>
+		</div>
 	</section>
 
 	<!-- Payment Methods -->
 	<section class="payment-methods">
-		<h3 class="heading3 sub-title">Payment Methods</h2>
+		<h3 class="heading3 sub-title">3. Payment Method</h2>
 		<form class="form" action="">
 			<div class="method">
-			<label for="card-type">Method</label>
-			<input type="radio" name="card-type" value="visa"> Visa
-			<input type="radio" name="card-type" value="mastercard"> Mastercard
-			<input type="radio" name="card-type" value="other"> Other
+				<p>Accepted Cards</p>
+				<img class="image" src="img/credit-card-logos.jpg"> 
 			</div>
 
 			<label for="card-name">Cardholder Name</label>
@@ -151,7 +165,14 @@
 		</form>
 	</section>
 
-	<button class="continue-button" onclick="window.location.href='register_confirm.html'">Confirm</button>
+	<section class="newsletter-form">
+		<input type="checkbox" name="news">I wish to receive Mealbox news on my e-mail<br>
+		<input type="checkbox" name="terms">I accept the Mealbox <a class="InText-Link" href="#">terms</a> and <a class="InText-Link" href="#">privacy statement</a>
+	</section>
+
+	<section class="buttons">
+		<button class="next-button" onclick="window.location.href='register-review.html'">Next</button>
+	</section>
 
 	</body>
 </html>
