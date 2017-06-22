@@ -1,0 +1,831 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: 'Open sans', sans-serif;
+  padding: 0.5em 2em;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #D4D9DF;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+#page-nav {
+  background-color: #8acb88;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  color: #FFF;
+  background-color: #8acb88;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 10;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #cf5c36 ;
+}
+
+/* Styling for the In-text Link */
+.InText-Link {
+  text-decoration: none;
+  font-weight: 400;
+  color: #cf5c36;
+   -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.inText-Link:hover {
+  text-decoration: underline;
+  color: #aa4c2d;
+}
+
+/* Styling for the Submit/Reset button*/
+.default-button, .next-button {
+  background-color: #cf5c36;
+  color: white; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0.4em;
+  border-style: none;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.default-button:hover {
+  background-color: #aa4c2d;
+}
+
+/* Styling for the Subscribe button*/
+.subscribe-button {
+  background-color: #efc88b;
+  color: white; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0.4em;
+  border-style: none;
+  padding: 0.5rem 1.2rem;
+  margin-right: .75rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.subscribe-button:hover {
+  background-color: #ecb35a;
+}
+
+/* Styling for the Learn More button*/
+.learn-more-button {
+  background-color: white;
+  color: #07080a; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: 1px solid #d4d9df;
+  border-radius: 0.4em;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.learn-more-button:hover {
+  background-color: #d4d9df;
+}
+
+/* Styling for the Text Input Field*/
+.textInput-field, select {
+  width: 20em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/* Styling for the Headings*/
+.heading1 {
+  font-family: 'Caveat', cursive;
+  font-size: 2.5em;
+  color: #24272b;
+}
+
+.heading2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #24272b;
+}
+
+.heading3 {
+  font-weight: 600;
+  font-size:1.2em;
+  color: #24272b;
+  margin-top: .25rem;
+}
+
+/* Styling for Paragraph*/
+.paragraph {
+  font-weight: 300;
+  width: 100%;
+  color: #596068;
+}
+ 
+/* Styling for Product Description Text*/
+.description-text {
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.03rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+/* Styling for the Bullet List*/
+.bullet-list {
+  line-height: 1.8em;
+  color: #596068;
+  padding-left: 2em;
+}
+
+
+/* Styling for Numbered List*/
+.numbered-list {
+  line-height: 1.8em;
+  color: #596068;
+}
+
+/* Styling for Price Numbers*/
+.price {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #cf5c36;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for Navigation*/
+.nav-logo {
+  left: 0;
+  font-size: 1.2em;
+  margin: 0.5em 0em;
+  z-index: 3;
+  top: 0;
+  color: #FFF;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  line-height: 3rem;
+  display: inline-block;
+}
+
+.navigation {
+  width: 100%;
+  background-color: #8acb88;
+  padding-right: 1em;
+  padding-left: 1em;
+  z-index: 1;
+  /*position: fixed;*/
+}
+
+/*source: http://blog.christopherianmurphy.com/2016/01/responsive-pure-css-menu.html*/
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navigation li {
+  list-style: none;
+  display: inline-block;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 2%;
+}
+
+#menu-toggle {display: none;}
+
+.label-toggle {display: none;}
+
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* Styling for Product Listing*/
+.p-listing {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+/* Contact Form */
+label {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/* Grid Structure */
+
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid-item {
+  flex: 1 1 auto;
+  /*border: 1px solid #333333;*/
+/*  text-align: center;*/
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+}
+
+.g-item {
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+  background-color: #d4d9df;
+  color: #596068;
+}
+
+
+@media (max-width: 65em){
+  .grid-item{
+  flex: 0 0 100%;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+  }
+  
+  .navigation ul {
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  .navigation li {
+    border-bottom: 1px solid #ffffff;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%, #ffffff 100%);
+    cursor: pointer;
+    display: inline;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+} 
+/*end of media query*/
+
+.form-container {
+    float:center;
+  }
+
+
+/* Account Page */
+.grid-col-3of10 {
+  width:30%;
+  float: left；
+}
+
+.grid-col-4of10 {
+  width:40%;
+  float:center;
+  position: relative;
+  left:30%;
+}
+
+.grid-col-5of10 {
+  width:50%;
+  float: left；
+}
+
+.grid-col-7of10 {
+  width:70%;
+  float: right；
+}
+
+.account-item {
+  flex:1 1 auto;
+  text-align: left;
+  position:relative;
+  top:5em;
+  left:15em;
+}
+
+
+#circle{
+  width:15px;
+  height:15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border:1px solid black;
+  float:left;
+  margin-top: 0.5em;
+}
+
+#Auto-renew{
+  float:left;
+  font-size: 0.8em;
+  padding-left: 0.2em;
+  padding-top: 0.5em;
+}
+
+.first-col{
+  border-top: 1px solid #333333;
+  float:left;
+}
+
+.second-col{
+  border-top: 1px solid #333333;
+  float:left;
+  padding-top:1.3em;
+  padding-left: 0.8em;
+}
+
+.third-col{
+  border-top: 1px solid #333333;
+  float:left;
+  padding-top:1.3em;
+  padding-left:2em;
+}
+
+.clear{
+  clear:both;
+}
+
+#account-img {
+  width:300px;
+  height:auto;
+  float:left;
+  margin-top: 6em;
+  margin-left: 5em;
+}
+
+.account-button{
+  margin-top:5em; 
+  padding-top: 5em;
+}
+
+/* Confirmation Page */
+
+.confirm-message {
+  margin: 0 15em !important; 
+}
+
+.confirm-item {
+  float:center;
+  color: #596068;
+}
+
+.bottom{
+  width:100%;
+  height:auto;
+  position:fixed;
+  bottom:0;
+}
+
+.confirm-img{
+  width:300px;
+  height: auto;
+  float: left;
+  margin-top: 4rem;
+}
+
+.confirm-para{
+  width:50%;
+  float:left;
+  margin-left:3em;
+  margin-top: 2rem;
+}
+
+@media(max-width: 40em){
+  .confirm-para{
+  margin-left:1em;
+  }
+}
+
+
+.order-confirm-img{
+  width:160px;
+  height:160px;
+}
+
+.order-confirm-text{
+  text-align: center;
+
+}
+
+.order-confirm-textInput{
+  width: 100%;
+  height:10em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/* Contact Page */
+.textInput{
+  width: 30em;
+  height:10em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  display: block;
+  position:absolute;
+  left:0;
+}
+
+.contact-button{
+  position:relative;
+  top:16em;
+  left:31em;
+}
+
+@media (max-width: 40em){
+  .grid-col-4of10{
+  left:4em;
+  }
+}
+
+#name,#email{
+  width:15em;
+}
+
+
+/* Registration Page */
+.basic-info, .select-plan, .payment-methods, .newsletter-form, .buttons { 
+  margin: 0 15em !important; 
+} 
+
+.buttons {
+  width: 100%;
+  margin-bottom: 2rem;
+  position: absolute;
+}
+
+.plan-text {
+  width: 15em;
+  padding-right: 1.5em !important;
+  background-color: #eee;
+}
+
+.plan-text p {
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+.plan-text:hover {
+  background-color: #efc88b;
+}
+
+.select-plan h4 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.1rem;
+}
+
+.name-fields label, .email-fields label, .address-fields label {
+  display: block;
+
+}
+
+.name-fields input, .email-fields input, .address-fields input {
+  display: inline;
+  margin-right: 1.12rem;
+  font-size: 0.86rem;
+}
+
+.basic-info label, .select-plan label, .payment-methods label {
+  font-size: 0.86rem;
+}
+
+select {
+  width: 10rem;
+  font-size: 0.86rem;
+}
+
+#postal-code {
+  width: 7em;
+}
+
+.method p {
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+.method img {
+  width: 15%;
+  margin-top: -0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.method label, .exp-date label {
+  display: block;
+}
+
+.method input[type=radio] {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.exp-date select, .exp-date p {
+  display: inline;
+}
+
+.exp-date select, .del-time select {
+  width: 5em;
+}
+
+.newsletter-form input {
+  margin-bottom: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+/*Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA*/
+
+.progress-bar-container {
+  width: 100%;
+}
+
+.progress-bar {
+  counter-reset: step;
+}
+
+.progress-bar li {
+  list-style-type: none;
+  float: left;
+  width: 33.33%;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  color: #d4d9df;
+  margin-bottom: 2rem;
+}
+
+.progress-bar li p {
+  color: #d4d9df;
+  margin-top: 0.5rem;
+}
+
+.progress-bar li:before {
+  content: counter(step); /*conuter-rest*/
+  counter-increment: step;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 5px solid #d4d9df;
+  display: block;
+  text-align: center;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/*line*/
+.progress-bar li:after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #d4d9df;
+  top: 1rem; /*half of the w/h of the circle*/
+  left: -50%;
+  z-index: -1;
+}
+
+/*this makes the line start at the first circle*/
+.progress-bar li:first-child:after {
+  content: none;
+}
+
+.progress-bar li.active {
+  color: white;
+}
+
+.progress-bar li.active p {
+  color: #cf5c36;
+}
+
+.progress-bar li.active:before {
+  border-color: #cf5c36;
+  background-color: #cf5c36;
+}
+
+.progress-bar li.active:after {
+  background-color: #cf5c36;
+} 
+
+/* Order Page */
+.selected-meals, .shipping-info, .del-time, .buttons { 
+  margin: 0 15em !important; 
+} 
+
+.selected-meals p {
+  font-size: .85rem;
+  color: #596068;
+}
+
+.selected-meals h4 {
+  margin: 0 auto;
+} 
+
+.shipping-location {
+  margin-left: -2rem;
+}
+
+.shipping-location li{
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    padding-right: 5rem;
+}
+
+.shipping-location li input {
+  margin-right: 0.86rem;
+}
+
+.selected-meals a, .shipping-location li a {
+  font-size: 0.75rem;
+}
+
+.quantity-field {
+  width: 5em;
+  text-align: center;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.meal-plans .price {
+  font-size: 1.24rem;
+  float: right;
+}
+
+.del-time select, .del-time p {
+  display: inline;
+}
+
+hr {
+  color: black;
+  margin-top: 0rem;
+}
+
+/*Colour Scheme*/
+
+.colours {
+  width: 10em;
+  height: 10em;
+  text-align: center;
+  padding-top: 10em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.colours p {
+  padding-right: 50%;
+
+}
+
+#main-green {
+  background-color: #8acb88;
+}
+
+#light-green {
+  background-color: #e4fde1;
+}
+
+#dark-green {
+  background-color:  #70B481;
+}
+
+#orange {
+  background-color: #cf5c36;
+}
+
+#light-orange {
+  background-color: #efc88b;
+}
+
+#black {
+  background-color: #07080a;
+}
+
+#light-black {
+  background-color: #24272b;
+}
+
+#grey {
+  background-color: #596068;
+}
+
+#light-grey {
+  background-color: #d4d9df;
+}
+
+
+/*-------------Wireframe page---------------*/
+
+/*smartwatch*/
+#smartwatch {
+  width: 312px;
+  height: 390px;
+}
+
+#mobile {
+  width: 400px;
+  height: 710px;
+}
+
+#console {
+  width: 1189px;
+  height: 667px;
+}
+
+/*-------------Additional---------------*/
+.copyright {
+  font-size: 0.5em;
+
+}
