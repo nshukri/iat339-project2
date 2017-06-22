@@ -239,7 +239,8 @@ a {
   justify-content: space-between;
   list-style-type: none;
   width: 40%;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .navigation li {
