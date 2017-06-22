@@ -4,6 +4,7 @@
 	<head>
 		<title>MealBox Home</title> 
 		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
 
 
    		<link href="css/template.css" rel="stylesheet">
@@ -14,7 +15,7 @@
 	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
 	</head>
 
-	<body>
+	<body onload="initElement()";>
 	<!-- Navigation code -->
 	<section class="header"> 
 		<nav class="navigation">
@@ -122,26 +123,11 @@
 			<div  class="grid-item menu-item container"  id="select" >
 				<h3 class="heading3 item-title" id="active">California Burger</h3>
 
-				<!-- 2nd layer content -->
-				<div id="item-content">
-					<a class="InText-Link review-link" href="#"><img class="rating" src="img/rating-full.png" alt="">Review</a>
-					<p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p> 
-					
-					 <button class="default-button add-item">Add</button>
-				</div>
-
 				<img class="image" src="img/burger.jpg" alt="">
 			</div>
 
 			<!-- food item 2 -->
 			<div  class="grid-item menu-item container">
-				<!-- <div class="item-content">
-					<h3 class="heading3 item-title2">food title</h3> 
-					<a class="InText-Link review-link" href="#"><img class="rating">Review</a>
-					<p class="paragraph">Curabitur ut pellentesque nulla. Fusce facilisis porttitor aliquam. Fusce at odio a arcu lobortis lacinia. Nulla imperdiet, ipsum nec blandit vehicula, nunc risus maximus odio, vitae porta turpis ligula vitae turpis. Nam bibendum consectetur sem ac consequat. Fusce consectetur diam id, tempus dolor.</p> 
-					
-					 <button class="default-button add-item">Add</button>
-				</div> -->
 				<h3 class="heading3 item-title">Zen Spring Rolls</h3>
 				<img class="image" src="img/spring-rolls.jpg" alt="">
 			</div>
@@ -210,6 +196,45 @@
 	<!-- Footer -->
 	<footer>
 	</footer>
+
+	<!-- script -->
+	<script>
+		    function initElement()  
+    {  
+        var p = document.getElementById("select"); 
+
+        // var x = document.getElementById("reviewClick"); 
+
+        p.onmouseover = showMouseOver;
+        p.onmouseout = showMouseOut;
+        p.onclick = showMouseOver;
+
+        // x.onclick = showMouseOut;
+    };  
+
+    function showMouseOver()  
+    {  
+        // var x = document.getElementById("item-content");
+        document.getElementById("item-layer2").style.display = "block";
+         
+
+        document.getElementById("active").style.paddingTop = "1.9em";
+        document.getElementById("active").style.paddingLeft = "2em";
+        document.getElementById("active").style.top = "0";
+
+    }
+    
+    function showMouseOut()
+    {
+        document.getElementById("item-layer2").style.display = "none";
+        document.getElementById("active").style.paddingTop = "";
+        document.getElementById("active").style.paddingLeft = "";
+        document.getElementById("active").style.top = "";
+    
+    }
+
+
+	</script>
 
 
 	</body>
