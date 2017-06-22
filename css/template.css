@@ -89,10 +89,15 @@ section {
 	margin-bottom: 5vh !important;
 }
 
+.header-logo {
+	width: 75px;
+	margin-right: 0.5rem;
+	float: left;
+}
+
 .image {
 	/*background-color: #262626;*/
 	width: 100%; 
-
 }
 
 .step-text {
