@@ -195,7 +195,8 @@ section {
 
 .item-content {
 	width: 100%;
-	display: none;
+	visibility: hidden;
+	/*display: block;*/
 }
 
 .item-content p {

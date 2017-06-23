@@ -323,7 +323,7 @@ label {
     list-style-type: none;
     opacity: 0;
     text-align: center;
-    transition: all 1s ease;
+    transition: all 0.1s ease;
     width: 100%;
     visibility: hidden;
   }
@@ -336,7 +336,8 @@ label {
   }
   nav #menu-toggle:checked ~ ul {
     opacity: 1;
-    height: 100vh;
+    height: 100%;
+    transition: color 0.2s ease;
     visibility: visible;
     /* Set our transitions up. 
   -webkit-transition: max-height 0.8s ease;
