@@ -240,8 +240,7 @@ a {
   justify-content: space-between;
   list-style-type: none;
   width: 40%;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 
 .navigation li {

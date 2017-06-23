@@ -269,8 +269,3 @@ section {
   height: 400px;
   width: 50%;
 }
-
-/* Order Page */ 
-.selected-plans, .shipping-info, .del-time, .additional-no { 
-  margin: 0 5em !important; 
-} 
