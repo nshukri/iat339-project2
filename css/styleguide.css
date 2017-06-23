@@ -1,0 +1,387 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: 'Open sans', sans-serif;
+  padding: 0.5em 2em;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #D4D9DF;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+#page-nav {
+  background-color: #8acb88;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  color: #FFF;
+  background-color: #8acb88;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 10;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #cf5c36 ;
+}
+
+/* Styling for the In-text Link */
+.InText-Link {
+  text-decoration: none;
+  font-weight: 400;
+  color: #cf5c36;
+   -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.inText-Link:hover {
+  text-decoration: underline;
+  color: #aa4c2d;
+}
+
+/* Styling for the Submit/Reset button*/
+.default-button, .next-button {
+  background-color: #cf5c36;
+  color: white; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0.4em;
+  border-style: none;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.default-button:hover {
+  background-color: #aa4c2d;
+}
+
+/* Styling for the Subscribe button*/
+.subscribe-button {
+  background-color: #efc88b;
+  color: white; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0.4em;
+  border-style: none;
+  padding: 0.5rem 1.2rem;
+  margin-right: .75rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.subscribe-button:hover {
+  background-color: #ecb35a;
+}
+
+/* Styling for the Learn More button*/
+.learn-more-button {
+  background-color: white;
+  color: #07080a; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: 1px solid #d4d9df;
+  border-radius: 0.4em;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.learn-more-button:hover {
+  background-color: #d4d9df;
+}
+
+/* Styling for the Text Input Field*/
+.textInput-field, select {
+  width: 20em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/* Styling for the Headings*/
+.heading1 {
+  font-family: 'Caveat', cursive;
+  font-size: 2.5em;
+  color: #24272b;
+}
+
+.heading2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #24272b;
+}
+
+.heading3 {
+  font-weight: 600;
+  font-size:1.2em;
+  color: #24272b;
+  margin-top: .25rem;
+}
+
+/* Styling for Paragraph*/
+.paragraph {
+  font-weight: 300;
+  width: 100%;
+  color: #596068;
+}
+ 
+/* Styling for Product Description Text*/
+.description-text {
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.03rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+/* Styling for the Bullet List*/
+.bullet-list {
+  line-height: 1.8em;
+  color: #596068;
+  padding-left: 2em;
+}
+
+
+/* Styling for Numbered List*/
+.numbered-list {
+  line-height: 1.8em;
+  color: #596068;
+}
+
+/* Styling for Price Numbers*/
+.price {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #cf5c36;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for Navigation*/
+.nav-logo {
+  left: 0;
+  font-size: 1.2em;
+  margin: 0.5em 0em;
+  z-index: 3;
+  top: 0;
+  color: #FFF;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  line-height: 3rem;
+  display: inline-block;
+}
+
+.navigation {
+  width: 100%;
+  background-color: #8acb88;
+  padding-right: 1em;
+  padding-left: 1em;
+  z-index: 1;
+  /*position: fixed;*/
+}
+
+/*source: http://blog.christopherianmurphy.com/2016/01/responsive-pure-css-menu.html*/
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navigation li {
+  list-style: none;
+  display: inline-block;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 2%;
+}
+
+#menu-toggle {display: none;}
+
+.label-toggle {display: none;}
+
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* Styling for Product Listing*/
+.p-listing {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+/* Contact Form */
+label {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/* Grid Structure */
+
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid-item {
+  flex: 1 1 auto;
+  /*border: 1px solid #333333;*/
+/*  text-align: center;*/
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+}
+
+.g-item {
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+  background-color: #d4d9df;
+  color: #596068;
+}
+
+
+@media (max-width: 65em){
+  .grid-item{
+  flex: 0 0 100%;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+  }
+} 
+/*end of media query*/
+
+/*Colour Scheme*/
+
+.colours {
+  width: 10em;
+  height: 10em;
+  text-align: center;
+  padding-top: 10em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.colours p {
+  padding-right: 50%;
+
+}
+
+#main-green {
+  background-color: #8acb88;
+}
+
+#light-green {
+  background-color: #e4fde1;
+}
+
+#dark-green {
+  background-color:  #70B481;
+}
+
+#orange {
+  background-color: #cf5c36;
+}
+
+#light-orange {
+  background-color: #efc88b;
+}
+
+#black {
+  background-color: #07080a;
+}
+
+#light-black {
+  background-color: #24272b;
+}
+
+#grey {
+  background-color: #596068;
+}
+
+#light-grey {
+  background-color: #d4d9df;
+}
+
+
+/*-------------Wireframe page---------------*/
+
+/*smartwatch*/
+#smartwatch {
+  width: 312px;
+  height: 390px;
+}
+
+#mobile {
+  width: 400px;
+  height: 710px;
+}
+
+#console {
+  width: 1189px;
+  height: 667px;
+}
