@@ -359,21 +359,11 @@ label {
 } 
 /*end of media query*/
 
-.form-container {
-    float:center;
-  }
-
-/* Account Page */
+/* Account Page ----------------------------------------------*/
+/*make different size of grid for account item*/
 .grid-col-3of10 {
   width:30%;
   float: left；
-}
-
-.grid-col-4of10 {
-  width:40%;
-  float:center;
-  position: relative;
-  left:30%;
 }
 
 .grid-col-5of10 {
@@ -381,11 +371,7 @@ label {
   float: left；
 }
 
-.grid-col-7of10 {
-  width:70%;
-  float: right；
-}
-
+/*stylying for account item*/
 .account-item {
   flex:1 1 auto;
   text-align: left;
@@ -394,7 +380,17 @@ label {
   left:15em;
 }
 
+@media(max-width: 40em){
+  .account-item {
+    flex:1 1 auto;
+    text-align: left;
+    position:relative;
+    top:5em;
+    left:3em;
+  }
+}
 
+/*draw a circle in account page*/
 #circle{
   width:15px;
   height:15px;
@@ -407,25 +403,26 @@ label {
   margin-top: 0.5em;
 }
 
+/*position for text"Auto-renew"*/
 #Auto-renew{
   float:left;
   font-size: 0.8em;
   padding-left: 0.2em;
   padding-top: 0.5em;
 }
-
+/*stylingfor first column of table*/
 .first-col{
   border-top: 1px solid #333333;
   float:left;
 }
-
+/*stylingfor second column of table*/
 .second-col{
   border-top: 1px solid #333333;
   float:left;
   padding-top:1.3em;
   padding-left: 0.8em;
 }
-
+/*styling for third column of table*/
 .third-col{
   border-top: 1px solid #333333;
   float:left;
@@ -433,34 +430,22 @@ label {
   padding-left:2em;
 }
 
+/*clear floating*/
 .clear{
   clear:both;
 }
 
+/*styling for account image*/
 #account-img {
-  width:300px;
-  height:auto;
-  float:left;
-  margin-top: 6em;
-  margin-left: 5em;
+  width:500px;
+  float:right;
+  margin-top: 3em;
+
 }
 
-.account-button{
-  margin-top:5em; 
-  padding-top: 5em;
-}
-
-/* Confirmation Page */
-
-.confirm-message {
-  margin: 0 15em !important; 
-}
-
-.confirm-item {
-  float:center;
-  color: #596068;
-}
-
+/* Confirmation Page -----------------------------*/
+/*fix position for footer in 
+confirm page and contact page*/
 .bottom{
   width:100%;
   height:auto;
@@ -468,6 +453,30 @@ label {
   bottom:0;
 }
 
+.confirm-message {
+  margin: 0 15em !important; 
+}
+
+/*size for grid in confirm page*/
+.grid-col-4of10 {
+  width:40%;
+  float:center;
+  position: relative;
+  left:30%;
+}
+
+@media (max-width: 40em){
+  .grid-col-4of10{
+  left:4em;
+  }
+}
+
+.grid-col-7of10 {
+  width:70%;
+  float: right；
+}
+
+/*styling for img in confirm page*/
 .confirm-img{
   width:300px;
   height: auto;
@@ -475,6 +484,7 @@ label {
   margin-top: 4rem;
 }
 
+/*styling for para in confirm page*/
 .confirm-para{
   width:50%;
   float:left;
@@ -488,16 +498,20 @@ label {
   }
 }
 
+/*set size for order review image*/
 .order-confirm-img{
   width:160px;
   height:160px;
 }
 
+/*styling for order review text*/
 .order-confirm-text{
   text-align: center;
 
 }
 
+/*styling for order review 
+page's input text*/
 .order-confirm-textInput{
   width: 100%;
   height:10em;
@@ -509,7 +523,9 @@ label {
   display: block;
 }
 
-/* Contact Page */
+/* Contact Page ------------------------*/
+/*styling for contact 
+page's input text*/
 .textInput{
   width: 30em;
   height:10em;
@@ -524,18 +540,14 @@ label {
   left:0;
 }
 
+/*set position for button in contact */
 .contact-button{
   position:relative;
   top:16em;
   left:31em;
 }
 
-@media (max-width: 40em){
-  .grid-col-4of10{
-  left:4em;
-  }
-}
-
+/*set size for input text field  */
 #name,#email{
   width:15em;
 }
