@@ -2,13 +2,15 @@
 
 <html lang="en">
 	<head>
-		<title>My Account</title> 
+		<title>MealBox Account</title> 
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name=viewport content="width=device-width, initial-scale=1">
 
-		<link href="css/main.css" rel="stylesheet">
-		<link href="css/template.css" rel="stylesheet">
-	    <!-- Import fonts from google -->
+
+   		<link href="css/flex-grid.css" rel="stylesheet">
+   		<link href="css/main.css" rel="stylesheet">
+
+		 <!-- Import fonts from google -->
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
 	</head>
@@ -20,7 +22,7 @@
 				<nav class="wrapper">
 					<!-- Company Logo -->
 
-					<a class="nav-logo" href="home.html"><img class="header-logo" src="img/logo.png"> MealBox</a> 
+					<a class="nav-logo" href="home.html"><img class="header-logo" src="img/logo.png">MealBox</a> 
 
 					<!-- mobile hamburger icon -->
 					<input type="checkbox" id="menu-toggle">
@@ -38,79 +40,90 @@
 			</nav>
 		</section>
 
+		<!-- section for my account information -->
  		<section>
  			<div class="grid">
         		<div class="grid-col-5of10">
         			<div class="account-item">
-					   <h2>My Account</h2>
-					   <br>
-					   <div class="grid-col-3of10 first-col">
- 					     <h3>Name</h3>
- 					   </div>
- 					   <div class="grid-col-3of10 second-col">
- 					   	 <p>Anna Cho</p>
- 					   </div>
- 					   <div class="grid-col-3of10 third-col">
- 					   	 <a alt="" href="" class="InText-Link">Change name</a>
- 					   </div>
- 					   <br class="clear">
+        				<h2 class="heading2">My Account</h2>
 
-					   <div class="grid-col-3of10 first-col">
- 					     <h3>Password</h3>
- 					   </div>
- 					   <div class="grid-col-3of10 second-col">
- 					   	 <p>******</p>
- 					   </div>
- 					   <div class="grid-col-3of10 third-col">
- 					   	 <a alt="" href="" class="InText-Link">Change password</a>
- 					   </div>
- 					   <br class="clear">
+        				<!-- infromation table -->
+        				<div class="grid-col-3of10 first-col">
+ 					    	<h3><img id="account-img" src="img/b-burrito.jpg" alt=""></h3>
+ 					  	</div>
 
-					   <div class="grid-col-3of10 first-col">
- 					     <h3>Payment Details</h3>
- 					   </div>
- 					   <div class="grid-col-3of10 second-col">
- 					   	 <p>Visa ending 1234</p>
- 					   </div>
- 					   <div class="grid-col-3of10 third-col">
- 					   	 <a alt="" href="" class="InText-Link">Update Payment</a>
- 					   </div>
- 					   <br class="clear">
+ 					  	<div class="grid-col-3of10 second-col">
+ 					   		<h3 class="heading3">Anna Cho</h3>
+ 					   		<p>annacho123@email.com</p>
+ 					   		<p>1276 102nd Avenue, Surrey, BC V3T 0A3</p>
+ 					  	</div>
+ 					   	<div class="grid-col-3of10 third-col">
+ 					   		<a alt="" href="" class="InText-Link">Edit</a>
+ 					   	</div>
 
-					   <div class="grid-col-3of10 first-col">
- 					      <h3>Current Meal Plan</h3>
-					    
-						  <div id="circle" class="grid-col-5of10"></div>
-					      <p id="Auto-renew" class="grid-col-5of10">Auto-renew</p> 
-					      <br class="clear">						     
- 					   </div>
- 					   <div class="grid-col-3of10 second-col">
- 					   	 <p>1 week trial (ends 5/26)</p>
- 					   </div>
- 					   <div class="grid-col-3of10 third-col">
- 					   	 <a alt="" href="menu.html" class="InText-Link">Change</a> / 
- 					   	 <a alt="" href="menu.html" class="InText-Link">Unsubscribe</a>
- 					   </div>
- 					   <br class="clear">
-					</div>     
+ 					   	<br class="clear">
+
+ 					   	<div class="grid-col-3of10 first-col">
+ 					   	<h3>Password</h3>
+ 					   		</div>
+ 					   	<div class="grid-col-3of10 second-col">
+ 					   		<p>******</p>
+ 					   	</div>
+ 					   	<div class="grid-col-3of10 third-col">
+ 					   		<a alt="" href="" class="InText-Link">Change password</a>
+ 					   	</div>
+
+ 					   	<br class="clear">
+
+ 					   	<div class="grid-col-3of10 first-col">
+ 					   		<h3>Payment Details</h3>
+ 					   	</div>
+ 					   	<div class="grid-col-3of10 second-col">
+ 					   		<p>Visa ending 1234</p>
+ 					   	</div>
+ 					   	<div class="grid-col-3of10 third-col">
+ 					   		<a alt="" href="" class="InText-Link">Edit</a>
+ 					   	</div>
+
+ 					   	<br class="clear">
+
+ 					   	<div class="grid-col-3of10 first-col">
+ 					   		<h3>Current Meal Plan</h3>  
+ 					   	</div>
+ 					   	<div class="grid-col-3of10 second-col">
+ 					   		<p>1 week trial (ends 5/26)</p>
+ 					   		<form>
+ 					   			<div class="auto-renew">
+							    	<input type="checkbox" id="renew-plan" name="renew" value="renew">
+							    	<label for="renew">Auto-renew current meal plan</label>
+							    </div>
+							</form>	
+ 					   	</div>
+ 					   	<div class="grid-col-3of10 third-col">
+ 					   		<a alt="" href="menu.html" class="InText-Link">Change</a> / 
+ 					   		<a alt="" href="menu.html" class="InText-Link">Unsubscribe</a>
+ 					   	</div>
+
+ 					   	<br class="clear">
+ 					</div>     
         		</div>
 
-        			
-
-    			<div class="grid-col-3of10" id="account-img">
-    				<img src="img/account-img.png" alt="">
-    				<!-- alt image https://mbkr-minimalistbaker.netdna-ssl.com/wp-content/uploads/2014/07/Vegan-Vietnamese-Spring-Rolls-with-Crispy-Tofu-and-almond-butter-dipping-sauce-30-minutes-and-SO-delicious-and-healthy.jpg -->
+        		<!-- add image
+        		don't get why there's a burrito pic here - need to edit
+				<div class="grid-item grid-col-5of10">
+	    			<img id="account-img" src="img/b-burrito.jpg" alt="">
     			</div>
+    			-->
 
         	</div>
-        </section>
+		</section>
         
-        <section class="footer">
+        
+		<!-- <section class="footer">
 			<h2 class="heading2 title">Questions?</h2>
 			<p class="paragraph">Call us at <b>604-334-5678</b> or <a class="InText-Link" href="">send us an email here</a></p>
 			<p class="copyright">Copyright 2017</p>
-
-		</section>
+		</section> -->
 
 	</body>
 </html>

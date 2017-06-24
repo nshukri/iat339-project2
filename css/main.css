@@ -1,17 +1,30 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  MAIN STYLESHEET FOR MEALBOX
 */
+
+/* ----
+
+BASIC STYLING
+
+---- */
+
 body {
   font-family: 'Open sans', sans-serif;
-  padding: 0.5em 2em;
+  padding: 0em;
+  margin: 0em;
+  width: 100%;
 }
 
+section {
+  border-top: none; /* no 1px border underneath the header */
+}
+
+/* this causes all the !important
 section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
   border-top: 1px solid #D4D9DF;
-}
+}*/
 
 section h3 {
   margin-bottom: 0;
@@ -21,42 +34,11 @@ section p {
   margin-top: 0;
 }
 
-section code {
-  background-color: #EEE;
-  padding: 0.5em 0.75em;
-}
-
-#page-nav {
-  background-color: #8acb88;
-}
-
+/* Styling for Links */
 a {
   text-decoration: none;
 }
 
-
-
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the navigation button */
-.button-nav {
-  color: #FFF;
-  background-color: #8acb88;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-decoration: none;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
-  z-index: 10;
-}
-
-.button-nav:hover, .button-nav:focus {
-  color: #cf5c36 ;
-}
-
-/* Styling for the In-text Link */
 .InText-Link {
   text-decoration: none;
   font-weight: 400;
@@ -70,85 +52,8 @@ a {
   color: #aa4c2d;
 }
 
-/* Styling for the Submit/Reset button*/
-.default-button, .next-button {
-  background-color: #cf5c36;
-  color: white; 
-  font-weight: 600;
-  font-size: 0.8rem;
-  border-radius: 0.4em;
-  border-style: none;
-  padding: 0.5rem 1.2rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-transform: uppercase; /* referred to W3Schools*/
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.default-button:hover {
-  background-color: #aa4c2d;
-}
-
-/* Styling for the Subscribe button*/
-.subscribe-button {
-  background-color: #efc88b;
-  color: white; 
-  font-weight: 600;
-  font-size: 0.8rem;
-  border-radius: 0.4em;
-  border-style: none;
-  padding: 0.5rem 1.2rem;
-  margin-right: .75rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-transform: uppercase; /* referred to W3Schools*/
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.subscribe-button:hover {
-  background-color: #ecb35a;
-}
-
-/* Styling for the Learn More button*/
-.learn-more-button {
-  background-color: white;
-  color: #07080a; 
-  font-weight: 600;
-  font-size: 0.8rem;
-  border: 1px solid #d4d9df;
-  border-radius: 0.4em;
-  padding: 0.5rem 1.2rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-transform: uppercase; /* referred to W3Schools*/
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.learn-more-button:hover {
-  background-color: #d4d9df;
-}
-
-/* Styling for the Text Input Field*/
-.textInput-field, select {
-  width: 20em;
-  border: solid 0.05em #d4d9df;
-  border-radius: 0.4em;
-  font-size: 1em;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-/* Styling for the Headings*/
-.heading1 {
+/* Styling for Text Elements */
+.tag-line {
   font-family: 'Caveat', cursive;
   font-size: 2.5em;
   color: #24272b;
@@ -164,53 +69,99 @@ a {
 
 .heading3 {
   font-weight: 600;
-  font-size:1.2em;
+  font-size: 1.2em;
   color: #24272b;
   margin-top: .25rem;
 }
 
-/* Styling for Paragraph*/
 .paragraph {
   font-weight: 300;
   width: 100%;
   color: #596068;
 }
+
+.title {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* nowhere using sub-title */
+.sub-title {
+  text-align: left;
+  margin: 2rem 0 1rem 0 !important; 
+}
  
-/* Styling for Product Description Text*/
-.description-text {
+.body {
   font-weight: 300;
-  font-size: 0.85rem;
-  letter-spacing: 0.03rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.85rem;
+  font-size: 0.9em;
+  margin: 0.5rem 0 1rem 0;
 }
 
-/* Styling for the Bullet List*/
-.bullet-list {
-  line-height: 1.8em;
-  color: #596068;
-  padding-left: 2em;
+/* Styling for Buttons */
+button { 
+  color: white; 
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0.4em;
+  border-style: none;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase; /* referred to W3Schools*/
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
-
-/* Styling for Numbered List*/
-.numbered-list {
-  line-height: 1.8em;
-  color: #596068;
+.default-button {
+  background-color: #cf5c36;
 }
 
-/* Styling for Price Numbers*/
-.price {
-  font-size: 0.85em;
+.default-button:hover {
+  background-color: #aa4c2d;
+}
+
+/* Styling for Forms */
+label {
+  font-size: 1em;
   font-weight: 700;
-  color: #cf5c36;
 }
 
-/* 
-  COMBINED ELEMENTS -------------------
-*/
+.textInput-field, select {
+  width: 20em;
+  border: solid 0.05em #d4d9df;
+  border-radius: 0.4em;
+  font-size: 1em;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
 
-/* Styling for Navigation*/
+/* ----
+
+PAGES
+
+---- */
+
+/* -- HOME PAGE -- */
+
+/* HEADER */
+.header {
+  margin: 0;
+  padding: 0;
+  background-color: #8acb88;
+}
+
+.navigation {
+  width: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
+  z-index: 1;
+  /*position: fixed;*/
+}
+
+/* logotype */
 .nav-logo {
   left: 0;
   font-size: 1.2em;
@@ -225,14 +176,27 @@ a {
   display: inline-block;
 }
 
-.navigation {
-  width: 100%;
+/* logo img */
+.header-logo {
+  width: 75px;
+  margin-right: 0.5rem;
+  float: left;
+}
+
+/* links in nav */
+.button-nav {
+  color: #FFF;
   background-color: #8acb88;
-  padding-right: 1em;
-  padding-left: 1em;
-  z-index: 1;
-  transition: all 0.8s ease;
-  /*position: fixed;*/
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 10;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #cf5c36 ;
 }
 
 /*source: http://blog.christopherianmurphy.com/2016/01/responsive-pure-css-menu.html*/
@@ -241,8 +205,7 @@ a {
   justify-content: space-between;
   list-style-type: none;
   width: 40%;
-  margin-top: auto;
-  margin-bottom: auto;
+  /*margin: auto;*/
 }
 
 .navigation li {
@@ -250,177 +213,272 @@ a {
   display: inline-block;
 }
 
-.wrapper {
+nav .wrapper {
   margin: 0 auto;
   max-width: 100%;
   padding: 0 2%;
-}
-
-#menu-toggle {
-  display: none;
-
-  
-}
-
-.label-toggle {display: none;}
-
-nav .wrapper {
-  align-items: center;
+    align-items: center;
   display: flex;
   justify-content: space-between;
-
 }
 
-/* Styling for Product Listing*/
-.p-listing {
+/* mobile hamburger menu */
+#menu-toggle {
+  display: none;
+}
+
+.label-toggle {
+  display: none;
+}
+
+/* Home Sections */
+.home-section {
+  /*margin-top: 10vh;*/
+  height: 78vh;
+  text-align: center;
+  background-color: black;
+}
+
+.home-container {
+  /*background-image: url("path/to/img/home-image-2.png");*/
   width: 100%;
-  padding-bottom: 2rem;
-}
-
-/* Contact Form */
-label {
-  font-size: 1em;
-  font-weight: 700;
-}
-
-/* Grid Structure */
-
-* {
-  box-sizing: border-box;
-}
-
-.grid {
-  display: flex;
-}
-
-.grid-item {
-  flex: 1 1 auto;
-  /*border: 1px solid #333333;*/
-/*  text-align: center;*/
-  padding: 1em;
-  margin: 0.5rem 0.5rem;
-}
-
-.g-item {
-  padding: 1em;
-  margin: 0.5rem 0.5rem;
-  background-color: #d4d9df;
-  color: #596068;
-}
-
-
-@media (max-width: 65em){
-  .grid-item{
-  flex: 0 0 100%;
-  }
-
-  .grid {
-    flex-wrap: wrap;
-  }
-  
-  .navigation ul {
-    display: block;
-    height: 0;
-    list-style-type: none;
-    opacity: 0;
-    text-align: center;
-    transition: all 0.8s ease;
-    width: 100%;
-    visibility: hidden;
-    padding-left: 0;
-  }
-  .navigation li {
-    border-bottom: 1px solid #ffffff;
-    color: #53354A;
-    display: block;
-    font-size: 1.5em;
-    padding: 2em 0;
-  }
-  nav #menu-toggle:checked ~ ul {
-    opacity: 1;
-    height: 100vh;
-    transition: all 0.8s ease;
-    visibility: visible;
-    /* Set our transitions up. 
-  -webkit-transition: max-height 0.8s ease;
-  -moz-transition: max-height 0.8s ease;
-  transition: max-height 0.8s ease;*/
-  }
-  nav .label-toggle {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%, #ffffff 100%);
-    cursor: pointer;
-    display: inline;
-    float: right;
-    height: 35px;
-    margin-top: 1em;
-    width: 35px;
-  }
-  nav .wrapper {
-    display: block;
-  }
-} 
-/*end of media query*/
-
-.form-container {
-    float:center;
-  }
-
-/* Account Page */
-.grid-col-3of10 {
-  width:30%;
-  float: left；
-}
-
-.grid-col-4of10 {
-  width:40%;
-  float:center;
+  height: 78vh;
+  /*background-size: cover;
+    background-repeat: no-repeat;*/
   position: relative;
-  left:30%;
+  overflow: hidden;
+}
+
+#img-home {
+  background-color: #d9d9d9;
+  /*height: 100%;*/
+  opacity: 0.7;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  /*source: https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio*/
+}
+
+.home-content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  text-anchor: middle;
+  z-index: 10;
+}
+
+.home-content h1 {
+  color: white;
+}
+
+.home-button { /* "ORDER NOW" button, takes user to menu page */
+  font-size: 1.1em !important;
+  letter-spacing: 0.18em !important;
+  margin-top: 5vh;
+}
+
+#about-arrow {
+  color: white !important;
+  position: absolute;
+  width: 100%;
+  bottom: 6vh;
+  left: 0;
+  cursor: pointer;
+}
+
+#down-arrow {
+  width: 2.5em;
+  height: 2em;
+  position: absolute;
+  bottom: 1.5vh;
+  margin: auto;
+  left: 48.5%;
+  cursor: pointer;
+}
+
+#down {
+  width: 100%;
+}
+
+/* Who Are We? Section */
+.about {
+  margin: 0 2.3em;
+}
+
+.about-text {
+  width: 35%;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.image, .step-text { /* steps */
+  /*background-color: #262626;*/
+  width: 100%; 
+}
+
+/* Menu Section */
+.home-menu {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.menu-item img {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* News Section */
+.news {
+  margin: 0 2.3em;
+}
+
+.news-text {
+  width: 15em;
+  padding-right: 1.5em;
+}
+
+.news-text p {
+  padding-top: 1em;
+}
+
+/* -- MENU PAGE -- */
+.item-title { /* title of product */
+  position: absolute;
+  background-color: rgba(0,0,0, 0.6);
+  z-index: 2;
+  color: white !important;
+  bottom: 0;
+  padding: 0.7em 2.5em;
+  width: 100%;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+/*
+.item-title-active:hover {
+  position: absolute;
+  z-index: 2;
+  color: white !important;
+  top:0;
+  padding-top: : 1.9em;
+  padding-left: 2em;
+}*/
+
+.item-content {
+  width: 100%;
+  visibility: hidden;
+  /*display: block;*/
+}
+
+.item-content p {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 6em;
+  left: 2.5em;
+  width: 80%;
+}
+
+.item-content button {
+  position: absolute;
+  z-index: 2;
+  bottom: 1em !important; /* need to check if important is needed */
+}
+
+/* not used
+#item-layer3 { 
+  display: block !important;
+} */
+
+/* check if important is needed */
+.add-item {
+  margin-left: 15% !important;
+  margin-right: 15% !important;
+  font-size: 1.1em !important;
+  text-align: center;
+  width: 70%;
+}
+
+.review-link {
+  position: absolute;
+  z-index: 2;
+  left: 2.5em;
+  top: 4.1em;
+}
+
+.rating {
+  height: 15px;
+  width: 80px;
+  padding-right: 0.3em;
+}
+
+.rating2 {
+  z-index: 2;
+  left: 2.5em; 
+  top: 5em;
+  height: 15px; 
+  width: 80px; 
+}
+
+.comment2 {
+  top: 11em;
+}
+
+.comment2-p{
+  top: 12em !important;
+}
+
+.review-back {
+  position: absolute;
+  z-index: 2;
+  top: 0.7em;
+  left: 1em;
+  text-align: center;
+}
+
+/* -- ACCOUNT PAGE -- */
+/*make different size of grid for account item*/
+.grid-col-3of10 {
+  width: 30%;
+  float: left；
 }
 
 .grid-col-5of10 {
-  width:50%;
+  width: 50%;
   float: left；
-}
-
-.grid-col-7of10 {
-  width:70%;
-  float: right；
 }
 
 .account-item {
   flex:1 1 auto;
   text-align: left;
-  position:relative;
-  top:5em;
-  left:15em;
+  position: relative;
+  top: 5em;
+  left: 15em;
 }
 
-
-#circle{
-  width:15px;
-  height:15px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border-color: black;
-  border:1px solid black;
-  float:left;
-  margin-top: 0.5em;
+.auto-renew input[type=checkbox] {
+  margin-top: 0.8em;
 }
 
-#Auto-renew{
-  float:left;
+.auto-renew label {
+  font-weight: 300;
   font-size: 0.8em;
-  padding-left: 0.2em;
-  padding-top: 0.5em;
 }
 
+/*styling for first column of table*/
 .first-col{
   border-top: 1px solid #333333;
   float:left;
 }
 
+/*styling for first column of table*/
 .second-col{
   border-top: 1px solid #333333;
   float:left;
@@ -428,6 +486,7 @@ label {
   padding-left: 0.8em;
 }
 
+/*styling for second column of table*/
 .third-col{
   border-top: 1px solid #333333;
   float:left;
@@ -435,34 +494,22 @@ label {
   padding-left:2em;
 }
 
+/*clear floating*/
 .clear{
   clear:both;
 }
 
+/*styling for account image*/
 #account-img {
-  width:300px;
+  width: 10em;
   height:auto;
-  float:left;
-  margin-top: 6em;
-  margin-left: 5em;
+  z-index: -1;
 }
 
-.account-button{
-  margin-top:5em; 
-  padding-top: 5em;
-}
+/* -- ORDER CONFIRMATION PAGE -- */
 
-/* Confirmation Page */
-
-.confirm-message {
-  margin: 0 15em !important; 
-}
-
-.confirm-item {
-  float:center;
-  color: #596068;
-}
-
+/*fix position for footer in 
+confirm page and contact page*/
 .bottom{
   width:100%;
   height:auto;
@@ -470,86 +517,90 @@ label {
   bottom:0;
 }
 
+/*size for grid in confirm page*/
+.col-4of10 {
+  width: 40%;
+  position: relative;
+  left: 30%; /*probably find a better way to center the col elements rather than defining a set value for left*/
+  /*background-color: green; test*/
+}
+
+.col-7of10 {
+  width: 70%;
+}
+
+@media (max-width: 40em){
+  .grid-col-4of10{
+    left: 4em;
+  }
+}
+
+/*styling for img in confirm page*/
 .confirm-img{
-  width:300px;
+  width: 300px;
   height: auto;
   float: left;
   margin-top: 4rem;
 }
 
-.confirm-para{
-  width:50%;
-  float:left;
-  margin-left:3em;
+/*styling for para in confirm page*/
+.confirm-msg {
+  width: 50%;
+  float: left;
+  margin-left: 3em;
   margin-top: 2rem;
 }
 
 @media(max-width: 40em){
-  .confirm-para{
-  margin-left:1em;
+  .confirm-msg{
+    margin-left: 1em;
   }
 }
 
+/* -- ORDER (WRITE A) REVIEWS PAGE -- */
+
+/*set size for order review image
+not sure if this is needed*/
 .order-confirm-img{
   width:160px;
   height:160px;
 }
 
-.order-confirm-text{
-  text-align: center;
-
-}
-
-.order-confirm-textInput{
+/*styling for order review 
+page's input text*/
+.order-review{
   width: 100%;
-  height:10em;
+  height: 10em;
   border: solid 0.05em #d4d9df;
   border-radius: 0.4em;
   font-size: 1em;
   margin-top: 0.8em;
   margin-bottom: 1em;
-  display: block;
 }
 
-/* Contact Page */
-.textInput{
-  width: 30em;
-  height:10em;
-  border: solid 0.05em #d4d9df;
-  border-radius: 0.4em;
-  font-size: 1em;
-  padding: 0.5em;
-  margin-top: 0.3em;
-  margin-bottom: 1em;
-  display: block;
-  position:absolute;
-  left:0;
-}
-
-.contact-button{
-  position:relative;
-  top:16em;
-  left:31em;
-}
+/* -- CONTACT PAGE -- */
 
 @media (max-width: 40em){
   .grid-col-4of10{
-  left:4em;
+    left: 4em;
   }
 }
 
-#name,#email{
-  width:15em;
+/*set position for button in contact */
+.contact-button{
+  position:relative;
+  top: 16em;
+  left: 31em;
 }
 
+/*set size for input text field  */
+#name, #email{
+  width: 15em;
+}
 
-/* Registration Page */
-/*.basic-info, .select-plan, .payment-methods, .newsletter-form, .buttons { 
-  margin: 0 15em !important; 
-} */
-
+/* -- REGISTRATION PAGE -- */
 .select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
-  margin: 0em 15em !important;
+  margin: 0em 15em;
 }
 
 @media (max-width: 1300px) {
@@ -570,8 +621,7 @@ label {
 }
 
 .buttons {
-  width: 100%;
-  margin-bottom: 3em !important;
+  margin-bottom: 3em;
   position: absolute;
 }
 
@@ -590,14 +640,13 @@ label {
   background-color: #efc88b;
 }
 
-.select-plan h4 {
+.plan-price {
   margin-top: 0.25rem;
   margin-bottom: 0.1rem;
 }
 
 .name-fields label, .email-fields label, .address-fields label {
   display: block;
-
 }
 
 .name-fields input, .email-fields input, .address-fields input {
@@ -623,7 +672,8 @@ select {
   font-size: 0.76rem;
   font-weight: 600;
 }
-.method img {
+
+.method img { /*credit card image */
   min-width: 10rem;
   max-width: 10rem;
   margin-top: -0.75rem;
@@ -652,7 +702,8 @@ select {
   margin-right: 0.75rem;
 }
 
-/*Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA*/
+/* step progress bar 
+Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 
 .progress-bar-container {
   width: 100%;
@@ -726,12 +777,7 @@ select {
   background-color: #cf5c36;
 } 
 
-/* Order Page */
-/*.selected-menu, .shipping-info, .del-time, .buttons { 
-  margin: 0 15em !important; 
-}*/
-
-
+/* -- ORDER PAGE -- */
 .selected-menu, .shipping-info, .del-time {
   margin: 0 15rem !important;
 }
@@ -747,6 +793,7 @@ select {
     margin: 0em 5em !important;
   }
 }
+
 .selected-items {
   margin: 0 !important;
   position: relative;
@@ -796,79 +843,77 @@ select {
   display: inline;
 }
 
-/*Colour Scheme*/
-
-.colours {
-  width: 10em;
-  height: 10em;
+/* Footer */
+.footer {
+  border-top: 1px solid #eee;
+  padding: 1em 0;
+  background-color: #f2f2f2;
   text-align: center;
-  padding-top: 10em;
-  margin-right: 1em;
-  margin-top: 1em;
 }
 
-.colours p {
-  padding-right: 50%;
-
+.footer-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-#main-green {
-  background-color: #8acb88;
+/* trying out a different footer
+.footer .footer-container {
+  height: 4em;
 }
 
-#light-green {
-  background-color: #e4fde1;
+.footer-section {
+  list-style: none;
+  margin-bottom: 0;
 }
 
-#dark-green {
-  background-color:  #70B481;
+@media (min-width: 544px) {
+  .col-sm-2 {
+   width: 16.667%;
+   float: left; bad
+  }
 }
 
-#orange {
-  background-color: #cf5c36;
+.footer-section ul {
+  margin-top: 0;
+  display: inline-block;
 }
 
-#light-orange {
-  background-color: #efc88b;
+.footer-section-header {
+  padding-bottom: 0.85em;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #70B481;
 }
 
-#black {
-  background-color: #07080a;
+.footer-section li {
+  display: list-item;
 }
 
-#light-black {
-  background-color: #24272b;
+.footer-section li a, .footer-section li a:visited, .footer-section li a:focus {
+  color: #24272b;
+  font-size: 0.8em;
+} */
+
+.legal-container .footer-container {
+  height: 1.5em;
 }
 
-#grey {
-  background-color: #596068;
+.legal-footer { 
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 1em;
 }
 
-#light-grey {
-  background-color: #d4d9df;
+.legal-footer p, .legal-footer a {
+  display: inline-block;
+  color: #d4d9df;
+  font-size: 0.8rem;
 }
 
-
-/*-------------Wireframe page---------------*/
-
-/*smartwatch*/
-#smartwatch {
-  width: 312px;
-  height: 390px;
-}
-
-#mobile {
-  width: 400px;
-  height: 710px;
-}
-
-#console {
-  width: 1189px;
-  height: 667px;
-}
-
-/*-------------Additional---------------*/
-.copyright {
-  font-size: 0.5em;
-
+.footer-item:not(:first-child) {
+  padding-left: 1em;
 }

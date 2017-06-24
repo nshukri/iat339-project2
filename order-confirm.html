@@ -2,12 +2,13 @@
 
 <html lang="en">
 	<head>
-		<title>Confirmation</title> 
+		<title>Mealbox Order Confirmation</title> 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link href="css/main.css" rel="stylesheet">
-		<link href="css/template.css" rel="stylesheet">
+		<link href="css/flex-grid.css" rel="stylesheet">
+   		<link href="css/main.css" rel="stylesheet">
+   		
 	    <!-- Import fonts from google -->
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
@@ -38,19 +39,17 @@
 			</nav>
 		</section>
 
-      	<section class="order_confirm">
-      		
-      		<div class="grid-col-7of10 confirm-item"> 
-      			<img src="img/truck-icon.png" alt="" class="grid-col-4of10 confirm-img">
+      	<section>   		
+      		<div class="grid-item col-7of10">
+      			<img src="img/truck-icon.png" alt="" class="col-4of10 confirm-img">
       			
-      			<div class="grid-col-4of10 confirm-para"> 		
+      			<div class="grid-item col-4of10 confirm-msg"> 		
 			  		<h2 class="heading2 sub-title">Thank You!</h2>
   		   			 <h3 class="heading3 sub-title">Your order has been received and will be delivered to you in an hour.</h3>   		
-	      			<p>Take a look at our other <a class="InText-Link" href="menu.html">menu items</a> while you wait for your order!</p>
-					
-			        <button class="default-button" onclick="window.location.href='order-review.html'">advance order</button>
+	      			<p class="body">Take a look at our other menu items while you wait for your order!</p>
+
+			        <button class="default-button" onclick="window.location.href='menu.html'">Go to Menu</button>
 		        </div>
-			</div>
       	</section>
 
       	<section class="footer bottom">
