@@ -69,7 +69,7 @@ a {
 
 .heading3 {
   font-weight: 600;
-  font-size:1.2em;
+  font-size: 1.2em;
   color: #24272b;
   margin-top: .25rem;
 }
@@ -82,6 +82,8 @@ a {
 
 .title {
   text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /* nowhere using sub-title */
@@ -444,40 +446,30 @@ nav .wrapper {
 /* -- ACCOUNT PAGE -- */
 /*make different size of grid for account item*/
 .grid-col-3of10 {
-  width:30%;
+  width: 30%;
   float: left；
 }
 
 .grid-col-5of10 {
-  width:50%;
+  width: 50%;
   float: left；
 }
 
 .account-item {
   flex:1 1 auto;
   text-align: left;
-  position:relative;
-  top:5em;
-  left:15em;
+  position: relative;
+  top: 5em;
+  left: 15em;
 }
 
-#circle{
-  width:15px;
-  height:15px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border-color: black;
-  border:1px solid black;
-  float:left;
-  margin-top: 0.5em;
+.auto-renew input[type=checkbox] {
+  margin-top: 0.8em;
 }
 
-#Auto-renew{
-  float:left;
+.auto-renew label {
+  font-weight: 300;
   font-size: 0.8em;
-  padding-left: 0.2em;
-  padding-top: 0.5em;
 }
 
 /*styling for first column of table*/
@@ -509,14 +501,12 @@ nav .wrapper {
 
 /*styling for account image*/
 #account-img {
-  width:300px;
+  width: 10em;
   height:auto;
-  float:left;
-  margin-top: 6em;
-  margin-left: 5em;
+  z-index: -1;
 }
 
-/* -- CONFIRMATION PAGE -- */
+/* -- ORDER CONFIRMATION PAGE -- */
 
 /*fix position for footer in 
 confirm page and contact page*/
@@ -527,81 +517,72 @@ confirm page and contact page*/
   bottom:0;
 }
 
-.confirm-message {
-  margin: 0 15em; 
+/*size for grid in confirm page*/
+.col-4of10 {
+  width: 40%;
+  position: relative;
+  left: 30%; /*probably find a better way to center the col elements rather than defining a set value for left*/
+  /*background-color: green; test*/
 }
 
-/*size for grid in confirm page*/
-.grid-col-4of10 {
-  width:40%;
-  float:center;
-  position: relative;
-  left:30%;
+.col-7of10 {
+  width: 70%;
 }
 
 @media (max-width: 40em){
   .grid-col-4of10{
-  left:4em;
+    left: 4em;
   }
-}
-
-.grid-col-7of10 {
-  width:70%;
-  float: right；
 }
 
 /*styling for img in confirm page*/
 .confirm-img{
-  width:300px;
+  width: 300px;
   height: auto;
   float: left;
   margin-top: 4rem;
 }
 
 /*styling for para in confirm page*/
-.confirm-para{
-  width:50%;
-  float:left;
-  margin-left:3em;
+.confirm-msg {
+  width: 50%;
+  float: left;
+  margin-left: 3em;
   margin-top: 2rem;
 }
 
 @media(max-width: 40em){
-  .confirm-para{
-  margin-left:1em;
+  .confirm-msg{
+    margin-left: 1em;
   }
 }
 
-/*set size for order review image*/
+/* -- ORDER (WRITE A) REVIEWS PAGE -- */
+
+/*set size for order review image
+not sure if this is needed*/
 .order-confirm-img{
   width:160px;
   height:160px;
 }
 
-/*styling for order review text*/
-.order-confirm-text{
-  text-align: center;
-
-}
-
 /*styling for order review 
 page's input text*/
-.order-confirm-textInput{
+.order-review{
   width: 100%;
-  height:10em;
+  height: 10em;
   border: solid 0.05em #d4d9df;
   border-radius: 0.4em;
   font-size: 1em;
   margin-top: 0.8em;
   margin-bottom: 1em;
-  display: block;
 }
 
 /* -- CONTACT PAGE -- */
 
 @media (max-width: 40em){
   .grid-col-4of10{
-  left:4em;
+    left: 4em;
   }
 }
 
