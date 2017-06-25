@@ -366,6 +366,7 @@ nav .wrapper {
   margin: 0;
   padding: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .menu-item img {
@@ -412,8 +413,30 @@ nav .wrapper {
 
 .item-content {
   width: 100%;
-  visibility: hidden;
+ /* visibility: hidden;*/
+  bottom: -100%;
+  transition: bottom 0.5s ease;
   /*display: block;*/
+  background: rgba( 0, 0, 0, 0.5 );
+  bottom: -100%;
+  color: #fff;
+  height: 100%;
+  left: 0%;
+  position: absolute;
+  transition: bottom 0.5s ease;
+  width: 100%;
+
+  /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
+
+}
+
+.menu-item .item-content
+{
+
+}
+
+.menu-item:hover .item-content {
+  bottom: 0%;
 }
 
 .item-content p {
@@ -430,6 +453,8 @@ nav .wrapper {
   z-index: 2;
   bottom: 1em !important; /* need to check if important is needed */
 }
+
+
 
 /* not used
 #item-layer3 { 
