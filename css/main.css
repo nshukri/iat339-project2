@@ -205,7 +205,7 @@ PAGES
   justify-content: space-between;
   list-style-type: none;
   width: 40%;
-  /*margin: auto;*/
+  /*margin-bottom: auto;*/
 }
 
 .navigation li {
@@ -217,7 +217,7 @@ nav .wrapper {
   margin: 0 auto;
   max-width: 100%;
   padding: 0 2%;
-    align-items: center;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -230,6 +230,45 @@ nav .wrapper {
 .label-toggle {
   display: none;
 }
+@media (max-width: 65em){
+  
+  .navigation ul {
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  .navigation li {
+    border-bottom: 1px solid #ffffff;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%, #ffffff 100%);
+    cursor: pointer;
+    display: inline;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+} 
+/*end of media query*/
+
 
 /* Home Sections */
 .home-section {
@@ -251,7 +290,7 @@ nav .wrapper {
 
 #img-home {
   background-color: #d9d9d9;
-  /*height: 100%;*/
+  height: 100%;
   opacity: 0.7;
   margin: auto;
   display: block;
