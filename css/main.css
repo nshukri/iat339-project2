@@ -359,7 +359,7 @@ nav .wrapper {
 /* Menu Section */
 .home-menu {
   background-color: #f2f2f2;
-  text-align: center;
+  padding-top: 0.1em;
 }
 
 .menu-item {
@@ -372,6 +372,10 @@ nav .wrapper {
 .menu-item img {
   overflow: hidden;
   height: 100%;
+}
+
+#viewMore-button {
+  text-align: center;
 }
 
 /* News Section */
@@ -391,11 +395,11 @@ nav .wrapper {
 /* -- MENU PAGE -- */
 .item-title { /* title of product */
   position: absolute;
-  background-color: rgba(0,0,0, 0.6);
+  /*background-color: rgba(0,0,0, 0.6);*/
   z-index: 2;
   color: white !important;
-  bottom: 0;
-  padding: 0.7em 2.5em;
+  top: 0;
+  padding: 0.7em 2em;
   width: 100%;
   transition: ease 0.5s;
   cursor: pointer;
@@ -417,8 +421,8 @@ nav .wrapper {
   bottom: -100%;
   transition: bottom 0.5s ease;
   /*display: block;*/
-  background: rgba( 0, 0, 0, 0.5 );
-  bottom: -100%;
+  background: rgba( 0, 0, 0, 0.7);
+  bottom: -86%;
   color: #fff;
   height: 100%;
   left: 0%;
@@ -427,11 +431,6 @@ nav .wrapper {
   width: 100%;
 
   /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
-
-}
-
-.menu-item .item-content
-{
 
 }
 
