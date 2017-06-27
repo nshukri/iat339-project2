@@ -329,14 +329,14 @@ nav .wrapper {
   color: white !important;
   position: absolute;
   width: 100%;
-  bottom: 6vh;
+  bottom: 3vh;
   left: 0;
   cursor: pointer;
   padding-top: 0.2em;
-  padding-bottom: 4em;
+  padding-bottom: 3em;
 }
 
-#text-arrow:hover {
+#arrow:hover {
   opacity: 0.8;
 }
 
@@ -344,9 +344,8 @@ nav .wrapper {
   width: 2.5em;
   height: 2em;
   position: absolute;
-  bottom: 1.5vh;
+  bottom: 0;
   margin: auto;
-  padding-top: 0.2em;
   left: 0;
   right: 0;
   cursor: pointer;
