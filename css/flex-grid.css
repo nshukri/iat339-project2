@@ -25,10 +25,20 @@
   color: #596068;
 }
 
+.select-plan .grid-item {
+  flex: 3 1 auto;
+}
+
+@media (max-width: 65em){
+  .select-plan .grid-item{
+   flex: 1 1 50%;
+  }
+}
+
 
 @media (max-width: 65em){
   .grid-item{
-  flex: 0 0 100%;
+   flex: 0 0 100%;
   }
 
   .grid {

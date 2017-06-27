@@ -691,6 +691,8 @@ page's input text*/
 .plan-text {
   width: 15em;
   padding: 1.5em !important;
+  margin-left: 0 !important;
+  margin-right: 0.8em;
   background-color: #eee;
 }
 
@@ -699,7 +701,7 @@ page's input text*/
   margin-top: 0.75rem;
 }
 
-.plan-text:hover {
+.plan-text:hover, .plan-text:target {
   background-color: #efc88b;
 }
 
