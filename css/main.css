@@ -56,7 +56,14 @@ a {
 .tag-line {
   font-family: 'Caveat', cursive;
   font-size: 2.5em;
+  margin: auto;
   color: #24272b;
+}
+
+.subTag-line {
+  color: white !important;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 .heading2 {
@@ -318,13 +325,19 @@ nav .wrapper {
   margin-top: 5vh;
 }
 
-#about-arrow {
+#arrow {
   color: white !important;
   position: absolute;
   width: 100%;
   bottom: 6vh;
   left: 0;
   cursor: pointer;
+  padding-top: 0.2em;
+  padding-bottom: 4em;
+}
+
+#text-arrow:hover {
+  opacity: 0.8;
 }
 
 #down-arrow {
@@ -333,12 +346,10 @@ nav .wrapper {
   position: absolute;
   bottom: 1.5vh;
   margin: auto;
-  left: 48.5%;
+  padding-top: 0.2em;
+  left: 0;
+  right: 0;
   cursor: pointer;
-}
-
-#down {
-  width: 100%;
 }
 
 /* Who Are We? Section */
