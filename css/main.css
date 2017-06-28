@@ -697,6 +697,38 @@ page's input text*/
   height:10em;
 }
 
+/* -- OUR PLANS PAGE -- */
+.plan-options .title {
+  margin-bottom: 0 !important;
+}
+
+.plan-table {
+  width: 10em;
+  margin: 0 10em 3em 10em;
+}
+
+.plan-column {
+  text-align: center;
+  float: left;
+  margin: 0 1%;
+}
+
+.plan-table .plan-column {
+  width: 23%;
+}
+
+.content-box {
+  background-color: white;
+  border: 1px solid #eee;
+  padding: 2em;
+}
+
+.plan-description {
+  min-height: 8em;
+  font-size: 0.86em;
+  margin: 1.5rem 0 2rem 0;
+}
+
 /* -- REGISTRATION PAGE -- */
 .select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons { 
   margin: 0em 15em; 
