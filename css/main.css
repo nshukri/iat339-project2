@@ -869,7 +869,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   position: relative;
   text-align: center;
   font-weight: 700;
-  color: #d4d9df;
+  color: #596068; 
   margin-bottom: 2rem;
 }
 
@@ -884,12 +884,13 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   width: 2rem;
   height: 2rem;
   line-height: 2rem;
-  border: 5px solid #d4d9df;
+  border: 1px solid #d4d9df; 
   display: block;
   text-align: center;
   margin: 0 auto 0.5rem auto;
   border-radius: 50%;
-  background-color: white;
+  background-color: #eee; 
+  font-size: 1em; /* font size of number */ 
 }
 
 /*line*/
@@ -897,9 +898,10 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   content: ' ';
   position: absolute;
   width: 100%;
-  height: 5px;
-  background-color: #d4d9df;
-  top: 1rem; /*half of the w/h of the circle*/
+  height: 7px; 
+  background-color: #eee; 
+  border: 1px solid #d4d9df; 
+  top: 0.8rem; /*half of the w/h of the circle*/ 
   left: -50%;
   z-index: -1;
 }
@@ -918,7 +920,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 }
 
 .progress-bar li.active:before {
-  border-color: #cf5c36;
+  border-color: #d4d9df;
   background-color: #cf5c36;
 }
 
