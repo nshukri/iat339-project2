@@ -241,3 +241,16 @@ function reviewOpen8() {
    var content = document.getElementById('foodContent-8');
    content.style.left = "0";
 }
+
+//function to get which plan the user selected
+function getPlan() {
+   var params = {};
+   var params_array = window.location.href.split('?')[1].split('&');
+
+   for (var i in params_array) {
+      x = params_array[i].split('=');
+      params[x[0]] = x[1];
+   }
+
+   return params
+}
