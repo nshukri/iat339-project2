@@ -14,9 +14,21 @@ $(document ).ready(function() {
 	});
 });
 
+//onclick in index.html when user click my account
+function loginPanel () {
+   var login = document.getElementById("login-panel");
+   login.style.visibility = "visible";
+   console.log("test login");
+}
 
-// ONlick function in Menu.html
+function loginClose () {
+   var login = document.getElementById("login-panel");
+   login.style.visibility = "hidden";
+   console.log("test login");
+}
 
+
+// ONlick functions in Menu.html
 
 //functions for food item 1 in Menu.html
 function reviewOpen1() {
