@@ -371,7 +371,7 @@ nav .wrapper {
 
 /* Menu Section */
 .home-menu {
-  background-color: #f2f2f2;
+  background-color: #e4fde1;
   padding-top: 0.1em;
 }
 
@@ -455,6 +455,7 @@ nav .wrapper {
 }
 
 .review-link {
+  cursor: pointer;
   position: absolute;
   z-index: 2;
   top: 4.1em;
@@ -546,6 +547,7 @@ nav .wrapper {
   top: 0.7em;
   left: 1em;
   text-align: center;
+  cursor: pointer;
 }
 
 .review-back:hover {
@@ -958,7 +960,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 .footer {
   border-top: 1px solid #eee;
   padding: 1em 0;
-  background-color: #f2f2f2;
+  background-color: #e4fde1;
   text-align: center;
 }
 
