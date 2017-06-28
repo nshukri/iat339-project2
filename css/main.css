@@ -586,6 +586,128 @@ nav .wrapper {
   border-bottom: 1px solid #333333;
 }
 
+@media (max-width: 1024px){
+  .account-item{
+    flex:1 1 100%;
+    text-align: left;
+    position: relative;
+    top: 2em;
+    left: 1em;
+  }
+
+  #account-profile{
+    margin-left:1em;
+    border: 1px solid #ffffff;
+  }
+
+  #account-setting{
+    float:left;
+    margin-top: 2.6em; 
+    margin-left: 0em; 
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+  }
+}
+
+/*styling account page for Tablet view*/
+@media (max-width: 768px){
+  #account-setting{
+    float:left;
+    margin-top: 2.6em; 
+    margin-left: 0em; 
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+  }
+
+  .account-item{
+    flex:1 1 100%;
+    text-align: left;
+    position: relative;
+    top: 2em;
+    left: 2em;
+  }
+
+  #account-profile{
+    margin-left: 15em;
+    border: 1px solid #ffffff;
+  }
+}
+
+/*styling account page for phone view*/
+@media (max-width: 425px){
+
+  #account-profile{
+    margin-left: 3.5em;
+    border: 1px solid #ffffff;
+  }
+
+  #account-setting{
+    border-bottom: 1px solid #333333;
+  }
+
+  .first-col{
+    border-top: 1px solid #333333;
+  }
+  .second-col{
+    padding-left:9em; 
+  }
+}
+
+/*styling account page for phone view*/
+@media (max-width: 375px){
+  .account-item{
+    position: relative;
+    top: 0em;
+    left: 1em;
+    font-weight: 2em;
+  }
+
+  #account-profile{
+    margin-left: 3.2em;
+    border: 1px solid #ffffff;
+  }
+
+  #account-setting{
+    padding:0.5em;
+    border-bottom: 1px solid #333333;
+  }
+
+  .first-col{
+    border-top: 1px solid #333333;
+  }
+  .second-col{
+    padding-left:7em; 
+  }
+}
+
+/*styling account page for phone view*/
+@media (max-width: 320px){
+  .account-item{
+    flex:1 1 100%;
+    text-align: left;
+    font-weight: 1.8em;
+  }
+
+  #account-profile{
+    margin-left: 2.2em;
+    border: 1px solid #ffffff;
+  }
+
+  #account-setting{
+    font-weight:1em;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+  }
+
+  .first-col{
+    border-top: 1px solid #333333;
+  }
+
+  .second-col{
+    padding-left:4em; 
+  }
+}
+
 /*styling for first column of table*/
 .first-col{
   margin-top: 0em;
@@ -620,22 +742,6 @@ nav .wrapper {
   opacity: 0.7;
 }
 /* -- ORDER CONFIRMATION PAGE -- */
-
-/*fix position for footer in 
-confirm page and contact page*/
-.bottom{
-  width:100%;
-  height:auto;
-  position:fixed;
-  bottom:0;
-}
-
-#leave_message{
-  float:left;
-  margin-top:1em; 
-  margin-left: 7em;
-  border: 1px solid #ffffff;
-}
 /*styling for img in confirm page*/
 .confirm-img{
   width: 300px;
@@ -680,11 +786,23 @@ page's input text*/
 }
 
 /* -- CONTACT PAGE -- */
-
-@media (max-width: 40em){
+/*.bottom{
+  width:100%;
+  height:auto;
+  position:fixed;
+  bottom:0;
+}*/
+/*@media (max-width: 40em){
   .grid-col-4of10{
     left: 4em;
   }
+}*/
+
+#leave_message{
+  float:left;
+  margin-top:1em; 
+  margin-left: 7em;
+  border: 1px solid #ffffff;
 }
 
 /*set size for input text field  */
@@ -695,6 +813,81 @@ page's input text*/
 #message{
   width:25em;
   height:10em;
+}
+
+/*styling contact page for Tablet view*/
+@media (max-width: 1024px){
+  #company_information{
+    margin-left:1.5em;
+  }
+
+  #leave_message{
+    float:left;
+    margin-top:1em; 
+    margin-left:2em;
+    border: 1px solid #ffffff;
+  }
+}
+
+/*styling contact page for Tablet view*/
+@media (max-width: 768px){
+  .contact-item{
+    flex:1 1 100%;
+    text-align: left;
+    position: relative;
+    top: 2em;
+    left: 2em;
+  }
+
+  #company_information{
+    margin-left:3em;
+  }
+
+  #leave_message{
+    float:left;
+    margin-top:1em; 
+    margin-left:2em;
+    border: 1px solid #ffffff;
+  }
+}
+/*styling contact page for phone view*/
+@media (max-width: 425px){
+  #leave_message{
+    font-weight:1em;
+    margin-left:0.5em;
+  }
+  #company_information{
+    margin-left:1em;
+  }
+  #message{
+    width:20em;
+  }
+}
+
+/*styling contact page for phone view*/
+@media (max-width: 375px){
+  #leave_message{
+    font-weight:1em;
+    margin-left:0.3em;
+  }
+  #company_information{
+    margin-left:1em;
+  }
+  #message{
+    width:20em;
+  }
+}
+
+/*styling contact page for phone view*/
+@media (max-width: 320px){
+  #leave_message{
+    font-weight:1em;
+    margin-left:0.7em;
+  }
+
+  #message{
+    width:15em;
+  }
 }
 
 /* -- OUR PLANS PAGE -- */
