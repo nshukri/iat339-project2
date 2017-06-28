@@ -598,192 +598,40 @@ nav .wrapper {
 }
 
 /* -- ACCOUNT PAGE -- */
-
-.account-item, .contact-item{
-  flex:1 1 100%;
-  text-align: left;
-  position: relative;
-  top: 5em;
-  left: 15em;
+/*set width for each section 
+of account page*/
+.section-accountPage{
+  width:100%;
+  align-items: center;
+  padding:1.5em;
 }
 
-.auto-renew input[type=checkbox] {
-  margin-top: 0.8em;
-}
-
-.auto-renew label {
-  font-weight: 300;
-  font-size: 0.8em;
-}
-
-#account-profile,#company_information{
-  float:left;
-  border: 1px solid #ffffff;
-}
-
-#account-setting{
-  float:left;
-  margin-top: 2.6em; 
-  margin-left: 4.5em; 
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-}
-
-@media (max-width: 1024px){
-  .account-item{
-    flex:1 1 100%;
-    text-align: left;
-    position: relative;
-    top: 2em;
-    left: 1em;
-  }
-
-  #account-profile{
-    margin-left:1em;
-    border: 1px solid #ffffff;
-  }
-
-  #account-setting{
-    float:left;
-    margin-top: 2.6em; 
-    margin-left: 0em; 
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-  }
-}
-
-/*styling account page for Tablet view*/
-@media (max-width: 768px){
-  #account-setting{
-    float:left;
-    margin-top: 2.6em; 
-    margin-left: 0em; 
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-  }
-
-  .account-item{
-    flex:1 1 100%;
-    text-align: left;
-    position: relative;
-    top: 2em;
-    left: 2em;
-  }
-
-  #account-profile{
-    margin-left: 15em;
-    border: 1px solid #ffffff;
-  }
-}
-
-/*styling account page for phone view*/
-@media (max-width: 425px){
-
-  #account-profile{
-    margin-left: 3.5em;
-    border: 1px solid #ffffff;
-  }
-
-  #account-setting{
-    border-bottom: 1px solid #333333;
-  }
-
-  .first-col{
-    border-top: 1px solid #333333;
-  }
-  .second-col{
-    padding-left:9em; 
-  }
-}
-
-/*styling account page for phone view*/
-@media (max-width: 375px){
-  .account-item{
-    position: relative;
-    top: 0em;
-    left: 1em;
-    font-weight: 2em;
-  }
-
-  #account-profile{
-    margin-left: 3.2em;
-    border: 1px solid #ffffff;
-  }
-
-  #account-setting{
-    padding:0.5em;
-    border-bottom: 1px solid #333333;
-  }
-
-  .first-col{
-    border-top: 1px solid #333333;
-  }
-  .second-col{
-    padding-left:7em; 
-  }
-}
-
-/*styling account page for phone view*/
-@media (max-width: 320px){
-  .account-item{
-    flex:1 1 100%;
-    text-align: left;
-    font-weight: 1.8em;
-  }
-
-  #account-profile{
-    margin-left: 2.2em;
-    border: 1px solid #ffffff;
-  }
-
-  #account-setting{
-    font-weight:1em;
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-  }
-
-  .first-col{
-    border-top: 1px solid #333333;
-  }
-
-  .second-col{
-    padding-left:4em; 
-  }
-}
-
-/*styling for first column of table*/
-.first-col{
-  margin-top: 0em;
-  float:left;
-}
-
-/*styling for first column of table*/
-.second-col{
-  float:left;
-  text-align: right;
-  font-weight: 2.5em;
-}
-
-/*styling for second column of table*/
-.third-col{
+/*make save button on account page 
+float to the right*/
+#saveButton{
   float:right;
 }
 
-/*clear floating*/
-.clear{
-  clear:both;
+/*styling second section*/
+#photo{
+  border-top: 1px solid #333333;
+  text-align: center;
 }
 
-/*styling for account image*/
-#account-img {
-  width: 10em;
-  height:auto;
-  z-index: -1;
+/*set size of image in account page*/
+#account-img{
+  width:100px;
 }
 
-#account-img:hover, .second-col:hover{
-  opacity: 0.7;
+/*styling image in account page*/
+#account-img:hover{
+  opacity: 0.7
 }
+
+#personalInformation,#changePassword,#paymentDetails{
+  border-bottom: 1px solid #333333;
+}
+
 /* -- ORDER CONFIRMATION PAGE -- */
 /*styling for img in confirm page*/
 .confirm-img{
