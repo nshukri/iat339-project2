@@ -173,6 +173,8 @@ PAGES
   left: 0;
   font-size: 1.2em;
   margin: 0.5em 0em;
+  padding: 0 1em;
+  border: solid 0.18em #fff;
   z-index: 3;
   top: 0;
   color: #FFF;
