@@ -47,9 +47,10 @@ a {
   transition: color 0.5s ease-out;
 }
 
-.inText-Link:hover {
+.InText-Link:hover {
   text-decoration: underline;
   color: #aa4c2d;
+  opacity: 0.7;
 }
 
 /* Styling for Text Elements */
