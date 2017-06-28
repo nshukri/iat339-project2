@@ -47,10 +47,9 @@ a {
   transition: color 0.5s ease-out;
 }
 
-.InText-Link:hover {
+.inText-Link:hover {
   text-decoration: underline;
   color: #aa4c2d;
-  opacity: 0.7;
 }
 
 /* Styling for Text Elements */
@@ -115,6 +114,7 @@ button {
   border-style: none;
   padding: 0.5rem 1.2rem;
   letter-spacing: 1px;
+  cursor: pointer;
   text-transform: uppercase; /* referred to W3Schools*/
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
@@ -173,11 +173,9 @@ PAGES
   left: 0;
   font-size: 1.2em;
   margin: 0.5em 0em;
-  padding: 0 1em;
   z-index: 3;
   top: 0;
   color: #FFF;
-  border: solid 0.15em #ffffff;
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 1.5em;
@@ -371,7 +369,7 @@ nav .wrapper {
 
 /* Menu Section */
 .home-menu {
-  background-color: #e4fde1;
+  background-color: #f2f2f2;
   padding-top: 0.1em;
 }
 
@@ -455,7 +453,6 @@ nav .wrapper {
 }
 
 .review-link {
-  cursor: pointer;
   position: absolute;
   z-index: 2;
   top: 4.1em;
@@ -547,7 +544,6 @@ nav .wrapper {
   top: 0.7em;
   left: 1em;
   text-align: center;
-  cursor: pointer;
 }
 
 .review-back:hover {
@@ -555,19 +551,9 @@ nav .wrapper {
 }
 
 /* -- ACCOUNT PAGE -- */
-/*make different size of grid for account item*/
-.grid-col-3of10 {
-  width: 30%;
-  float: left；
-}
-
-.grid-col-5of10 {
-  width: 50%;
-  float: left；
-}
 
 .account-item {
-  flex:1 1 auto;
+  flex:1 1 100%;
   text-align: left;
   position: relative;
   top: 5em;
@@ -583,26 +569,34 @@ nav .wrapper {
   font-size: 0.8em;
 }
 
+#account-profile{
+  float:left;
+}
+
+#account-setting{
+  float:left;
+  margin-top: 2.6em;
+  background: rgba( 0, 0, 0, 0.1);
+}
+
 /*styling for first column of table*/
 .first-col{
-  border-top: 1px solid #333333;
+  /*border-top: 1px solid #333333;*/
+  margin-top: 0em;
   float:left;
 }
 
 /*styling for first column of table*/
 .second-col{
-  border-top: 1px solid #333333;
   float:left;
-  padding-top:1.3em;
-  padding-left: 0.8em;
+  margin-top: 1.2em;
+  text-align: right;
 }
 
 /*styling for second column of table*/
 .third-col{
-  border-top: 1px solid #333333;
-  float:left;
-  padding-top:1.3em;
-  padding-left:2em;
+  float:right;
+  margin-top: 1.1em;
 }
 
 /*clear floating*/
@@ -704,19 +698,24 @@ page's input text*/
   left: 31em;
 }
 
+/*set size for input text field  */
+#name, #email{
+  width: 15em;
+}
+
 /* -- REGISTRATION PAGE -- */
-.select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons {
+.select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
   margin: 0em 15em;
 }
 
 @media (max-width: 1300px) {
-  .select-plan, .basic-info, .payment-methods, ..checkbox-form, .buttons {
+  .select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
     margin: 0em 10em !important;
   }
 }
 
 @media (max-width: 750px){
-  .select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons {
+  .select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
     margin: 0em 5em !important;
   }
 
@@ -728,7 +727,7 @@ page's input text*/
 
 .buttons {
   margin-bottom: 3em;
-  float: right;
+  position: absolute;
 }
 
 .plan-text {
@@ -753,51 +752,27 @@ page's input text*/
   margin-bottom: 0.1rem;
 }
 
-.basic-info label, .payment-methods label { 
-  width: 100%; 
-  display: block; 
-  margin-right: -7em;
-  font-size: 0.86em;
-  font-weight: 700;
+.name-fields label, .email-fields label, .address-fields label {
+  display: block;
 }
 
-.basic-info input[type="text"], .payment-methods input[type="text"], .basic-info select. .payment-methods select { 
-  float: left; 
-  margin-right: 0.5em;
+.name-fields input, .email-fields input, .address-fields input {
+  display: inline;
+  margin-right: 1.12rem;
   font-size: 0.86rem;
 }
 
-.u-mb3 {
-  margin-bottom: 1em;
+.basic-info label, .select-plan label, .payment-methods label {
+  font-size: 0.86rem;
 }
 
-.grid--withGutter {
-  margin: 0 -0.3em;
+select {
+  width: 10rem;
+  font-size: 0.86rem;
 }
 
-.grid--withGutter>.grid-item {
-  padding: 0 0.3em;
-}
-
-
-.size1of2 {
-  flex-basis: auto;
-  width: 50%;
-}
-
-.size1of4 {
-  width: 25%;
-}
-
-.textInput-field, select {
-  width: 20em;
-  border: solid 0.05em #d4d9df;
-  border-radius: 0.4em;
-  font-size: 0.86em;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
-  display: block;
+#postal-code {
+  width: 7em;
 }
 
 .method p {
@@ -808,23 +783,30 @@ page's input text*/
 .method img { /*credit card image */
   min-width: 10rem;
   max-width: 10rem;
+  margin-top: -0.75rem;
+  margin-bottom: 1.5rem;
 }
 
-#postal-code, #cvv {
-  width: 7em;
+.method label, .exp-date label {
+  display: block;
 }
 
-.exp-date select {
-  width: 7em;
+.method input[type=radio] {
+  display: inline-block;
+  margin-bottom: 1.5rem;
 }
 
-.checkbox-form {
-  font-size: 0.86em;
+.exp-date select, .exp-date p {
+  display: inline;
 }
 
-.checkbox-form input {
-  margin-bottom: 0.75em;
-  margin-right: 0.75em;
+.exp-date select, .del-time select {
+  width: 5em;
+}
+
+.newsletter-form input {
+  margin-bottom: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 /* step progress bar 
@@ -845,7 +827,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   position: relative;
   text-align: center;
   font-weight: 700;
-  color: #596068;
+  color: #d4d9df;
   margin-bottom: 2rem;
 }
 
@@ -860,13 +842,12 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   width: 2rem;
   height: 2rem;
   line-height: 2rem;
-  border: 1px solid #d4d9df;
+  border: 5px solid #d4d9df;
   display: block;
   text-align: center;
   margin: 0 auto 0.5rem auto;
   border-radius: 50%;
-  background-color: #eee;
-  font-size: 1em; /* font size of number */
+  background-color: white;
 }
 
 /*line*/
@@ -874,10 +855,9 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   content: ' ';
   position: absolute;
   width: 100%;
-  height: 7px;
-  background-color: #eee;
-  border: 1px solid #d4d9df;
-  top: 0.8rem; /*half of the w/h of the circle*/
+  height: 5px;
+  background-color: #d4d9df;
+  top: 1rem; /*half of the w/h of the circle*/
   left: -50%;
   z-index: -1;
 }
@@ -896,7 +876,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 }
 
 .progress-bar li.active:before {
-  border-color: #d4d9df;
+  border-color: #cf5c36;
   background-color: #cf5c36;
 }
 
@@ -974,7 +954,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 .footer {
   border-top: 1px solid #eee;
   padding: 1em 0;
-  background-color: #e4fde1;
+  background-color: #f2f2f2;
   text-align: center;
 }
 
