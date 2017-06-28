@@ -549,7 +549,7 @@ nav .wrapper {
   text-align: center;
 }
 
-.review-back:hover {
+.review-back:hover{
   opacity: 0.8;
 }
 
@@ -574,12 +574,13 @@ nav .wrapper {
 
 #account-profile{
   float:left;
+  border: 1px solid #ffffff;
 }
 
 #account-setting{
   float:left;
-  margin-top: 2.6em;
-  background: rgba( 0, 0, 0, 0.1);
+  margin-top: 2.6em; 
+  border: 1px solid #ffffff;
 }
 
 /*styling for first column of table*/
@@ -594,6 +595,7 @@ nav .wrapper {
   float:left;
   margin-top: 1.2em;
   text-align: right;
+  font-weight: 2.5em;
 }
 
 /*styling for second column of table*/
@@ -613,7 +615,9 @@ nav .wrapper {
   height:auto;
   z-index: -1;
 }
-
+#account-img:hover, .second-col:hover{
+  opacity: 0.7;
+}
 /* -- ORDER CONFIRMATION PAGE -- */
 
 /*fix position for footer in 
