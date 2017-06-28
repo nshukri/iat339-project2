@@ -698,9 +698,14 @@ page's input text*/
   left: 31em;
 }
 
-/*set size for input text field  */
-#name, #email{
-  width: 15em;
+/* -- OUR PLANS PAGE -- */
+.plan-box {
+  width: 20em;
+  margin: auto;
+}
+
+.box {
+  padding: 2em;
 }
 
 /* -- REGISTRATION PAGE -- */
