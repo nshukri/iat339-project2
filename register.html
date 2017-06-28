@@ -57,22 +57,22 @@
 	<section class="select-plan">
 		<h3 class="heading3 sub-title">Select a Meal Plan</h2>
 		<div class="grid plan-items">
-			<div class="grid-item plan-text" id="selected-plans">
+			<div class="grid-item plan-text" id="plan-1">
 				<h3 class="heading3">Trial: 1 Week</h3>
 				<h4 class="plan-price">$115.00</h4>
 				<p class="paragraph">Try out our trial plan for a week and see how Mealbox works out for you.</p>
 			</div>
-			<div class="grid-item plan-text" id="selected-plans">
+			<div class="grid-item plan-text" id="plan-2">
 				<h3 class="heading3">1 Month</h3>
 				<h4 class="plan-price">$445.00</h4>
 				<p class="paragraph">Don’t have time to cook for the next month? Select this short 1 month plan to receive meal boxes and not worry about cooking.</p>
 			</div>
-			<div class="grid-item plan-text" id="selected-plans">
+			<div class="grid-item plan-text" id="plan-3">
 				<h3 class="heading3">3 Months</h3>
 				<h4 class="plan-price">$1350.00</h4>
 				<p class="paragraph">Really satisfied with Mealbox? Select this 3 month plan to continue receiving meal boxes!</p>
 			</div>
-			<div class="grid-item plan-text" id="selected-plans">
+			<div class="grid-item plan-text" id="plan-4">
 				<h3 class="heading3">6 Months</h3>
 				<h4 class="plan-price">$2745.00</h4>
 				<p class="paragraph">The plan with the best value! Select the 6 month plan to continue receiving meal boxes for half a year.</p>
@@ -81,19 +81,20 @@
 	</section>
 
 	<!-- https://stackoverflow.com/questions/26937424/change-button-color-onclick -->
-	<script>
-		document.getElementById("selected-plans").onclick = function() {changeColor()};
+	<script language="JavaScript" type="text/javascript" src="js/javascript.js">
 
-		var count = 1;
-		function changeColor() {
-			if (count == 0) {
-				document.getElementById("selected-plans").style.backgroundColor='#eeeeee'
-				count = 1;
-			} else {
-				document.getElementById("selected-plans").style.backgroundColor='#efc88b'
-				count = 0;
-			}
-		}
+		// document.getElementById("selected-plans").onclick = function() {changeColor()};
+
+		// var count = 1;
+		// function changeColor() {
+		// 	if (count == 0) {
+		// 		document.getElementById("selected-plans").style.backgroundColor='#eeeeee'
+		// 		count = 1;
+		// 	} else {
+		// 		document.getElementById("selected-plans").style.backgroundColor='#efc88b'
+		// 		count = 0;
+		// 	}
+		// }
 	</script>
 
 	<!-- Basic Information -->
@@ -101,47 +102,47 @@
 		<h3 class="heading3 sub-title">Basic Information</h2>
 		<div class="grid">
 		<form class="form" action="/action_page.php">
-			<div class="grid grid--withGutter u-mb3">
-				<div class="grid-item size1of2">
+			<div class="grid gutter">
+				<div class="grid-item col1of2">
 				<!-- <div class="name-fields"> -->
 					<label for="f-name">First Name</label>
 					<input type="text" id="f-name" class="textInput-field" placeholder="First Name">
 				</div>
-				<div class="grid-item size1of2">
+				<div class="grid-item col1of2">
 					<label for="l-name">Last Name</label>
 					<input type="text" id="l-name" class="textInput-field" placeholder="Last Name">
 				</div>
 			</div>
 
-			<div class="grid grid--withGutter u-mb3">
-				<div class="grid-item size1of2">
+			<div class="grid gutter">
+				<div class="grid-item col1of2">
 					<label for="email">E-mail</label>
 					<input type="text" id="email" class="textInput-field" placeholder="Enter your e-mail">
 				</div>
-				<div class="grid-item size1of2">
+				<div class="grid-item col1of2">
 					<label for="email">Confirm your E-mail</label>
 					<input type="text" id="email" class="textInput-field" placeholder="Confirm your e-mail">
 				</div>
 			</div>
 
-			<div class="grid grid--withGutter u-mb3">
-				<div class="grid-item size1of2">
+			<div class="grid gutter">
+				<div class="grid-item col1of2">
 					<label for="address">Address</label>
 					<input type="text" id="address" class="textInput-field" placeholder="Line 1">
 				</div>
-				<div class="grid-item size1of2">
+				<div class="grid-item col1of2">
 					<label for="address">Address Line 2</label>
 					<input type="text" id="address" class="textInput-field" placeholder="Line 2">
 				</div>
 			</div>
 
-			<div class="grid grid--withGutter u-mb3">
-				<div class="grid-item size1of4 exp-date">
+			<div class="grid gutter">
+				<div class="grid-item col1of4 exp-date">
 					<label for="postal-code">Postal Code</label>
 					<input type="text" id="postal-code" class="textInput-field" min="6" max="6">
 				</div>
 
-				<div class="grid-item size1of4 exp-date">
+				<div class="grid-item col1of4 exp-date">
 					<label for="city">City</label>
 					<select>
 						<!-- select tag placeholder: https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
@@ -153,7 +154,7 @@
 					</select>
 				</div>
 
-				<div class="grid-item size1of4 exp-date">
+				<div class="grid-item col1of4 exp-date">
 					<label for="province">Province</label>
 					<select>
 						<option value="" disabled selected>Province</option>
@@ -184,20 +185,20 @@
 					<img class="image" src="img/credit-card-logos.jpg">
 				</div>
 
-				<div class="grid grid--withGutter u-mb3">
-					<div class="grid-item size1of2">
+				<div class="grid gutter">
+					<div class="grid-item col1of2">
 						<label for="f-name">Cardholder Name</label>
 						<input type="text" id="f-name" class="textInput-field" placeholder="First Name">
 					</div>
 
-					<div class="grid-item size1of2">
+					<div class="grid-item col1of2">
 						<label for="f-name">Card Number</label>
 						<input type="text" id="l-name" class="textInput-field" placeholder="Last Name">
 					</div>
 				</div>
 
-				<div class="grid grid--withGutter u-mb3">
-					<div class="grid-item size1of2 exp-date">
+				<div class="grid gutter">
+					<div class="grid-item col1of2 exp-date">
 						<label for="card-name">Expiration Date</label>
 						<select>
 							<option value="" disabled selected>Month</option>
@@ -214,7 +215,7 @@
 							<option value="2020">20</option>
 						</select>
 					</div>
-					<div class="grid-item size1of2">
+					<div class="grid-item col1of2">
 						<label for="text">CVV</label>
 						<input type="text" id="cvv" class="textInput-field">
 					</div>

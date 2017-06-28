@@ -743,18 +743,18 @@ page's input text*/
 }*/
 
 /* -- REGISTRATION PAGE -- */
-.select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
-  margin: 0em 15em;
-}
+.select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons { 
+  margin: 0em 15em; 
+} 
 
-@media (max-width: 1300px) {
-  .select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
-    margin: 0em 10em !important;
-  }
-}
+@media (max-width: 1300px) { 
+  .select-plan, .basic-info, .payment-methods, ..checkbox-form, .buttons { 
+    margin: 0em 10em !important; 
+  } 
+} 
 
 @media (max-width: 750px){
-  .select-plan, .basic-info, .payment-methods, .newsletter-form, .buttons {
+  .select-plan, .basic-info, .payment-methods, ..checkbox-form, .buttons { 
     margin: 0em 5em !important;
   }
 
@@ -766,7 +766,53 @@ page's input text*/
 
 .buttons {
   margin-bottom: 3em;
-  position: absolute;
+  float: right; 
+}
+
+.basic-info label, .payment-methods label {  
+  width: 100%;  
+  display: block;  
+  margin-right: -7em; 
+  font-size: 0.86em; 
+  font-weight: 700; 
+}
+
+.basic-info input[type="text"], .payment-methods input[type="text"], .basic-info select. .payment-methods select {  
+  float: left;  
+  margin-right: 0.5em; 
+} 
+ 
+.gutter { 
+  margin: 0 -0.3em; 
+} 
+ 
+.gutter>.grid-item { 
+  padding: 0 0.3em; 
+} 
+ 
+.col1of2 { 
+  flex-basis: auto; 
+  width: 50%; 
+}
+
+.col1of4 { 
+  width: 25%;
+}
+
+.textInput-field, select { 
+  width: 20em; 
+  border: solid 0.05em #d4d9df; 
+  border-radius: 0.4em; 
+  font-size: 0.86em; 
+  padding: 0.5rem; 
+  margin-top: 0.3rem; 
+  margin-bottom: 1rem; 
+  display: block; 
+}
+
+.select-plan .sub-title, .basic-info .sub-title, .payment-methods .sub-title {
+  font-weight: 600;
+  text-align: left;
 }
 
 .plan-text {
@@ -791,26 +837,7 @@ page's input text*/
   margin-bottom: 0.1rem;
 }
 
-.name-fields label, .email-fields label, .address-fields label {
-  display: block;
-}
-
-.name-fields input, .email-fields input, .address-fields input {
-  display: inline;
-  margin-right: 1.12rem;
-  font-size: 0.86rem;
-}
-
-.basic-info label, .select-plan label, .payment-methods label {
-  font-size: 0.86rem;
-}
-
-select {
-  width: 10rem;
-  font-size: 0.86rem;
-}
-
-#postal-code {
+#postal-code, #cvv {
   width: 7em;
 }
 
@@ -822,30 +849,19 @@ select {
 .method img { /*credit card image */
   min-width: 10rem;
   max-width: 10rem;
-  margin-top: -0.75rem;
-  margin-bottom: 1.5rem;
 }
 
-.method label, .exp-date label {
-  display: block;
+.exp-date select {
+  width: 7em;
 }
 
-.method input[type=radio] {
-  display: inline-block;
-  margin-bottom: 1.5rem;
+.checkbox-form {
+  font-size: 0.86em;
 }
 
-.exp-date select, .exp-date p {
-  display: inline;
-}
-
-.exp-date select, .del-time select {
-  width: 5em;
-}
-
-.newsletter-form input {
-  margin-bottom: 0.75rem;
-  margin-right: 0.75rem;
+.checkbox-form input {
+  margin-bottom: 0.75em;
+  margin-right: 0.75em;
 }
 
 /* step progress bar 
