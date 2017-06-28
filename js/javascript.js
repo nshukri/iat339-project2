@@ -1,5 +1,5 @@
 // source: https://codepen.io/nxworld/pen/OyRrGy?editors=0110
-$(document ).ready(function() {
+$(document).ready(function() {
 	$('#arrow').on('click', function(e) {
 		e.preventDefault();
 		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
@@ -12,6 +12,7 @@ $(document ).ready(function() {
 	    });
 	    console.log("review open");
 	});
+
 });
 
 //onclick in index.html when user click my account
@@ -254,15 +255,39 @@ function reviewOpen8() {
    content.style.left = "0";
 }
 
-//function to get which plan the user selected
+function changeColor() {
+   var plan = document.getElementById("plan-one")
+   plan.style.backgroundColor = 'red'; /*test*/
+
+   if (getPlan() == '1') {
+      var plan = document.getElementById("plan-one")
+      plan.style.backgroundColor = 'green'; /*test*/
+   }
+}
+
 function getPlan() {
    var params = {};
-   var params_array = window.location.href.split('?')[1].split('&');
+   var param_array = window.location.split('?')[1].split('&');
 
-   for (var i in params_array) {
-      x = params_array[i].split('=');
+   for (va i in param_array) {
+      x = param_array[1].split('=');
       params[x[0]] = x[1];
+   } 
+   return params;
+}
+
+
+/*https://stackoverflow.com/questions/26937424/change-button-color-onclick
+
+var count = 1;
+function changeColor2() {
+      if (count == 0) {
+         document.getElementById("plan-one").style.backgroundColor='#eeeeee'
+         count = 1;
+      } else {
+         document.getElementById("plan-one").style.backgroundColor='#efc88b'
+         count = 0;
+      }
    }
 
-   return params
-}
+*/
