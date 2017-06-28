@@ -41,26 +41,33 @@
 		<!-- end of Navigation code -->
 
       	<section>      		
-  		    <div class="col-4of10 confirm-item">
-  		    	<h2>Contact</h2>
+  		    <div class=" grid">
+  		    	<div class="contact-item">
+	  		    	<h2 class="heading2">Contact</h2>
 
-				<form class="form" action="/action_page.php">
-			        <input type="text" id="name" class="textInput-field" placeholder="Name">
-			        <input type="text" id="email" class="textInput-field" placeholder="Your email">
-			        <textarea id="message" class="textInput-field" placeholder=""></textarea>
-			    </form>
+	  		    	<div class="grid-item" id="company_information">
+				   		<h3><img id="account-img" src="img/google map.gif" alt=""></h3>
+				   		<h3 class="heading3">MealBox</h3><br>
+				   		<p>mealbox@email.com<br>2021 Kingsway, Vancouver<br>BC V5N 2T2</p>
+	  		    	</div>
 
-	            <button class="default-button contact-button" onclick="window.location.href='home.html'">send</button>
+	  		    	<div class="grid-item" id="leave_message">
+						<form class="form" action="/action_page.php">
+							<label for="name">Name</label>
+					        <input type="text" id="name" class="textInput-field" placeholder="">
+					        <label for="email">E-Mail</label>
+					        <input type="text" id="email" class="textInput-field" placeholder="">
+					        <label for="message">Message</label>
+					        <textarea id="message" class="textInput-field" placeholder=""></textarea>
+					    </form>
+
+			            <button class="default-button" onclick="window.location.href='index.html'">send</button>
+		            </div>
+	            </div>
 			</div>
       	</section>
-      	
 
-		<section class="footer bottom">
-				<h2 class="heading2 title">Questions?</h2>
-				<p class="paragraph">Call us at <b>604-334-5678</b> or <a class="InText-Link" href="">send us an email here</a></p>
-		</section>
-
-		<section class="legal-footer">
+		<section class="legal-footer bottom">
 			<div class="footer-container">
 				<p>© 2017</p>
 				<a href="styleguide.html">Styleguide</a>
