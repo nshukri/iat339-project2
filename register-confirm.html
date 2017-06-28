@@ -4,6 +4,7 @@
 	<head>
 		<title>Mealbox Registration Confirmation</title> 
 		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
 
 		<link href="css/flex-grid.css" rel="stylesheet">
    		<link href="css/main.css" rel="stylesheet">
@@ -39,30 +40,35 @@
 		</section>
 		<!-- end of Navigation code -->
 
-	<section class="">
-		<h2 class="heading2 title">Register an Account</h2>
-	</section>
+		<section class="">
+			<h2 class="heading2 title">Register an Account</h2>
+		</section>
 
-	<!-- Process Bar -->
-	<div class="progress-bar-container">
-		<ul class="progress-bar">
-			<li class="active"><p>Register</p></li>
-			<li class="active"><p>Review</p></li>
-			<li class="active"><p>Complete</p></li>
-		</ul>
-	</div>
-
-	<section class="confirm-message">    		
-  		   <div class="grid-item">  
-  		    <h2 class="heading2 sub-title">Congratulations!</h2>
-  		    <h3 class="heading3 sub-title">You have successfully registered an account with Mealbox.</h3>   		
-	      	<p>To start ordering your meal boxes please confirm with the validation code sent to your email address. In the meantime, take a look at our <a class="InText-Link" href="menu.html">menu</a> to see what you would like to order for your first meal box!</p>
+		<!-- Process Bar -->
+		<div class="progress-bar-container">
+			<ul class="progress-bar">
+				<li class="active"><p>Register</p></li>
+				<li class="active"><p>Review</p></li>
+				<li class="active"><p>Complete</p></li>
+			</ul>
 		</div>
-	</section>
 
-	<section class="buttons">
-		<button class="default-button" onclick="window.location.href='menu.html'">Go to Menu</button>
-	</section>
+		<section class="message-container">
+			<div class="grid-item">
+				<h2 class="heading2 sub-title">Congratulations!</h2>
+				<h3 class="heading3 sub-title">You have successfully registered an account with Mealbox.</h3>
+				
+				<div class="message">
+					<p class="body">To start ordering your meal boxes please confirm with the validation code sent to your email address. In the meantime, take a look at our <a class="InText-Link" href="menu.html">menu</a> to see what you would like to order for your first meal box!</p>
+				</div>
+			</div>
+
+			<button class="default-button" onclick="window.location.href='menu.html'">Start ordering now</button>
+		</section>
+
+<!-- 		<section class="buttons start-button">
+			<button class="default-button" onclick="window.location.href='menu.html'">Start ordering now</button>
+		</section> -->
 
 	</body>
 </html>
