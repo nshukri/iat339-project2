@@ -15,29 +15,30 @@
 	</head>
 
 	<body>
-		<!-- Navigation code -->
-		<section class="header"> 
-			<nav class="navigation">
-				<nav class="wrapper">
-					<!-- Company Logo -->
+	<!-- Navigation code -->
+	<section class="header"> 
+		<nav class="navigation">
+			<nav class="wrapper">
+				<!-- Company Logo -->
 
-					<a class="nav-logo" href="home.html"><img class="header-logo" src="img/logo.png"> MealBox</a> 
+				<a class="nav-logo" href="index.html">MealBox</a> 
 
-					<!-- mobile hamburger icon -->
-					<input type="checkbox" id="menu-toggle">
-		      			<label for="menu-toggle" class="label-toggle"></label>
-					</input>
+				<!-- mobile hamburger icon -->
+				<input type="checkbox" id="menu-toggle">
+	      			<label for="menu-toggle" class="label-toggle"></label>
+				</input>
 
-					<ul>
-						<li><a class="button-nav" href="menu.html">Menu</a></li>
-						<li><a class="button-nav" href="register.html">Subscription</a></li>
-						<li><a class="button-nav" href="contact.html">Contact</a></li>
-						<!-- Login button styling will be different -->
-						<li><a class="button-nav" href="account.html">My Account</a></li>
-					</ul>
-				</nav>
+				<ul>
+					<li><a class="button-nav" href="menu.html">Menu</a></li>
+					<li><a class="button-nav" href="register.html">Our Plans</a></li>
+					<li><a class="button-nav" href="contact.html">Contact</a></li>
+					<!-- Login button styling will be different -->
+					<li><a class="button-nav" href="account.html">My Account</a></li>
+				</ul>
 			</nav>
-		</section>
+		</nav>
+	</section>
+	<!-- end of Navigation code -->
 
 	<section class="">
 		<h2 class="heading2 title">Register an Account</h2>
@@ -100,98 +101,129 @@
 		<h3 class="heading3 sub-title">Basic Information</h2>
 		<div class="grid">
 		<form class="form" action="/action_page.php">
-			<div class="name-fields">
-				<label for="f-name">Full Name</label>
-				<input type="text" id="f-name" class="textInput-field" placeholder="First Name">
-				<input type="text" id="l-name" class="textInput-field" placeholder="Last Name">
+			<div class="grid grid--withGutter u-mb3">
+				<div class="grid-item size1of2">
+				<!-- <div class="name-fields"> -->
+					<label for="f-name">First Name</label>
+					<input type="text" id="f-name" class="textInput-field" placeholder="First Name">
+				</div>
+				<div class="grid-item size1of2">
+					<label for="l-name">Last Name</label>
+					<input type="text" id="l-name" class="textInput-field" placeholder="Last Name">
+				</div>
 			</div>
 
-			<div class="email-fields">
-				<label for="email">E-mail</label>
-				<input type="email" id="email" class="textInput-field" placeholder="Enter your e-mail">
-				<input type="email" id="email" class="textInput-field" placeholder="Confirm your e-mail">
+			<div class="grid grid--withGutter u-mb3">
+				<div class="grid-item size1of2">
+					<label for="email">E-mail</label>
+					<input type="text" id="email" class="textInput-field" placeholder="Enter your e-mail">
+				</div>
+				<div class="grid-item size1of2">
+					<label for="email">Confirm your E-mail</label>
+					<input type="text" id="email" class="textInput-field" placeholder="Confirm your e-mail">
+				</div>
 			</div>
 
-			<div class="address-fields">
-				<label for="address">Address</label>
-				<input type="text" id="email" class="textInput-field">
-				<input type="text" id="email" class="textInput-field">
+			<div class="grid grid--withGutter u-mb3">
+				<div class="grid-item size1of2">
+					<label for="address">Address</label>
+					<input type="text" id="address" class="textInput-field" placeholder="Line 1">
+				</div>
+				<div class="grid-item size1of2">
+					<label for="address">Address Line 2</label>
+					<input type="text" id="address" class="textInput-field" placeholder="Line 2">
+				</div>
 			</div>
 
-			<label for="city">City</label>
-				<select>
-					<option value="" disabled selected>City</option>
-					<option value="burnaby">Burnaby</option>
-					<option value="surrey">Surrey</option>
-					<option value="vancouver">Vancouver</option>
-					<option value="victoria">Victoria</option>
-				</select>
+			<div class="grid grid--withGutter u-mb3">
+				<div class="grid-item size1of4 exp-date">
+					<label for="postal-code">Postal Code</label>
+					<input type="text" id="postal-code" class="textInput-field" min="6" max="6">
+				</div>
 
-			<label for="postal-code">Postal Code</label>
-				<input type="text" id="postal-code" class="textInput-field" min="6" max="6">
+				<div class="grid-item size1of4 exp-date">
+					<label for="city">City</label>
+					<select>
+						<!-- select tag placeholder: https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
+						<option value="" disabled selected>City</option>
+						<option value="burnaby">Burnaby</option>
+						<option value="surrey">Surrey</option>
+						<option value="vancouver">Vancouver</option>
+						<option value="victoria">Victoria</option>
+					</select>
+				</div>
 
-			<label for="province">Province</label>
-				<select>
-					<option value="" disabled selected>Province</option>
-					<option value="alberta">Alberta</option>
-					<option value="bc">British Columbia</option>
-					<option value="manitoba">Manitoba</option>
-					<option value="ontario">Ontario</option>
-				</select>
-
-			<label for="country">Country</label>
-				<select>
-					<option value="" disabled selected>Country</option>
-					<!-- select tag placeholder: https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
-					<option value="canada">Canada</option>
-					<option value="china">China</option>
-					<option value="japan">Japan</option>
-					<option value="america">United States</option>
-				</select>
+				<div class="grid-item size1of4 exp-date">
+					<label for="province">Province</label>
+					<select>
+						<option value="" disabled selected>Province</option>
+						<option value="alberta">Alberta</option>
+						<option value="bc">British Columbia</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="alberta">New Brunswick</option>
+						<option value="alberta">Newfoundland and Labrador</option>
+						<option value="alberta">Nova Scotia</option>
+						<option value="ontario">Ontario</option>
+						<option value="bc">Prince Edward Island</option>
+						<option value="manitoba">Quebec</option>
+						<option value="ontario">Saskatchewan</option>
+					</select>
+				</div>
+			</div>
 		</form>
 		</div>
 	</section>
 
 	<!-- Payment Methods -->
 	<section class="payment-methods">
-		<h3 class="heading3 sub-title">Payment Method</h
-		<form class="form" action="">
-			<div class="method">
-				<p class="body">Accepted Cards</p>
-				<img class="image" src="img/credit-card-logos.jpg"> 
-			</div>
+		<h3 class="heading3 sub-title">Payment Methods</h2>
+		<div class="grid">
+			<form class="form" action="/action_page.php">
+				<div class="method">
+					<label class="body">Accepted Cards</label>
+					<img class="image" src="img/credit-card-logos.jpg">
+				</div>
 
-			<label for="card-name">Cardholder Name</label>
-			<input type="name" id="cardholder-name" class="textInput-field">
+				<div class="grid grid--withGutter u-mb3">
+					<div class="grid-item size1of2">
+						<label for="f-name">Cardholder Name</label>
+						<input type="text" id="f-name" class="textInput-field" placeholder="First Name">
+					</div>
 
-			<label for="card-num">Card Number</label>
-			<input type="number" id="cardholder-num" class="textInput-field">
+					<div class="grid-item size1of2">
+						<label for="f-name">Card Number</label>
+						<input type="text" id="l-name" class="textInput-field" placeholder="Last Name">
+					</div>
+				</div>
 
-			<div class="exp-date">
-				<label for="card-name">Expiration Date</label>
-				<select>
-					<option value="" disabled selected>Month</option>
-					<option value="jan">01</option>
-					<option value="feb">02</option>
-					<option value="mar">03</option>
-					<option value="apr">04</option>
-					</select>
-				<p>/</p>
-				<select>
-					<option value="" disabled selected>Year</option>
-					<option value="2017">17</option>
-					<option value="2018">18</option>
-					<option value="2019">19</option>
-					<option value="2020">20</option>
-				</select>
-				
-				<label for="cvv">CVV</label>
-				<input type="number" id="cvv" class="quantity-field">
-			</div>
-		</form>
+				<div class="grid grid--withGutter u-mb3">
+					<div class="grid-item size1of2 exp-date">
+						<label for="card-name">Expiration Date</label>
+						<select>
+							<option value="" disabled selected>Month</option>
+							<option value="jan">01</option>
+							<option value="feb">02</option>
+							<option value="mar">03</option>
+							<option value="apr">04</option>
+						</select>
+						<select>
+							<option value="" disabled selected>Year</option>
+							<option value="2017">17</option>
+							<option value="2018">18</option>
+							<option value="2019">19</option>
+							<option value="2020">20</option>
+						</select>
+					</div>
+					<div class="grid-item size1of2">
+						<label for="text">CVV</label>
+						<input type="text" id="cvv" class="textInput-field">
+					</div>
+				</div>
+			</form>
+		</div>
 	</section>
 
-	<section class="newsletter-form">
+	<section class="checkbox-form">
 		<input type="checkbox" name="news">I wish to receive Mealbox news on my e-mail<br>
 		<input type="checkbox" name="terms">I accept the Mealbox <a class="InText-Link" href="#">terms</a> and <a class="InText-Link" href="#">privacy statement</a>
 	</section>
