@@ -20,6 +20,9 @@ function loginPanel () {
    var login = document.getElementById("login-panel");
    login.style.visibility = "visible";
    console.log("test login");
+
+   var nav = document.getElementById("nav-links");
+   nav.style.height = "0";
 }
 
 function loginClose () {
