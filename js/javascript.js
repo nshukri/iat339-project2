@@ -22,7 +22,7 @@ function loginPanel () {
    console.log("test login");
 
    var nav = document.getElementById("nav-links");
-   nav.style.height = "0";
+   nav.style.height = "";
 }
 
 function loginClose () {
