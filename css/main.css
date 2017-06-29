@@ -763,7 +763,7 @@ page's input text*/
 }
 /*set input boxes' location on the center as well*/
 /*learnt from https://stackoverflow.com/questions/1281403/place-input-box-at-the-center-of-div*/
-#name,#email,#message{
+.contactForm #name, .contactForm #email, .contactForm#message{
   position: relative;
   margin:0 auto;
 }
