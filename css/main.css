@@ -620,12 +620,12 @@ float to the right*/
 
 /*set size of image in account page*/
 #account-img{
-  width:100px;
+  width:150px;
 }
 
 /*styling image in account page*/
 #account-img:hover{
-  opacity: 0.7
+  opacity: 0.7;
 }
 
 #personalInformation,#changePassword,#paymentDetails{
@@ -677,9 +677,17 @@ page's input text*/
 }
 
 /* -- CONTACT PAGE -- */
-.thanksContact,.contactForm,#name,#email,#message{
+/*setting elements on contact page center on the center  */
+.thanksContact,.contactForm{
   width:100%;
   text-align: center;
+}
+
+/*set input boxes' location on the center as well*/
+/*learnt from https://stackoverflow.com/questions/1281403/place-input-box-at-the-center-of-div*/
+#name,#email,#message{
+  position: relative;
+  margin:0 auto;
 }
 
 /* -- OUR PLANS PAGE -- */
