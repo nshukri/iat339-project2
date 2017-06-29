@@ -41,27 +41,85 @@
 		<!-- end of Navigation code -->
 
 		<!-- section for order review -->
-      	<section>    		
-  		    <div class="grid-col-4of10 order-confirm-text">
-  		    	<h2>How was your previous meal?</h2>
-	      		<h3>Chicken broccoli</h3>
-	      		<br>
-
-	      		<!-- add img -->
-	      		<img src="img/picture1.jpg" alt="" class="order-confirm-img">
-	      		<img src="img/tofu-fry.jpg" alt="" class="order-confirm-img">
-	      		<img src="img/Ultimate BBQ Burger.jpg" alt="" class="order-confirm-img">
-
-	      		<!-- add review field -->
-	      		<textarea id="message" class="textInput-field order-review" placeholder=""></textarea>
-
-	      		<!-- add buttons -->
-	      		<div class="confirm-button">
-		      		<a href="menu.html" class="InText-Link">skip</a>
-		            <button class="default-button" onclick="window.location.href='order-confirm.html'">Submit Review</button>
-	            </div>
-			</div>
+      	<section class="food-review"> 
+      		<article id="review-form">	
+	  		    <div class="grid">
+		  		    <div class="grid-item">
+		  		    	<h1 class="tag-line">Let us know what you think</h1>
+		  		    </div>
+	  		    </div>
+	  		    <div class="grid">
+	  		    	<div class="grid-item">
+	  		    		<h2 class="heading3">What did you have last time?</h2>
+		  		    	<select  class="dropDown-menu" name="food-name-review">
+						  <option value="placeholder">I had...</option> 
+						  <option value="food1">California Burger</option>
+						  <option value="food2">Zen Spring Rolls</option>
+						  <option value="food2">Buffalo Chickpea Burger</option>
+						</select>
+		  		    </div>
+	  		    </div>
+	  		    <!-- Star Rating -->
+	  		    <div class="grid star-container">
+	  		   		<!-- 1 star -->
+	  		    	<div class="grid-item">
+	  		    		<img class="full-star-image" id="full-star1" onclick="star1()" src="img/full-star.png" alt="star-full">
+	  		    		<img class="star-image" id="empty-star1" src="img/empty-star.png" alt="star-full">
+	  		    	</div>
+	  		    	<!-- 2 star -->
+	  		    	<div class="grid-item">
+	  		    		<img class="full-star-image" id="full-star2" onclick="star2()"  src="img/full-star.png" alt="star-full">
+	  		    		<img class="star-image" src="img/empty-star.png" alt="star-full">
+	  		    	</div>
+	  		    	<!-- 3 star -->
+	  		    	<div class="grid-item">
+	  		    		<img class="full-star-image" id="full-star3" onclick="star3()"  src="img/full-star.png" alt="star-full">
+	  		    		<img class="star-image" src="img/empty-star.png" alt="star-full">
+	  		    	</div>
+	  		    	<!-- 4 star -->
+	  		    	<div class="grid-item">
+	  		    		<img class="full-star-image" id="full-star4" onclick="star4()" src="img/full-star.png" alt="star-full">
+	  		    		<img class="star-image" src="img/empty-star.png" alt="star-full">
+	  		    	</div>
+	  		    	<!-- 5 star -->
+	  		    	<div class="grid-item">
+	  		    		<img class="full-star-image" id="full-star5" onclick="star5()" src="img/full-star.png" alt="star-full">
+	  		    		<img class="star-image" src="img/empty-star.png" alt="star-full">
+	  		    	</div>
+	  		    </div>
+	  		    <div class="grid">
+	  		    	<div class="grid-item">
+	  		    		<!-- add review field -->
+		      			<textarea class="textInput-field" placeholder=""></textarea>
+	  		    	</div>
+	  		    </div>
+		      	<div class="grid">
+		      		<div class="grid-item">
+		      			<button class="default-button" onclick="reviewSubmit()">Submit Review</button>
+		      		</div>
+		      	</div>
+		      	<div class="grid">
+		      		<div class="grid-item">
+		      			<a href="menu.html" class="InText-Link">skip</a>
+		      		</div>
+		      	</div>
+	      	</article>
+	      	<!-- submit feedback -->
+	      	<article id="review-submitted">
+	      		<div class="grid">
+		      		<div class="grid-item">
+		      			<h1 class="tag-line">Thank you!</h1>
+		      			<h2 class="heading3">Your feedback helps us grow!</h2>
+		      		</div>
+		      	</div>
+	      		<div class="grid">
+		      		<div class="grid-item">
+		      			<button class="default-button" onclick="window.location.href='menu.html'">Back to Menu</button>
+		      		</div>
+		      	</div>
+      		</article>
       	</section>
+      	
 
       	<!-- footer section -->
       	<section class="footer bottom">
@@ -70,5 +128,6 @@
 			<p class="copyright">Copyright 2017</p>
 		</section>
 
+		<script language="JavaScript" type="text/javascript" src="js/javascript.js"></script>
 	</body>
 </html>
