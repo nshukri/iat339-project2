@@ -101,6 +101,13 @@ a {
   color: #24272b;
   margin: 1em 0 2em 0; 
 }
+
+.section-title {
+  font-weight: 600;
+  text-align: left;
+  color: #24272b;
+  margin: 1em 0 2em 0; 
+}
  
 .body {
   font-weight: 300;
@@ -853,11 +860,6 @@ page's input text*/
   width: 25%;
 }
 
-.select-plan .sub-title, .basic-info .sub-title, .payment-methods .sub-title {
-  font-weight: 600;
-  text-align: left;
-}
-
 .plan-text {
   width: 15em;
   padding: 1.5em !important;
@@ -912,6 +914,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 
 .progress-bar-container {
   width: 100%;
+  margin: 0 auto;
 }
 
 .progress-bar {
@@ -927,6 +930,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   font-weight: 700;
   color: #596068; 
   margin-bottom: 2rem;
+  /*border: 1px solid yellow;*/
 }
 
 .progress-bar li p {
@@ -991,24 +995,23 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 
   /*.selected-menu, .shipping-info, .del-time {
     margin: 0 !important;
-  }*/
+  }
+}*/
+
+.selected-menu, .shipping-info, .del-time {
+  /*border: 1px solid red;*/
+  margin: 0 auto;
+  width: 75%;
+
 }
 
-.selected-menu .sub-title, .shipping-info .sub-title, .del-time .sub-title {
-  font-weight: 600 !important;
-  text-align: left !important;
+.selected-menu .grid-item {
+  padding: 0 !important;
 }
 
-/*this doesn't work*/
-
-.selected-menu, .shipping-info {
-  padding: 0 15em;
-  border: 1px solid red;
-}
-
-.selected-items, .shipping-info {
+.selected-items {
   margin: 0;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 .selected-items .item-image {
@@ -1023,47 +1026,27 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 }
 
 
-.item-column {
+#item-image, #item-description {
   margin-right: 4em;
-
-  /*width: 33.33%;
-  flex: 0 0 100%;
-  text-align: left;
-  margin: 0 0.5em;*/
 }
 
-@media (max-width: 80em){
-  .selected-menu, .shipping-info  {
-    padding: 0 7em;
+@media (max-width: 50em){
+  .selected-menu {
+    min-width: 50%;
+    margin: 0 auto;
   }
 
-  .item-column {
-
+  .selected-items .item-image {
+    max-width: 100%;
   }
-} 
 
-@media (max-width: 62.5em){
-  .selected-menu, .shipping-info  {
-      padding: 0 3em;
-  }
-}
-
-  @media (max-width: 50em){
   .selected-items {
     flex-direction: column;
   }
 
-  .selected-items .item-image {
-    align-items: center;
+  #item-image, #item-description {
+    margin-right: 0;
   }
-
-  .item-column {
-    margin-left: 1em;
-    width: 15em;
-    justify-content: center;
-    algin-items: center;
-  }
-
 } 
 
 .selected-items p {
