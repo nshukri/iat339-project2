@@ -280,6 +280,99 @@ nav .wrapper {
 
 }
 
+/* styling for Progress Step 
+Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
+.progress-bar-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  counter-reset: step;
+}
+
+.progress-bar li {
+  list-style-type: none;
+  float: left;
+  width: 33.33%;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  color: #596068; 
+  margin-bottom: 2rem;
+  /*border: 1px solid yellow;*/
+}
+
+.progress-bar li p {
+  color: #d4d9df;
+  margin-top: 0.5rem;
+}
+
+.progress-bar li:before {
+  content: counter(step); /*conuter-rest*/
+  counter-increment: step;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid #d4d9df; 
+  display: block;
+  text-align: center;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+  background-color: #eee; 
+  font-size: 1em; /* font size of number */ 
+}
+
+/*line*/
+.progress-bar li:after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 7px; 
+  background-color: #eee; 
+  border: 1px solid #d4d9df; 
+  top: 0.8rem; /*half of the w/h of the circle*/ 
+  left: -50%;
+  z-index: -1;
+}
+
+/*this makes the line start at the first circle*/
+.progress-bar li:first-child:after {
+  content: none;
+}
+
+.progress-bar li.active {
+  color: white;
+}
+
+.progress-bar li.active p {
+  color: #cf5c36;
+}
+
+.progress-bar li.active:before {
+  border-color: #d4d9df;
+  background-color: #cf5c36;
+}
+
+.progress-bar li.active:after {
+  background-color: #cf5c36;
+} 
+
+/* Styling for Plan Cards */
+.plan-description {
+  min-height: 4em;
+  font-size: 0.86em;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.content-box {
+  background-color: white;
+  border: 1px solid #eee;
+  padding: 2em;
+  text-align: center;
+  width: 23%;
+}
+
 /* Styling for Product Listing*/
 .item-content {
   width: 100%;

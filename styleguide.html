@@ -198,30 +198,40 @@
 
       <!-- Bullet List styling section -->
       <section>
-        <h2>Bulleted Lists</h2>
+        <h2>Progress Bar</h2>
 
         <h3>CSS selector</h3>
-        <p>.bullet-list</p>
+        <p>.progress-bar-container</p>
+        <p>.progress-bar</p>
+        <p>.active</p>
+
 
         <h3>Sample code:</h3>
         <code>
-          &lt;ul class="bullet-list">
+          &lt;div class="progress-bar-container"&gt;
           <br>
-            &lt;li&gt;item 1&lt;/li&gt;
+          &lt;ul class="progress-bar">
+          <br>
+            &lt;li class="active"&gt;&lt;p&gt;Order&lt;/li&gt;
             <br>
-            &lt;li&gt;item 2&lt;/li&gt;
+            &lt;li&gt;Review&lt;/li&gt;
             <br>
-            &lt;li&gt;item 3&lt;/li&gt;
+            &lt;li&gt;Done!&lt;/li&gt;
           <br>
           &lt;/ul&gt;
+          <br>
+           &lt;/div&gt;
         </code>
 
         <h3>Rendered element:</h3>
-        <ul class="bullet-list">
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-        </ul>
+        <!-- Process Bar -->
+        <div class="progress-bar-container">
+          <ul class="progress-bar">
+            <li class="active"><p>Order</p></li>
+            <li><p>Review</p></li>
+            <li><p>Done!</p></li>
+          </ul>
+       </div>
       </section>
 
       <!-- NUmbered list styling section -->
@@ -233,25 +243,26 @@
 
         <h3>Sample code:</h3>
         <code>
-          &lt;ol class="numbered-list">
+          &lt;div class="content-box"&gt;
           <br>
-            &lt;li&gt;item a&lt;/li&gt;
+            &lt;h3 class="heading3"&lt;1 Month Plan&lt;/h3&lt;
             <br>
-            &lt;li&gt;item b&lt;/li&gt;
+            &lt;h4 class="plan-price"&lt;$445.00&lt;/h4&lt;
             <br>
-            &lt;li&gt;item c&lt;/li&gt;
+            &lt;p class="plan-description body"&lt;Don’t have time to cook for the next month? Select this short 1 month plan to receive meal boxes and not worry about cooking.&lt;/p&gt;
+            <br>
+            &lt;button class="default-button" onclick="window.location.href='register-plan-2.html'"&gt;Select Plan&lt;/button&gt;
           <br>
-          &lt;/ol&gt;
+          &lt;/div&gt;
         </code>
 
         <h3>Rendered element:</h3>
-        <ol class="numbered-list">
-          <li>item a</li>
-          <li>item b</li>
-          <li>item c</li>
-        </ol>
-      </section>
-
+        <div class="content-box">
+          <h3 class="heading3">1 Month Plan</h3>
+          <h4 class="plan-price">$445.00</h4>
+          <p class="plan-description body">Don’t have time to cook for the next month? Select this short 1 month plan to receive meal boxes and not worry about cooking.</p>
+          <button class="default-button" onclick="window.location.href='register-plan-2.html'">Select Plan</button>
+        </div>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -387,7 +398,7 @@
 
       <!-- contact form section which learnt from https://www.w3schools.com/howto/howto_css_contact_form.asp-->
       <section>
-        <h2> Contact </h2>
+        <h2>Contact</h2>
 
         <h3>CSS selector</h3>
         <p>input</p>
