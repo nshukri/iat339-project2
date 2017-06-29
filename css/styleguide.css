@@ -215,10 +215,13 @@ a {
 */
 
 /* Styling for Navigation*/
+/* logotype */
 .nav-logo {
   left: 0;
   font-size: 1.2em;
   margin: 0.5em 0em;
+  padding: 0 1em;
+  border: solid 0.18em #fff;
   z-index: 3;
   top: 0;
   color: #FFF;
@@ -271,16 +274,149 @@ nav .wrapper {
 }
 
 /* Styling for Product Listing*/
-.p-listing {
+.item-content {
   width: 100%;
-  padding-bottom: 2rem;
+ /* visibility: hidden;*/
+  transition: bottom 0.5s ease;
+  /*display: block;*/
+  background: rgba( 0, 0, 0, 0.7);
+  bottom: -86%;
+  color: #fff;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2em;
+  position: absolute;
+  transition: all 0.5s ease;
+  width: 100%;
+
+  /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
+
 }
 
-/* Contact Form */
-label {
-  font-size: 1em;
-  font-weight: 700;
+.menu-item:hover .item-content{
+  bottom: 0%;
 }
+
+.item-title { /* title of product */
+  position: absolute;
+  /*background-color: rgba(0,0,0, 0.6);*/
+  z-index: 2;
+  color: white !important;
+  top: 0.5em;
+  padding-right: 1em;
+  transition: ease 0.5s;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.review-link {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  top: 4.1em;
+}
+
+.review-link:hover {
+  opacity: 0.8;
+}
+
+.item-content p {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 6em;
+  width: 80%;
+}
+
+.item-content button {
+  position: absolute;
+  z-index: 2;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.add-item {
+  font-size: 1.1em;
+  text-align: center;
+  width: 70%;
+}
+
+.item-reviews{
+  width: 100%;
+ /* visibility: hidden;*/
+  bottom: -100%;
+  transition: bottom 0.5s ease;
+  /*display: block;*/
+  background: rgba( 0, 0, 0, 0.7);
+  color: #fff;
+  height: 100%;
+  left: 100%;
+  right: 0;
+  margin: 0 auto;
+  padding: 2em;
+  position: absolute;
+  transition: all 0.5s ease;
+  width: 100%;
+
+  /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
+}
+
+.menu-item:hover .item-reviews{
+  bottom: 0%;
+}
+
+.review-title { /* title of product */
+  position: absolute;
+  /*background-color: rgba(0,0,0, 0.6);*/
+  z-index: 2;
+  color: white !important;
+  padding-right: 1em;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.user-reviews {
+  position: absolute;
+  top: 4em;
+  margin: auto;
+}
+
+.rating {
+  height: 15px;
+  width: 80px;
+  padding-right: 0.3em;
+}
+
+.comment {
+  position: block;
+  color: white !important;
+  margin-bottom: 1.5em;
+  padding-right: 2em;
+}
+
+.review-back {
+  position: absolute;
+  z-index: 2;
+  top: 0.7em;
+  left: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.back-icon {
+  width: 0.688em;
+  height: 1.250em;
+  margin-bottom: -0.2em;
+}
+
+.review-back:hover{
+  opacity: 0.8;
+}
+
 
 /* Grid Structure */
 

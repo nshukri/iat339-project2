@@ -30,6 +30,26 @@
 
     </nav>
 
+    <!-- Navigation code -->
+    <section class="header"> 
+      <nav class="navigation">
+        <nav class="wrapper">
+          <!-- Company Logo -->
+
+          <a class="nav-logo" href="index.html">MealBox</a> 
+
+          <ul>
+            <li><a class="button-nav" href="menu.html">Menu</a></li>
+            <li><a class="button-nav" href="our-plans.html">Our Plans</a></li>
+            <li><a class="button-nav" href="contact.html">Contact</a></li>
+            <!-- Login button styling will be different -->
+            <li><a class="button-nav" href="account.html">My Account</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </section>
+    <!-- end of Navigation code -->
+
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
 
@@ -307,43 +327,70 @@
 
         <h3>CSS selector</h3>
         <p>.navigation</p>
+        <p>.wrapper</p>
+        <p>.nav-logo</p>
         <p>.button-nav</p>
 
         <h3>Sample code:</h3>
         <code>
            &lt;nav class="navigation">
             <br>
-            &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;
+            &lt;nav class="wrapper">
             <br>
-            &lt;a class="button-nav" href="#"&gt;Subscription&lt;/a&gt;
+            &lt;a class="nav-logo" href="index.html">MealBox&lt;/a&gt;
             <br>
-            &lt;a class="button-nav" href="#"&gt;Contact&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a class="button-nav" href="menu.html">Menu&lt;/a&gt;&lt;/li&gt;
+              <br>
+              &lt;li&gt;&lt;a class="button-nav" href="our-plans.html">Our Plans&lt;/a&gt;&lt;/li&gt;
+              <br>
+              &lt;li&gt;&lt;a class="button-nav" href="contact.html">Contact&lt;/a&gt;&lt;/li&gt;
+              <br>
+              &lt;li&gt;&lt;a class="button-nav" href="account.html">My Account&lt;/a&gt;&lt;/li&gt;
             <br>
-            &lt;a class="button-nav" href="#"&gt;My Account&lt;/a&gt;
+            &lt;/nav>
             <br>
           &lt;/nav>
         </code>
 
         <h3>Rendered element:</h3>
-        <a class="nav-logo" href="h#">MealBox</a>
         <nav class="navigation">
-          <a class="button-nav" href="#">Menu</a>
-          <a class="button-nav" href="#">Subscription</a> 
-          <a class="button-nav" href="#">Contact</a>
-          <a class="button-nav" href="#">My Account</a> 
-        </nav>
+          <nav class="wrapper">
+            <a class="nav-logo" href="index.html">MealBox</a> 
+            <ul>
+              <li><a class="button-nav" href="menu.html">Menu</a></li>
+              <li><a class="button-nav" href="our-plans.html">Our Plans</a></li>
+              <li><a class="button-nav" href="contact.html">Contact</a></li>
+              <li><a class="button-nav" href="account.html">My Account</a></li>
+            </ul>
+          </nav>
+      </nav>
 
       <!-- Product Listing Section -->
       <section>
         <h2>Product Listing</h2>
 
         <h3>CSS selector</h3>
-        <p>.p-listing</p>
+        <p>.grid-item</p>
+        <p>.menu-item</p>
+        <p>.container</p>
+        <p>.item-content</p>
+        <p>#foodContent-1</p>
         <p>.heading3</p>
-        <p>.price</p>
-        <p>.description-text</p>
-        <p>.subscribe-button</p>
-        <p>learn-more-button</p>
+        <p>.item-title</p>
+        <p>.inText-Link</p>
+        <p>.review-link</p>
+        <p>.rating</p>
+        <p>.paragraph</p>
+        <p>.default-button</p>
+        <p>.add-item</p>
+        <p>.item-reviews</p>
+        <p>#itemReview-1</p>
+        <p>.review-back</p>
+        <p>.back-icon</p>
+        <p>.review-title</p>
+        <p>.user-reviews</p>
+        <p>.comment</p>
 
         <h3>Sample code:</h3>
         <code>
@@ -358,14 +405,43 @@
         </code>
 
         <h3>Rendered element:</h3>
-        <div class="p-listing">
-          <img src="img/picture1.jpg" alt="buddha-bowl">
-          <h3 class="heading3">Buddha Bowl</h3>
-          <p class="price">$47.00</p>
-          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.</p>
-          <button class="subscribe-button">subscribe</button>
-          <button class="learn-more-button">learn more</button>
+        <div  class="grid-item menu-item container">
+        
+        <!-- food content -->
+        <div class="item-content" id="foodContent-1">
+          <h3 class="heading3 item-title">California Burger</h3>
+          <a class="InText-Link review-link" onclick="reviewOpen1();"><img class="rating" src="img/rating-full.png" alt="">Review</a>
+          <p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p> 
+          
+           <button class="default-button add-item" onclick="window.location.href='order.html'">Add</button>
+        </div> 
+
+        <!-- Item Review Section -->
+        <div class="item-reviews" id="itemReview-1" onmouseleave="resetContent1()">
+          <a class="InText-Link review-back" onclick="backContent1();"> 
+            <!-- SVG back icon -->
+            <svg class="back-icon" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+  
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-8.000000, -11.000000)" fill="#cf5c36">
+                        <g transform="translate(8.000000, 11.000000)">
+                            <polygon points="0.5 11 11 0.5 13 2.5 4.5 11 13 19.5 11 21.5"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          Back</a>
+
+          <h3 class="heading3 review-title">Member Reviews</h3>
+          <article class="user-reviews">
+            <img class="rating" src="img/rating-full.png" alt="full-rating">
+            <p class="paragraph comment">I am surprised by how delicious this burger is! I'm usually someone who doesn't like burgers and sandwiches but this is the best burger I've ever had! Not to mention the burger was still hot when it arrived.</p>
+          </article>
         </div>
+
+        <img class="image" src="img/burger.jpg" alt="" >
+      </div>
       </section>
 
 
@@ -491,6 +567,6 @@
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
-
+    <script type="text/javascript" src="js/javascript.js"></script>
   </body>
 </html>
