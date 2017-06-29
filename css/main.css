@@ -357,6 +357,15 @@ nav .wrapper {
   overflow: hidden;
 }
 
+@media (max-width: 65em){
+  .home-section, .home-container {
+    height: 89vh;
+  }
+  .home-content {
+    top: 18% !important;
+  }
+}
+
 #img-home {
   background-color: #d9d9d9;
   /*height: 100%;*/
