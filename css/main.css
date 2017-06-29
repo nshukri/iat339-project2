@@ -153,6 +153,7 @@ label {
   margin-top: 0.3rem;
   margin-bottom: 1rem;
   display: block;
+  font-family: 'Open sans', sans-serif;
 }
 
 .dropDown-menu { 
@@ -664,6 +665,63 @@ float to the right*/
   .confirm-msg{
     margin-left: 1em;
   }
+}
+/*Food Review page*/
+.food-review {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.food-review h1 {
+  margin-top: 1em;
+}
+
+.food-review select{
+  left:0;
+  right:0;
+  margin: auto;
+  width: 40em;
+  height: 2.5em;
+}
+.food-review textarea {
+  width: 40em;
+  height: 20em;
+  margin: auto;
+  left:0;
+  right:0;
+}
+.star-container {
+  width: 40em;
+  margin: auto;
+  left:0;
+  right: 0;
+}
+
+.full-star-image {
+  width: 2.5em;
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+}
+
+.full-star-image:hover {
+  /*opacity: 1;*/
+}
+
+.star-image {
+  position: relative;
+  width: 2.5em;
+}
+
+#review-submitted {
+  text-align: center;
+  z-index: 5;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  right: 0;
+  visibility: hidden;
 }
 
 /* -- ORDER (WRITE A) REVIEWS PAGE -- */

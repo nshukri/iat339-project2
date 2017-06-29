@@ -236,6 +236,8 @@ function reviewOpen8() {
    var content = document.getElementById('foodContent-8');
    content.style.left = "-200%";
  }
+//End of Menu.html javascript
+
 
 
  function backContent8() {
@@ -276,6 +278,136 @@ function getPlan() {
    return params;
 }
 
+
+
+//food-review page
+//1 star
+function star1(){
+   var star1 = document.getElementById("full-star1");
+   var star2 = document.getElementById("full-star2");
+   var star3 = document.getElementById("full-star3");
+   var star4 = document.getElementById("full-star4");
+   var star5 = document.getElementById("full-star5");
+   // 
+   var opacity = star1.style.opacity;
+   // console.log (opacity)
+   ;
+   if (opacity == 0) {
+      star1.style.opacity = "1";
+   }
+   else if (opacity == 1) {
+      star1.style.opacity = "0";
+      star2.style.opacity = "0";
+      star3.style.opacity = "0";
+      star4.style.opacity = "0";
+      star5.style.opacity = "0";
+      // console.log("test star 2");
+   }
+}
+
+//star 2
+function star2(){
+   var star1 = document.getElementById("full-star1");
+   var star2 = document.getElementById("full-star2");
+   var star3 = document.getElementById("full-star3");
+   var star4 = document.getElementById("full-star4");
+   var star5 = document.getElementById("full-star5");
+   // 
+   var opacity = star2.style.opacity;
+   // console.log (opacity)
+   ;
+   if (opacity == 0) {
+      star1.style.opacity = "1";
+      star2.style.opacity = "1";
+   }
+   else if (opacity == 1) {
+      star3.style.opacity = "0";
+      star4.style.opacity = "0";
+      star5.style.opacity = "0";
+      // console.log("test star 2");
+   }
+}
+
+//star 3
+function star3(){
+   var star1 = document.getElementById("full-star1");
+   var star2 = document.getElementById("full-star2");
+   var star3 = document.getElementById("full-star3");
+   var star4 = document.getElementById("full-star4");
+   var star5 = document.getElementById("full-star5");
+   // 
+   var opacity = star3.style.opacity;
+   // console.log (opacity)
+   ;
+   if (opacity == 0) {
+      star1.style.opacity = "1";
+      star2.style.opacity = "1";
+      star3.style.opacity = "1";
+   }
+   else if (opacity == 1) {
+      star4.style.opacity = "0";
+      star5.style.opacity = "0";
+      // console.log("test star 2");
+   }
+}
+
+
+//star 4
+function star4(){
+   var star1 = document.getElementById("full-star1");
+   var star2 = document.getElementById("full-star2");
+   var star3 = document.getElementById("full-star3");
+   var star4 = document.getElementById("full-star4");
+   var star5 = document.getElementById("full-star5");
+   // 
+   var opacity = star4.style.opacity;
+   // console.log (opacity)
+   ;
+   if (opacity == 0) {
+      star1.style.opacity = "1";
+      star2.style.opacity = "1";
+      star3.style.opacity = "1";
+      star4.style.opacity = "1";
+   }
+   else if (opacity == 1) {
+      star5.style.opacity = "0";
+      // console.log("test star 2");
+   }
+}
+
+//star 5
+function star5(){
+   var star1 = document.getElementById("full-star1");
+   var star2 = document.getElementById("full-star2");
+   var star3 = document.getElementById("full-star3");
+   var star4 = document.getElementById("full-star4");
+   var star5 = document.getElementById("full-star5");
+   // 
+   var opacity = star5.style.opacity;
+   // console.log (opacity)
+   ;
+   if (opacity == 0) {
+      star1.style.opacity = "1";
+      star2.style.opacity = "1";
+      star3.style.opacity = "1";
+      star4.style.opacity = "1";
+      star5.style.opacity = "1";
+   }
+   else if (opacity == 1) {
+      star5.style.opacity = "0";
+      // console.log("test star 2");
+   }
+}
+
+// show form submitted when user press Submit button in food-review.html
+function reviewSubmit() {
+   var showReviewForm = document.getElementById("review-submitted");
+   showReviewForm.style.visibility = "visible";
+
+   var hideReviewForm = document.getElementById("review-form");
+   hideReviewForm.style.visibility = "hidden";
+
+}
 
 /*https://stackoverflow.com/questions/26937424/change-button-color-onclick
 
