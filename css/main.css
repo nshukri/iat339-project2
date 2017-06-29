@@ -689,11 +689,15 @@ page's input text*/
 
 /* -- CONTACT PAGE -- */
 /*setting elements on contact page center on the center  */
-.thanksContact,.contactForm{
+.contactForm,.thanksContact {
   width:100%;
   text-align: center;
-}
 
+}
+/*set the least length for paragraph*/
+.thanksContact p{
+   min-width: 20em;
+}
 /*set input boxes' location on the center as well*/
 /*learnt from https://stackoverflow.com/questions/1281403/place-input-box-at-the-center-of-div*/
 #name,#email,#message{
