@@ -698,6 +698,11 @@ page's input text*/
 .thanksContact p{
    min-width: 20em;
 }
+.paraContact{
+  text-align: left;
+  width:50%;
+  margin:0 auto;
+}
 /*set input boxes' location on the center as well*/
 /*learnt from https://stackoverflow.com/questions/1281403/place-input-box-at-the-center-of-div*/
 #name,#email,#message{
