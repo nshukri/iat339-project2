@@ -752,28 +752,110 @@ page's input text*/
 }
 
 /* -- CONTACT PAGE -- */
-/*setting elements on contact page center on the center  */
-.contactForm,.thanksContact {
-  width:100%;
-  text-align: center;
 
+.contact {
+  margin: auto;
+  text-align: center;
 }
-/*set the least length for paragraph*/
-.thanksContact p{
-   min-width: 20em;
+
+.contact-container {
+  position: relative;
 }
-.paraContact{
+
+.contact h1, h2{
+  width: 100%;
+  margin: auto;
+  padding-top: 1em;
+  left:0;
+  right: 0;
+}
+
+.contact p {
+  width: 60em;
+  margin: auto;
+  line-height: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+
+
+.contactForm label {
+  display: block;
+  width: 30em;
+  margin: auto;
+  padding: 0.5em 2.1em;
   text-align: left;
-  width:50%;
-  margin:0 auto;
 }
+
+
+.contactForm input {
+  margin: auto;
+  width: 30em;
+}
+
+#contact-message {
+  width: 30em;
+  height: 15em;
+  margin: auto;
+}
+
+#contact-message-title {
+  width: 30em;
+  padding: 0.5em 2em;
+  border-radius: 200px;
+}
+
+.contactForm button {
+  margin: 0 auto 2em;
+  width: 30em;
+}
+
+
+@media (max-width: 50em){
+  .contact p {
+    width: 100%;
+  }
+    .contactForm label {
+    width: 20em;
+  }
+
+  .contactForm input {
+    width: 20em;
+  }
+
+  #contact-message {
+    width: 20em;
+  }
+
+  #contact-message-title {
+    width: 20em;
+  }
+  .contactForm button {
+    width: 20em;
+  }
+}
+
+#contact-submit {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+
+
+
 /*set input boxes' location on the center as well*/
 /*learnt from https://stackoverflow.com/questions/1281403/place-input-box-at-the-center-of-div*/
-#fname,#lname, .contactForm #email, .contactForm #message,
+/*#fname,#lname, .contactForm #email, .contactForm #message,
 #phone,#question{
   position: relative;
   margin:0 auto;
-}
+}*/
 
 /* -- OUR PLANS PAGE -- */
 .plan-options .title {

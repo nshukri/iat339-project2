@@ -409,6 +409,16 @@ function reviewSubmit() {
 
 }
 
+//submission on contact page
+function contactSubmit() {
+   var showSubmitMessage = document.getElementById("contact-submit");
+   showSubmitMessage .style.visibility = "visible";
+
+   var hideReviewForm = document.getElementById("contact-info");
+   hideReviewForm.style.visibility = "hidden";
+
+}
+
 /*https://stackoverflow.com/questions/26937424/change-button-color-onclick
 
 var count = 1;

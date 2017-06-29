@@ -4,7 +4,7 @@
 	<head>
 		<title>Mealbox Contact</title> 
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name=viewport content="width=device-width, initial-scale=1">
 
 		<link href="css/flex-grid.css" rel="stylesheet">
    		<link href="css/main.css" rel="stylesheet">
@@ -32,7 +32,6 @@
 						<li><a class="button-nav" href="menu.html">Menu</a></li>
 						<li><a class="button-nav" href="our-plans.html">Our Plans</a></li>
 						<li><a class="button-nav" href="contact.html">Contact</a></li>
-						<!-- Login button styling will be different -->
 						<li><a class="button-nav" href="account.html">My Account</a></li>
 					</ul>
 				</nav>
@@ -41,73 +40,100 @@
 		<!-- end of Navigation code -->
 
 		<!-- contact page code -->
-      	<section>  
-      		<!-- thanks geading section -->    		
-  		    <div class="grid thanksContact">
-  		    	<div class="grid-item">
-  		    		<h2 class="heading2">CONTACT US</h2>
-  		    	
-      		<!-- thanks paragraph section --> 
-      				<br><br>
-      				<h3 class=heading3>Thank you for contacting us!</h3><br> 
-      				<!-- learnt from https://www.saje.com/ca/contact-us/ 		 -->
-  		    		<P class="paraContact"> 
-  		    			We welcome feedback from our community with open arms. If you have suggestions, concerns or feedback about our website a product experience or an online order, please call 604-334-5678 or email to connect with MealBox. 
-  		    			<br><br>
-						Our Customer Experience team is available Monday to Friday 6:00am - 7:00pm PST, and Saturday to Sunday 7:00am - 5:00pm PST. 
-						<br><br>
-						For the most up-to-date information, news, promotions, special contests or to share your story, join our online community.<br><br>
-						Thank you for being a member of the Saje community. We wouldn’t be here without you.
-					</P>
-  		    	</div>
-  		    </div>
-
-  		    <!-- contact form code -->
-  		    <section class="contactForm">
+      	<section class="contact-container"> 
+      		<section class="contact" id="contact-info">
+	      		<!-- thanks geading section -->    		
 	  		    <div class="grid">
 	  		    	<div class="grid-item">
-						<label for="fname">First Name</label>
-				        <input type="text" id="fname" class="textInput-field" placeholder="">
-				    </div>
-				</div>
-				<div class="grid">
+	  		    		<h1 class="heading2">CONTACT US</h1>
+	  		    	</div>
+	  		    </div>
+	  		    <div class="grid">
 	  		    	<div class="grid-item">
-						<label for="lname">Last Name</label>
-				        <input type="text" id="lname" class="textInput-field" placeholder="">
-				    </div>
-				</div>
-				<div class="grid">
-				    <div class="grid-item">
-				        <label for="email">E-Mail</label>
-				        <input type="email" id="email" class="textInput-field" placeholder="">
-				    </div>
-				</div>
-				<div class="grid">
-				    <div class="grid-item">
-				        <label for="phone">Phone</label>
-				        <input type="tel" id="phone" class="textInput-field" placeholder="">
-				    </div>
-				</div>
-				<div class="grid">
-				    <div class="grid-item">
-				        <label for="question">My Question</label>
-				        <input type="search" id="question" class="textInput-field" placeholder="">
-				    </div>
-				</div>
-				<div class="grid">
-				    <div class="grid-item">
-				        <label for="message">Comment</label>
-				        <textarea id="message" class="textInput-field" placeholder=""></textarea>
-					</div>
+	  		    		<h2 class=heading3>Thank you for contacting us!</h2> 
+	  		    	</div>
+	  		    </div>
+	  		    <div class="grid">
+	  		    	<div class="grid-item">
+	  		    		<p class="paragraph"> 
+	  		    			We welcome feedback from our customers! If you have suggestions, concerns or feedback about our website a product experience or an online order, please call 604-334-5678 or email to connect with MealBox. 
+	  		    		</p>
+	  		    		<p class="paragraph"> 
+							Our team is available to answer your calls from: <br>Monday to Friday 6:00am - 7:00pm PST <br> Saturday to Sunday 7:00am - 5:00pm PST
+						</p>
+						<p class="paragraph"> 
+							Thank you for being a member of the MealBox. We wouldn’t be here without you.
+						</P> 
+	  		    	</div>
 	  		    </div>
 
-	  		    <div class="grid">
-				    <div class="grid-item">
-				    	<button class="default-button">SUBMIT
-				    	</button>
+	  		    <!-- contact form code -->
+	  		    <section class="contactForm">
+		  		    <div class="grid">
+		  		    	<div class="grid-item">
+							<label for="fname">*First Name</label>
+					        <input type="text" id="fname" class="textInput-field" placeholder="" required>
+					    </div>
 					</div>
+					<div class="grid">
+					    <div class="grid-item">
+							<label for="lname">*Last Name</label>
+					        <input type="text" id="lname" class="textInput-field" placeholder="">
+					    </div>
+					</div>
+					<div class="grid">
+		  		    	<div class="grid-item">
+					        <label for="email">*E-Mail</label>
+					        <input type="email" id="email" class="textInput-field" placeholder="">
+					    </div>
+					</div>
+					<div class="grid">
+					    <div class="grid-item">
+					        <label for="phone">Phone</label>
+					        <input type="tel" id="phone" class="textInput-field" placeholder="">
+					    </div>
+					</div>
+					<div class="grid">
+					    <div class="grid-item">
+					        <label for="message" id="contact-message-title">Let us know your concern</label>
+					        <textarea class="textInput-field" id="contact-message" placeholder=""></textarea>
+						</div>
+		  		    </div>
+		  		    <div class="grid">
+					    <div class="grid-item">
+					    	<button class="default-button" onclick="contactSubmit()">SUBMIT</button>
+						</div>
+		  		    </div>
+	  		    </section>
+	  		</section>
+
+  		    <section class="contact" id="contact-submit">  
+	      		<!-- thanks geading section -->    		
+	  		    <div class="grid">
+	  		    	<div class="grid-item">
+	  		    		<h1 class="heading2">CONTACT US</h1>
+	  		    	</div>
 	  		    </div>
-  		    </section>
+	  		    <div class="grid">
+	  		    	<div class="grid-item">
+	  		    		<h2 class=heading3>Thank you for contacting us!</h2> 
+	  		    	</div>
+	  		    </div>
+	  		    <div class="grid">
+	  		    	<div class="grid-item">
+	  		    		<p class="paragraph"> 
+	  		    			We appreciate your feedback and will respond back to you within 3 business days. 
+	  		    		</p>
+	  		    	</div>
+	  		    </div>
+	  		    <div class="grid">
+					    <div class="grid-item">
+					    	<button class="default-button" onclick="window.location.href='index.html'">Back to home</button>
+						</div>
+		  		    </div>
+	  		</section>
+  		</section>
+  		    
   		<!-- footer section code -->
   		<section class="legal-footer">
 			<div class="footer-container">
@@ -116,7 +142,7 @@
 				<a href="citations.html">Citations</a>
 			</div>
 		</section>
-			
-      	</section>
+	
+		<script type="text/javascript" src="js/javascript.js"></script>
 	</body>
 </html>
