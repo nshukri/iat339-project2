@@ -933,6 +933,10 @@ page's input text*/
 }
 
 /* -- REGISTRATION PAGE -- */
+/*#plan-1-content {
+  background-color: #e4fde1;
+}*/
+
 /*select plan*/
 .select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons {
   width: 65%;

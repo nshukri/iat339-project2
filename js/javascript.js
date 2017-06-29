@@ -22,7 +22,7 @@ function loginPanel () {
    console.log("test login");
 
    var nav = document.getElementById("nav-links");
-   nav.style.height = "";
+   // nav.style.height = "0";
 }
 
 function loginClose () {
@@ -260,6 +260,8 @@ function reviewOpen8() {
    content.style.left = "0";
 }
 
+
+
 function changeColor() {
    var plan = document.getElementById("plan-one")
    plan.style.backgroundColor = 'red'; /*test*/
@@ -270,15 +272,30 @@ function changeColor() {
    }
 }
 
-function getPlan() {
-   var params = {};
-   var param_array = window.location.split('?')[1].split('&');
+//our plan.html
 
-   for (var i in param_array) {
-      x = param_array[1].split('=');
-      params[x[0]] = x[1];
-   } 
-   return params;
+//get function source:https://stackoverflow.com/questions/12929140/getting-url-data-with-javascript-split-it-like-php-get
+// window.params = function(){
+//    var params = {};
+//    var param_array = window.location.split('?')[1].split('&');
+
+//    for (var i in param_array) {
+//       x = param_array[1].split('=');
+//       params[x[0]] = x[1];
+//    } 
+//    return params;
+// }
+
+// if(window.params.plan == 1) {
+//    console.log("plan 1");
+//    plan1Selected();
+
+// }
+
+//change color of chosen plan
+function plan1Selected() {
+    var plan1 = document.getElementById("plan-1-content");
+    plan1.style.backgroundColor = "#e4fde1";
 }
 
 
