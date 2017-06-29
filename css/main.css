@@ -605,6 +605,12 @@ nav .wrapper {
   cursor: pointer;
 }
 
+.back-icon {
+  width: 0.688em;
+  height: 1.250em;
+  margin-bottom: -0.2em;
+}
+
 .review-back:hover{
   opacity: 0.8;
 }
