@@ -41,122 +41,163 @@
 		</section>
 		<!-- Navigation code end -->
 
-		<!-- section for my account information -->
-		<section>
-			<!-- top section for heading-->
-			<div class="grid section-accountPage">
-				<div class="grid-item">
-					<h2 class="heading2">My Account</h2>
-				</div>
-				<div class="grid-item">
-					<!-- learnt from https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
-					<button id="saveButton" class="default-button" onclick="window.location.href='index.html'">save</button>
-				</div>
+		<section class="account-info">
+			<h2 class="heading2 title">My Account</h2>
+		</section>
+
+		<!-- Basic Information -->
+		<section class="basic-info personal-info">
+			<div class="grid">
+				<form class="form" action="/action_page.php">
+					<div class="grid gutter section-header">
+						<h3 class="heading3 section-title">Personal Information</h3>
+					</div>
+					
+					<div class="grid gutter">
+						<div class="grid-item col1of2">
+						<!-- <div class="name-fields"> -->
+							<label for="f-name">First Name</label>
+							<input type="text" id="f-name" class="textInput-field" readonly="readonly" placeholder="Anna">
+						</div>
+						<div class="grid-item col1of2">
+							<label for="l-name">Last Name</label>
+							<input type="text" id="l-name" class="textInput-field" readonly="readonly" placeholder="Cho">
+						</div>
+					</div>
+
+					<div class="grid gutter">
+						<div class="grid-item col1of2">
+							<label for="email">E-mail</label>
+							<input type="text" id="email" class="textInput-field" readonly="readonly" placeholder="annacho123@email.com">
+						</div>
+						<div class="grid-item col1of2">
+							<label for="email">Phone Number</label>
+							<input type="text" id="email" class="textInput-field" readonly="readonly" placeholder="778-666-3333">
+						</div>
+					</div>
+
+					<div class="grid gutter">
+						<div class="grid-item col1of2">
+							<label for="address">Address</label>
+							<input type="text" id="address" class="textInput-field" readonly="readonly" placeholder="1276 102nd Avenue">
+						</div>
+					</div>
+
+					<div class="grid gutter">
+						<div class="grid-item col1of4 exp-date">
+							<label for="postal-code">Postal Code</label>
+							<input type="text" id="postal-code" class="textInput-field" readonly="readonly" min="6" max="6" placeholder="V3T 0A3">
+						</div>
+
+						<div class="grid-item col1of4 exp-date">
+							<label for="city">City</label>
+							<input type="text" id="city" class="textInput-field" readonly="readonly" placeholder="Surrey">
+						</div>
+
+						<div class="grid-item col1of4 exp-date">
+							<label for="province">Province</label>
+							<input type="text" id="province" class="textInput-field" readonly="readonly" placeholder="British Columbia">
+						</div>
+					</div>
+					<a class="InText-Link change-plan" href="#">Update</a>
+				</form>
 			</div>
 
-			<!-- second section  for photo-->
-			<div class="grid section-accountPage" id="photo">
-				<div class="grid-item">
-					<h3><img id="account-img" src="img/anna.jpg" alt=""></h3>
-					<h3 class="heading3">Anna Cho</h3>
-					<a class="InText-Link">Upload</a>
-				</div>
-			</div>
+		</section>
 
-			<!-- third section about personal information -->
-			<div class="grid section-accountPage" id="personalInformation">
-				<div class="grid-item">
-					<label for="fullName">Full Name</label>
-			        <input type="text" id="fullName" class="textInput-field" placeholder="Anna Cho">
-				</div>
-<!-- 				<div class="grid-item">
-					<label for="email">E-Mail</label>
-			        <input type="email" id="email" class="textInput-field" placeholder="annacho123@email.com">
-				</div> -->
-				<div class="grid-item">
-					<label for="phoneNumber">Phone Number</label>
-			        <input type="tel" id="phoneNumber" class="textInput-field" placeholder="7786663333">
-				</div>
+		<!-- Change Password -->
+		<section class="basic-info password-info">
+			<h3 class="heading3 section-title">Change Password</h3>
+			<div class="grid">
+				<form class="form" action="/action_page.php">
+					<div class="grid gutter">
+						<div class="grid-item">
+							<label for="currentPassword">Current Password</label>
+							<input type="password" id="currentPassword" class="textInput-field" placeholder="Enter your current password">
+						</div>
+					</div>
 
-				<div class="grid-item">
-					<label for="address">Address</label>
-			        <input type="text" id="address" class="textInput-field" placeholder="1276 102nd Avenue, Surrey,BC V3T 0A3">
-				</div>
-				<div class="grid-item">
-					<a href="" class="InText-Link">Edit</a>
-				</div>
-			</div>
+					<div class="grid gutter">
+						<div class="grid-item">
+						<label for="newPassword">New Password</label>
+				        <input type="password" id="newPassword" class="textInput-field" placeholder="Enter your new password">
+						</div>
 
-			<!-- third section for changing password -->
-			<div class="grid section-accountPage">
-				<h3 class="heading3">&emsp;Change passpord</h3>
-			</div>
-			<div class="grid section-accountPage" id="changePassword">
-				<div class="grid-item">
-					<label for="oldPassword">Old Password</label>
-			        <input type="password" id="oldPassword" class="textInput-field" placeholder="********">
-				</div>
-				<div class="grid-item">
-					<label for="newPassword">New Password</label>
-			        <input type="password" id="newPassword" class="textInput-field" placeholder="********">
-				</div>
-				<div class="grid-item">
-					<label for="confirmPassword">Confirm Password</label>
-			        <input type="password" id="confirmPassword" class="textInput-field" placeholder="********">
-				</div>
-				<div class="grid-item">
-					<a href="" class="InText-Link">Change</a>
-				</div>
-
-			</div>
-
-			<!-- fourth section for payment details -->
-			<div class="grid section-accountPage">
-				<h3 class="heading3">&emsp;Payment Details</h3>
-			</div>
-			<div class="grid section-accountPage" id="paymentDetails">
-				<div class="grid-item">
-					<label for="card">Card Holder's Name</label>
-			        <input type="text" id="card" class="textInput-field" placeholder="Anna Cho">
-				</div>
-				<div class="grid-item">
-					<label for="cardNumber">Card Number</label>
-			        <input type="text" id="cardNumber" class="textInput-field" placeholder="Visa ending 1234">
-				</div>
-				<div class="grid-item">
-					<label for="date">Expiry Date</label>
-			        <input type="date" id="date" class="textInput-field">
-				</div>
-				<div class="grid-item">
-					<a href="" class="InText-Link">Change</a>
-				</div>
-			</div>
-
-			<!-- fifth section for plan details -->
-			<div class="grid section-accountPage">
-				<h3 class="heading3">&emsp;Plan Details</h3>
-			</div>
-			<div class="grid section-accountPage" id="planDetails">
-				<div class="grid-item">
-					<h3 class="heading3">Current Meal Plan</h3>
-				</div>
-				<div class="grid-item">
-					<a href="" class="InText-Link">Change</a>
-			   		<p>1 week trial (ends 5/26)</p>
-			   		<form>
-			   			<div class="auto-renew">
-					    	<input type="checkbox" name="plan" value="renew">
-					    	<label for="renew">Auto-renew current meal plan</label>
-					    </div>
-					</form>
-				</div>
-				<div class="grid-item">
-			   		<a href="menu.html" class="InText-Link">Change</a> /
-			   		<a href="menu.html" class="InText-Link">Unsubscribe</a>
-				</div>
+						<div class="grid-item">
+							<label for="confirmPassword">Confirm New Password</label>
+				        	<input type="password" id="confirmPassword" class="textInput-field" placeholder="Confirm your current password">
+						</div>
+					</div>
+				</form>
 			</div>
 		</section>
-		<!-- section for my account information end -->
+
+		<!-- Payment Details -->
+		<section class="basic-info payment-details">
+			<h3 class="heading3 section-title">Payment Details</h3>
+			<div class="grid">
+				<form class="form" action="/action_page.php">
+					<div class="grid gutter">
+						<div class="grid-item">
+							<label for="card">Cardholder Name</label>
+			       			 <input type="text" id="card" class="textInput-field" readonly="readonly" placeholder="Anna Cho">
+						</div>
+
+						<div class="grid-item">
+							<label for="cardNumber">Card Number</label>
+			       			 <input type="text" id="cardNumber" class="textInput-field" readonly="readonly" placeholder="0000 1111 2222 3333">
+						</div>
+					</div>
+				</form>
+			</div>
+			<a class="InText-Link change-plan" href="#">Add new card</a>
+		</section>
+
+		<!-- Meal Plan Details -->
+		<section class="account-plan">
+			<h3 class="heading3 section-title">Your Meal Plan</h3>
+
+			<table class="mealPlan-table">
+				<thead>
+					<tr>
+						<th>Plan</th>
+						<th>End Date</th>
+						<th>Auto-renew</th>
+						<th>Action</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1 Week Trial</td>
+						<td>05/26</td>
+						<td><input type="checkbox" id="renew-plan" name="renew" value="renew"></td>
+						<td><a class="InText-Link" href="#">Unsubscribe</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="InText-Link change-plan" href="our-plans.html">Change Plan</a>
+		</section>
+
+		<!-- Selected Plans -->
+		<section class="past-orders">
+			<h3 class="heading3 section-title">Your Past Orders</h3>
+			<table class="order-table">
+				<thead>
+					<tr>
+						<th>Order Date</th>
+						<th>Meal</th>
+						<th>Status</th>
+						<th>Action</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>June 1, 2017</td>
+						<td>Thai Spring Rolls</td>
+						<td>Delivered</td>
+						<td><a class="InText-Link" href="food-review.html">Review</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
 		<!-- footer information -->
 		<section class="legal-footer">

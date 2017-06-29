@@ -620,38 +620,78 @@ nav .wrapper {
 }
 
 /* -- ACCOUNT PAGE -- */
-/*set width for each section 
-of account page*/
-.section-accountPage{
-  width:100%;
-  align-items: center;
+/*set width for each section of account page*/
+.account-info {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center; /*aligns save button to title */
   padding:1.5em;
+}
+
+.personal-info, .password-info, .payment-details, .account-plan, .past-orders {
+  width: 50% !important;
+  margin: 0 auto;
+}
+
+.section-header .section-title {
+  width: 100%;
+}
+
+.section-header {
+  align-items: center;
+}
+
+.section-heading {
+  display: inline;
+}
+
+.personal-info #province {
+  width: 10em;
+}
+
+.payment-details .delete-card {
+  justify-content: center;
+  align-items: center;
+}
+
+/*tables*/
+.order-table, .mealPlan-table {
+  table-layout: fixed;
+  width: 90%;
+  text-align: left;
+  font-size: 0.86em;
+}
+
+.order-table thead, .mealPlan-table thead {
+  border-top: 1px solid #eee;
+}
+
+.order-table>tbody>tr>td, .order-table>thead>tr>th, 
+.mealPlan-table>tbody>tr>td, .mealPlan-table>thead>tr>th {
+  padding: 1em;
+}
+
+.order-table>tbody>tr>td:last-child, .order-table>thead>tr>th:last-child, 
+.mealPlan-table>tbody>tr>td:last-child, .mealPlan-table>thead>tr>th:last-child {
+  width: 20%;
+}
+
+.order-table>tbody>tr>td, .mealPlan-table>tbody>tr>td {
+  border-top: 1px solid #eee;
+}
+
+.change-plan {
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+
+@media (max-width: 80em) {
 }
 
 /*make save button on account page 
 float to the right*/
 #saveButton{
   float:right;
-}
-
-/*styling second section*/
-#photo{
-  border-top: 1px solid #333333;
-  text-align: center;
-}
-
-/*set size of image in account page*/
-#account-img{
-  width:150px;
-}
-
-/*styling image in account page*/
-#account-img:hover{
-  opacity: 0.7;
-}
-
-#personalInformation,#changePassword,#paymentDetails{
-  border-bottom: 1px solid #333333;
 }
 
 /* -- ORDER CONFIRMATION PAGE -- */
@@ -676,7 +716,8 @@ float to the right*/
     margin-left: 1em;
   }
 }
-/*Food Review page*/
+
+/* -- FOOD REVIEW PAGE -- */
 .food-review {
   width: 100%;
   text-align: center;
@@ -985,7 +1026,7 @@ page's input text*/
     min-width: 100%;
   }
 
-  .select-plan   .plan-column {
+  .select-plan .plan-column {
     margin: 0.5em 0;
   }
 
@@ -1012,7 +1053,7 @@ page's input text*/
   float: left;
 }
 
-.basic-info label, .payment-methods label {  
+.basic-info label, .payment-methods label, .personal-info label {  
   width: 100%;  
   display: block;  
   margin-right: -7em; 
@@ -1020,7 +1061,9 @@ page's input text*/
   font-weight: 700; 
 }
 
-.basic-info input[type="text"], .payment-methods input[type="text"], .basic-info select. .payment-methods select {  
+.basic-info input[type="text"], .payment-methods input[type="text"], 
+.basic-info select. .payment-methods select, 
+.personal-info input, .personal-info select {  
   float: left;  
   margin-right: 0.5em; 
 } 
@@ -1064,19 +1107,20 @@ page's input text*/
   margin-bottom: 0.1rem;
 }
 
-#postal-code, #cvv {
+#postal-code, #city, #province, #cvv {
   width: 7em;
-}
-
-.select-plan {
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #eee;
 }
 
 .basic-info {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eee;
 }
+
+.select-plan, .account-plan, .payment-details {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #eee;
+}
+
 
 .method p {
   font-size: 0.76rem;
@@ -1102,9 +1146,6 @@ page's input text*/
   margin-right: 0.75em;
 }
 
-.review-info, .review-methods {
-  color: black;
-}
 /* step progress bar 
 Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 
