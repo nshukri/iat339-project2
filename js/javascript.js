@@ -555,18 +555,3 @@ function plan4(){
    plan3.style.backgroundColor = "white";
    btn3.style.backgroundColor = "#cf5c36";
 }
-
-/*https://stackoverflow.com/questions/26937424/change-button-color-onclick
-
-var count = 1;
-function changeColor2() {
-      if (count == 0) {
-         document.getElementById("plan-one").style.backgroundColor='#eeeeee'
-         count = 1;
-      } else {
-         document.getElementById("plan-one").style.backgroundColor='#efc88b'
-         count = 0;
-      }
-   }
-
-*/
