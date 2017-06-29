@@ -724,6 +724,10 @@ float to the right*/
   position: relative;
 }
 
+.foodReview-container {
+  width: 100%;
+}
+
 .food-review h1 {
   margin-top: 1em;
 }
@@ -747,6 +751,10 @@ float to the right*/
   margin: auto;
   left:0;
   right: 0;
+}
+
+.star-container img {
+  margin: auto 0.4em;
 }
 
 .full-star-image {
@@ -773,6 +781,22 @@ float to the right*/
   left: 0;
   right: 0;
   visibility: hidden;
+}
+
+@media (max-width: 50em){
+  .food-review h1 {
+    width: 100%;
+  }
+  .food-review select{
+    width: 80%;
+  }
+
+  .star-container {
+    width: 100%;
+  }
+  .food-review textarea {
+    width: 90%;
+  }
 }
 
 /* -- ORDER (WRITE A) REVIEWS PAGE -- */
