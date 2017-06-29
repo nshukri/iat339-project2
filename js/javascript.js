@@ -440,6 +440,122 @@ function contactSubmit() {
 
 }
 
+//register page
+function plan1(){
+   var plan1 = document.getElementById("plan-1-content");
+   var plan2 = document.getElementById("plan-2-content");
+   var plan3 = document.getElementById("plan-3-content");
+   var plan4 = document.getElementById("plan-4-content");
+   
+   var btn1 = document.getElementById("select-button-1");
+   var btn2 = document.getElementById("select-button-2");
+   var btn3 = document.getElementById("select-button-3");
+   var btn4 = document.getElementById("select-button-4");
+
+   plan1.style.backgroundColor = "#efc88b";
+   btn1.style.backgroundColor = "#596068";
+
+   plan2.style.backgroundColor = "white";
+   btn2.style.backgroundColor = "#cf5c36";
+
+   plan3.style.backgroundColor = "white";
+   btn3.style.backgroundColor = "#cf5c36";
+
+   plan4.style.backgroundColor = "white";
+   btn4.style.backgroundColor = "#cf5c36";
+}
+
+function plan2(){
+   var plan1 = document.getElementById("plan-1-content");
+   var plan2 = document.getElementById("plan-2-content");
+   var plan3 = document.getElementById("plan-3-content");
+   var plan4 = document.getElementById("plan-4-content");
+   
+   var btn1 = document.getElementById("select-button-1");
+   var btn2 = document.getElementById("select-button-2");
+   var btn3 = document.getElementById("select-button-3");
+   var btn4 = document.getElementById("select-button-4");
+
+   plan2.style.backgroundColor = "#efc88b";
+   btn2.style.backgroundColor = "#596068";
+
+   plan1.style.backgroundColor = "white";
+   btn1.style.backgroundColor = "#cf5c36";
+
+   plan3.style.backgroundColor = "white";
+   btn3.style.backgroundColor = "#cf5c36";
+
+   plan4.style.backgroundColor = "white";
+   btn4.style.backgroundColor = "#cf5c36";
+   
+   /*var i = 0;
+   while (i < 5 && i != 2) {
+      plan[i].style.backgroundColor = "white";
+      plan[i].style.border = "1px solid #eee";
+      btn[i].style.backgroundColor = "#cf5c36";
+   }
+
+   plan2.style.backgroundColor = "#efc88b";
+   plan2.style.border = "none";
+   btn2.style.backgroundColor = "#596068";
+
+   for (i = 1; i < 5; i++) {
+      if (i != 2) {
+         plan[i].style.backgroundColor = "white";
+         plan[i].style.border = "1px solid #eee";
+         btn[i].style.backgroundColor = "#cf5c36";
+      }
+   }*/
+}
+
+function plan3(){
+   var plan1 = document.getElementById("plan-1-content");
+   var plan2 = document.getElementById("plan-2-content");
+   var plan3 = document.getElementById("plan-3-content");
+   var plan4 = document.getElementById("plan-4-content");
+   
+   var btn1 = document.getElementById("select-button-1");
+   var btn2 = document.getElementById("select-button-2");
+   var btn3 = document.getElementById("select-button-3");
+   var btn4 = document.getElementById("select-button-4");
+
+   plan3.style.backgroundColor = "#efc88b";
+   btn3.style.backgroundColor = "#596068";
+
+   plan1.style.backgroundColor = "white";
+   btn1.style.backgroundColor = "#cf5c36";
+
+   plan2.style.backgroundColor = "white";
+   btn2.style.backgroundColor = "#cf5c36";
+
+   plan4.style.backgroundColor = "white";
+   btn4.style.backgroundColor = "#cf5c36";
+}
+
+function plan4(){
+   var plan1 = document.getElementById("plan-1-content");
+   var plan2 = document.getElementById("plan-2-content");
+   var plan3 = document.getElementById("plan-3-content");
+   var plan4 = document.getElementById("plan-4-content");
+   
+   var btn1 = document.getElementById("select-button-1");
+   var btn2 = document.getElementById("select-button-2");
+   var btn3 = document.getElementById("select-button-3");
+   var btn4 = document.getElementById("select-button-4");
+
+   plan4.style.backgroundColor = "#efc88b";
+   btn4.style.backgroundColor = "#596068";
+
+   plan1.style.backgroundColor = "white";
+   btn1.style.backgroundColor = "#cf5c36";
+
+   plan2.style.backgroundColor = "white";
+   btn2.style.backgroundColor = "#cf5c36";
+
+   plan3.style.backgroundColor = "white";
+   btn3.style.backgroundColor = "#cf5c36";
+}
+
 /*https://stackoverflow.com/questions/26937424/change-button-color-onclick
 
 var count = 1;

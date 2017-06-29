@@ -12,7 +12,6 @@
 		 <!-- Import fonts from google -->
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
-	    
 	</head>
 
 	<body>
@@ -60,42 +59,42 @@
 		<div class="grid"> 
 			<div  class="grid-item plan-table">
 				<!-- plan item 1 -->
-				<div class="plan-column" id="planContent-1">
+				<div class="plan-column">
 					<div class="content-box" id="plan-1-content">
 						<h3 class="heading3">1 Week Trial Plan</h3>
 						<h4 class="plan-price">$115.00</h4>
 						<p class="plan-description body">Try out our trial plan for a week and see how Mealbox works out for you.</p>
-						<button class="default-button" onclick="plan1Selected()">Select Plan</button>
+						<button class="default-button" id="select-button-1" onclick="plan1()">Select Plan</button>
 					</div>
 				</div>
 
 				<!-- plan item 2 -->
-				<div class="plan-column" id="planContent-2">
-					<div class="content-box">
+				<div class="plan-column">
+					<div class="content-box" id="plan-2-content">
 						<h3 class="heading3">1 Month Plan</h3>
 						<h4 class="plan-price">$445.00</h4>
 						<p class="plan-description body">Don’t have time to cook for the next month? Select this short 1 month plan to receive meal boxes and not worry about cooking.</p>
-						<button class="default-button" onclick="window.location.href='register.html?plan=2'">Select Plan</button>
+						<button class="default-button" id="select-button-2" onclick="plan2()">Select Plan</button>
 					</div>
 				</div>
 				
 				<!-- plan item 3 -->
-				<div class="plan-column" id="planContent-3">
-					<div class="content-box">
+				<div class="plan-column">
+					<div class="content-box pre-selected" id="plan-3-content">
 						<h3 class="heading3">3 Month Plan</h3>
 						<h4 class="plan-price">$1350.00</h4>
 						<p class="plan-description body">Really satisfied with Mealbox? Select this 3 month plan to continue receiving meal boxes!</p>
-						<button class="default-button" onclick="window.location.href='register.html?plan=3'">Select Plan</button>
+						<button class="default-button selected-btn" id="select-button-3" onclick="plan3()">Select Plan</button>
 					</div>
 				</div>
 
 				<!-- plan item 4 -->
-				<div class="plan-column" id="planContent-4">
-					<div class="content-box">
+				<div class="plan-column">
+					<div class="content-box" id="plan-4-content">
 						<h3 class="heading3">6 Month Plan</h3>
 						<h4 class="plan-price">$2745.00</h4>
 						<p class="plan-description body">The plan with the best value! Select the 6 month plan to continue receiving meal boxes for half a year.</p>
-						<button class="default-button" onclick="window.location.href='register.html?plan=4'">Select Plan</button>
+						<button class="default-button" id="select-button-4" onclick="plan4()">Select Plan</button>
 					</div>
 				</div>
 			</div>
@@ -236,7 +235,6 @@
 	<section class="buttons">
 		<button class="default-button" id="right-button" onclick="window.location.href='register-review.html'">Next</button>
 	</section>
-
 
 	<script language="JavaScript" type="text/javascript" src="js/javascript.js"></script>
 

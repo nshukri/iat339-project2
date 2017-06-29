@@ -1021,6 +1021,15 @@ page's input text*/
   font-size: 1em;
 }
 
+/*pre-selected plans in register*/
+.pre-selected {
+  background-color: #efc88b;
+}
+
+.pre-selected .selected-btn {
+  background-color: #596068;
+}
+
 @media (max-width: 85em) {
   .select-plan .plan-table .plan-column {
     min-width: 100%;
@@ -1038,6 +1047,7 @@ page's input text*/
     padding: 1.5em;
   }
 }
+
 
 .buttons {
   margin-bottom: 2em;
@@ -1325,17 +1335,32 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   width: 100%;
   margin: 0 auto;
 }
+
 .review-item, .review-location, .review-time {
   /*padding: 1em;
   background-color: #eee;
   border: 1px solid #d4d9df;*/
-    padding-bottom: 0;
+  padding-bottom: 0;
   margin-bottom: 1em;
+}
+
+.review-plan .plan-table .plan-column {
+  width: 100%;
+}
+
+.review-plan .content-box {
+  background-color: #efc88b;
+}
+
+.review-plan .plan-description {
+  min-height: 0 !important;
+  margin-bottom: 0;
 }
 
 .review-menu .selected-items {
   margin: 0;
 }
+
 .review-time .dropDown-menu {
   width: 4em;
 }

@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+	<head>
+		<title>Mealbox Registration</title> 
+		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1.0">
+
+   		<link href="css/flex-grid.css" rel="stylesheet">
+   		<link href="css/main.css" rel="stylesheet">
+
+		 <!-- Import fonts from google -->
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Navigation code -->
+		<section class="header"> 
+			<nav class="navigation">
+				<nav class="wrapper">
+					<!-- Company Logo -->
+
+					<a class="nav-logo" href="index.html">MealBox</a> 
+
+					<!-- mobile hamburger icon -->
+					<input type="checkbox" id="menu-toggle">
+		      			<label for="menu-toggle" class="label-toggle"></label>
+					</input>
+
+					<ul>
+						<li><a class="button-nav" href="menu.html">Menu</a></li>
+						<li><a class="button-nav" href="our-plans.html">Our Plans</a></li>
+						<li><a class="button-nav" href="contact.html">Contact</a></li>
+						<!-- Login button styling will be different -->
+						<li><a class="button-nav" href="account.html">My Account</a></li>
+					</ul>
+				</nav>
+			</nav>
+		</section>
+		<!-- end of Navigation code -->
+
+	<section class="">
+		<h2 class="heading2 title">Register an Account</h2>
+	</section>
+
+	<!-- Process Bar -->
+	<div class="progress-bar-container">
+		<ul class="progress-bar">
+			<li class="active"><p>Register</p></li>
+			<li><p>Confirm</p></li>
+			<li><p>Done!</p></li>
+		</ul>
+	</div>
+
+	<!-- Select Plan -->
+	<section class="select-plan">
+		<h3 class="heading3 section-title">Select a Meal Plan</h3>
+		<div class="grid"> 
+			<div  class="grid-item plan-table">
+				<!-- plan item 1 -->
+				<div class="plan-column">
+					<div class="content-box" id="plan-1-content">
+						<h3 class="heading3">1 Week Trial Plan</h3>
+						<h4 class="plan-price">$115.00</h4>
+						<p class="plan-description body">Try out our trial plan for a week and see how Mealbox works out for you.</p>
+						<button class="default-button" id="select-button-1" onclick="plan1()">Select Plan</button>
+					</div>
+				</div>
+
+				<!-- plan item 2 -->
+				<div class="plan-column">
+					<div class="content-box pre-selected" id="plan-2-content">
+						<h3 class="heading3">1 Month Plan</h3>
+						<h4 class="plan-price">$445.00</h4>
+						<p class="plan-description body">Don’t have time to cook for the next month? Select this short 1 month plan to receive meal boxes and not worry about cooking.</p>
+						<button class="default-button selected-btn" id="select-button-2" onclick="plan2()">Select Plan</button>
+					</div>
+				</div>
+				
+				<!-- plan item 3 -->
+				<div class="plan-column">
+					<div class="content-box" id="plan-3-content">
+						<h3 class="heading3">3 Month Plan</h3>
+						<h4 class="plan-price">$1350.00</h4>
+						<p class="plan-description body">Really satisfied with Mealbox? Select this 3 month plan to continue receiving meal boxes!</p>
+						<button class="default-button" id="select-button-3" onclick="plan3()">Select Plan</button>
+					</div>
+				</div>
+
+				<!-- plan item 4 -->
+				<div class="plan-column">
+					<div class="content-box" id="plan-4-content">
+						<h3 class="heading3">6 Month Plan</h3>
+						<h4 class="plan-price">$2745.00</h4>
+						<p class="plan-description body">The plan with the best value! Select the 6 month plan to continue receiving meal boxes for half a year.</p>
+						<button class="default-button" id="select-button-4" onclick="plan4()">Select Plan</button>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- Basic Information -->
+	<section class="basic-info">
+		<h3 class="heading3 section-title">Basic Information</h2>
+		<div class="grid">
+		<form class="form" action="/action_page.php">
+			<div class="grid gutter">
+				<div class="grid-item col1of2">
+				<!-- <div class="name-fields"> -->
+					<label for="f-name">First Name</label>
+					<input type="text" id="f-name" class="textInput-field" placeholder="First Name">
+				</div>
+				<div class="grid-item col1of2">
+					<label for="l-name">Last Name</label>
+					<input type="text" id="l-name" class="textInput-field" placeholder="Last Name">
+				</div>
+			</div>
+
+			<div class="grid gutter">
+				<div class="grid-item col1of2">
+					<label for="email">E-mail</label>
+					<input type="text" id="email" class="textInput-field" placeholder="Enter your e-mail">
+				</div>
+				<div class="grid-item col1of2">
+					<label for="email">Confirm your E-mail</label>
+					<input type="text" id="email" class="textInput-field" placeholder="Confirm your e-mail">
+				</div>
+			</div>
+
+			<div class="grid gutter">
+				<div class="grid-item col1of2">
+					<label for="address">Address</label>
+					<input type="text" id="address" class="textInput-field" placeholder="Line 1">
+				</div>
+				<div class="grid-item col1of2">
+					<label for="address">Address Line 2</label>
+					<input type="text" id="address" class="textInput-field" placeholder="Line 2">
+				</div>
+			</div>
+
+			<div class="grid gutter">
+				<div class="grid-item col1of4 exp-date">
+					<label for="postal-code">Postal Code</label>
+					<input type="text" id="postal-code" class="textInput-field" min="6" max="6">
+				</div>
+
+				<div class="grid-item col1of4 exp-date">
+					<label for="city">City</label>
+					<select class="dropDown-menu">
+						<!-- select tag placeholder: https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
+						<option value="" disabled selected>City</option>
+						<option value="burnaby">Burnaby</option>
+						<option value="surrey">Surrey</option>
+						<option value="vancouver">Vancouver</option>
+						<option value="victoria">Victoria</option>
+					</select>
+				</div>
+
+				<div class="grid-item col1of4 exp-date">
+					<label for="province">Province</label>
+					<select class="dropDown-menu">
+						<option value="" disabled selected>Province</option>
+						<option value="alberta">Alberta</option>
+						<option value="bc">British Columbia</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="alberta">New Brunswick</option>
+						<option value="alberta">Newfoundland and Labrador</option>
+						<option value="alberta">Nova Scotia</option>
+						<option value="ontario">Ontario</option>
+						<option value="bc">Prince Edward Island</option>
+						<option value="manitoba">Quebec</option>
+						<option value="ontario">Saskatchewan</option>
+					</select>
+				</div>
+			</div>
+		</form>
+		</div>
+	</section>
+
+	<!-- Payment Methods -->
+	<section class="payment-methods">
+		<h3 class="heading3 section-title">Payment Methods</h2>
+		<div class="grid">
+			<form class="form" action="/action_page.php">
+				<div class="method">
+					<label class="body">Accepted Cards</label>
+					<img class="image" src="img/credit-card-logos.jpg">
+				</div>
+
+				<div class="grid gutter">
+					<div class="grid-item col1of2">
+						<label for="f-name">Cardholder Name</label>
+						<input type="text" id="f-name" class="textInput-field" placeholder="First Name">
+					</div>
+
+					<div class="grid-item col1of2">
+						<label for="f-name">Card Number</label>
+						<input type="text" id="l-name" class="textInput-field" placeholder="Last Name">
+					</div>
+				</div>
+
+				<div class="grid gutter">
+					<div class="grid-item col1of2 exp-date">
+						<label for="card-name">Expiration Date</label>
+						<select class="dropDown-menu">
+							<option value="" disabled selected>Month</option>
+							<option value="jan">01</option>
+							<option value="feb">02</option>
+							<option value="mar">03</option>
+							<option value="apr">04</option>
+						</select>
+						<select class="dropDown-menu">
+							<option value="" disabled selected>Year</option>
+							<option value="2017">17</option>
+							<option value="2018">18</option>
+							<option value="2019">19</option>
+							<option value="2020">20</option>
+						</select>
+					</div>
+					<div class="grid-item col1of2">
+						<label for="text">CVV</label>
+						<input type="text" id="cvv" class="textInput-field">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="checkbox-form">
+		<input type="checkbox" name="news">I wish to receive Mealbox news on my e-mail<br>
+		<input type="checkbox" name="terms">I accept the Mealbox <a class="InText-Link" href="#">terms</a> and <a class="InText-Link" href="#">privacy statement</a>
+	</section>
+
+	<section class="buttons">
+		<button class="default-button" id="right-button" onclick="window.location.href='register-review.html'">Next</button>
+	</section>
+
+	<script language="JavaScript" type="text/javascript" src="js/javascript.js"></script>
+
+	</body>
+</html>
