@@ -13,42 +13,26 @@
   </head>
 
   <body>
-     <h1>Mealbox Style Guide</h1>
-     <p>IAT 339 D101: Nadhirah Shukri (301192085), Michelle Cheung (301237218), Snow Liu (301298633)</p>
-
-      <nav id="page-nav">
-        <a class="button-nav" href="citations.html">Citation</a>
-      </nav>
-
-    <nav>
-      <p>
-        Sections:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
-      </p>
-
-    </nav>
-
     <!-- Navigation code -->
     <section class="header"> 
       <nav class="navigation">
         <nav class="wrapper">
           <!-- Company Logo -->
 
-          <a class="nav-logo" href="index.html">MealBox</a> 
+          <a class="nav-logo" href="index.html">MealBox Styleguide</a> 
 
           <ul>
-            <li><a class="button-nav" href="menu.html">Menu</a></li>
-            <li><a class="button-nav" href="our-plans.html">Our Plans</a></li>
-            <li><a class="button-nav" href="contact.html">Contact</a></li>
-            <!-- Login button styling will be different -->
-            <li><a class="button-nav" href="account.html">My Account</a></li>
+            <li><a class="button-nav" href="#interactive_elements">Interactive</a></li>
+            <li><a class="button-nav" href="#text_elements">Text</a></li>
+            <li><a class="button-nav" href="#combined_elements">Combined</a></li>
+            <li><a class="button-nav" href="citations.html">Citations</a></li>
           </ul>
         </nav>
       </nav>
     </section>
     <!-- end of Navigation code -->
+
+    <p>IAT 339 D101: Nadhirah Shukri (301192085), Michelle Cheung (301237218), Snow Liu (301298633)</p>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
@@ -62,10 +46,10 @@
         <p>.button-nav</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav" href-"#"&gt;Menu&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button-nav" href="#">About</a>
+        <a class="button-nav" href="#">Menu</a>
 
       </section>
 
@@ -77,64 +61,34 @@
         <p>.inText-Link</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;p&gt;We deliver healthy and delicious food right to your door! &lt;a class="InText-Link" href="#"&gt;Click here to subscribe&lt;/a&gt;&lt;/p&gt;</code>
+        <code>&lt;p class="paragraph"&gt;Call us at 604-334-5678 or &lt;a class="InText-Link" href="#"&gt;send us an email here&lt;/a&gt;&lt;/p&gt;</code>
 
         <h3>Rendered element:</h3>
-        <p class="paragraph">We deliver healthy and delicious food right to your door! <a class="InText-Link" href="#">Subscribe Here</a></p>
+        <p class="paragraph">Call us at 604-334-5678 or <a class="InText-Link" href="#">send us an email here</a></p>
 
       </section>
 
-      <!-- Default Submit/Reset Button styling section -->
+      <!-- Default Button styling section -->
       <section>
-        <h2>Submit/Reset Buttons</h2>
+        <h2>Default Button</h2>
 
         <h3>CSS selector</h3>
         <p>.default-button</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;button class="default-button"&gt;submit&lt;/button&gt;</code>
+        <code>&lt;button class="default-button"&gt;Confirm&lt;/button&gt;</code>
 
         <h3>Rendered element:</h3>
-        <button class="default-button">submit</button>
-
+        <button class="default-button">Confirm</button>
       </section>
 
-      <!-- Subscribe Button styling section -->
-      <section>
-        <h2>Subscribe Button</h2>
-
-        <h3>CSS selector</h3>
-        <p>.subscribe-button</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;button class="subscribe-button"&gt;subscribe&lt;/button&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <button class="subscribe-button">subscribe</button>
-
-      </section>
-
-      <!-- Learn More Button styling section -->
-      <section>
-        <h2>Learn More Button</h2>
-
-        <h3>CSS selector</h3>
-        <p>.learn-more-button</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;button class="learn-more-button"&gt;learn more&lt;/button&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <button class="learn-more-button">learn more</button>
-
-      </section>
 
       <!-- Default Text Input Field styling section -->
       <section>
         <h2>Text Input Field</h2>
 
         <h3>CSS selector</h3>
-        <p>.default-button</p>
+        <p>.textInput-fielld</p>
 
         <h3>Sample code:</h3>
         <code>&lt;input type="Text" name="textField" class="textInput-field"&gt;</code>
@@ -170,7 +124,7 @@
       </section>
 
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+    <!-- // INTERACTIVE ELEMENTS SECTION END -->
 
 
 
@@ -212,33 +166,18 @@
         <h3 class="heading3">Heading 3</h3>
       </section>
 
-      <!-- Paragraphs styling section -->
+      <!-- Paragraphs / Product Description styling section -->
       <section>
-        <h2>Paragraphs</h2>
+        <h2>Paragraphs / Product Description Text</h2>
 
         <h3>CSS selector</h3>
         <p>.paragraph</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;p class="paragraph"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis. Pellentesque tempus euismod efficitur. Ut tempus, felis sed pellentesque egestas, nisi nibh auctor mauris, at elementum nunc nisl non justo.&lt;/p&gt;</code>
+        <code>&lt;p class="paragraph"&gt;Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.&lt;/p&gt;</code>
 
         <h3>Rendered element:</h3>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis. Pellentesque tempus euismod efficitur. Ut tempus, felis sed pellentesque egestas, nisi nibh auctor mauris, at elementum nunc nisl non justo.</p>
-
-      </section>
-
-            <!-- Paragraphs styling section -->
-      <section>
-        <h2>Product Description Text</h2>
-
-        <h3>CSS selector</h3>
-        <p>.description-text</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;p class="description-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt..&lt;/p&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt.</p>
+        <p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p>
 
       </section>
 
@@ -247,13 +186,13 @@
         <h2>Prices</h2>
 
         <h3>CSS selector</h3>
-        <p>.price</p>
+        <p>.plan-price</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;p class="price"&gt;$35.99&lt;/p&gt;</code>
+        <code>&lt;h4 class="plan-price"&gt;$115.00&lt;/h4&gt;</code>
 
         <h3>Rendered element:</h3>
-        <p class="price">$35.99</p>
+        <h4 class="plan-price">$115.00</h4>
 
       </section>
 
@@ -405,9 +344,10 @@
         </code>
 
         <h3>Rendered element:</h3>
+        <!-- <div class="grid">
         <div  class="grid-item menu-item container">
         
-        <!-- food content -->
+  
         <div class="item-content" id="foodContent-1">
           <h3 class="heading3 item-title">California Burger</h3>
           <a class="InText-Link review-link" onclick="reviewOpen1();"><img class="rating" src="img/rating-full.png" alt="">Review</a>
@@ -416,12 +356,11 @@
            <button class="default-button add-item" onclick="window.location.href='order.html'">Add</button>
         </div> 
 
-        <!-- Item Review Section -->
         <div class="item-reviews" id="itemReview-1" onmouseleave="resetContent1()">
           <a class="InText-Link review-back" onclick="backContent1();"> 
-            <!-- SVG back icon -->
+
             <svg class="back-icon" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+                Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch
   
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(-8.000000, -11.000000)" fill="#cf5c36">
@@ -442,6 +381,7 @@
 
         <img class="image" src="img/burger.jpg" alt="" >
       </div>
+      </div> -->
       </section>
 
 
@@ -475,21 +415,43 @@
 
         <!-- W3 Schools -->
         <h3>Rendered element:</h3>
-        <div class="form-container">
-          <h2 class="heading2">Contact Form</h2>
-          <form class="form" action="/action_page.php">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" class="textInput-field" placeholder="Enter your full name">
-
-            <label for="email">Your E-mail</label>
-            <input type="text" id="email" class="textInput-field" placeholder="Enter your e-mail">
-
-            <label for="message">Message</label>
-            <textarea id="message" class="textInput-field" placeholder="Type your message here"></textarea> 
-
-            <button class="default-button">submit</button>
-          </form>
-        </div>
+        <div class="contactForm">
+              <div class="grid">
+                <div class="grid-item">
+              <label for="fname">*First Name</label>
+                  <input type="text" id="fname" class="textInput-field" placeholder="" required>
+              </div>
+          </div>
+          <div class="grid">
+              <div class="grid-item">
+              <label for="lname">*Last Name</label>
+                  <input type="text" id="lname" class="textInput-field" placeholder="">
+              </div>
+          </div>
+          <div class="grid">
+                <div class="grid-item">
+                  <label for="email">*E-Mail</label>
+                  <input type="email" id="email" class="textInput-field" placeholder="">
+              </div>
+          </div>
+          <div class="grid">
+              <div class="grid-item">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" class="textInput-field" placeholder="">
+              </div>
+          </div>
+          <div class="grid">
+              <div class="grid-item">
+                  <label for="message" id="contact-message-title">Let us know your concern</label>
+                  <textarea class="textInput-field" id="contact-message" placeholder=""></textarea>
+            </div>
+              </div>
+              <div class="grid">
+              <div class="grid-item">
+                <button class="default-button" onclick="contactSubmit()">SUBMIT</button>
+            </div>
+              </div>
+            </section>
       </section>
 
       <!-- Website Grid Section -->

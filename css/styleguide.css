@@ -216,6 +216,13 @@ a {
 
 /* Styling for Navigation*/
 /* logotype */
+.header {
+  margin: 0;
+  padding: 0;
+  background-color: #8acb88;
+}
+
+
 .nav-logo {
   left: 0;
   font-size: 1.2em;
