@@ -1,0 +1,56 @@
+/*
+  GRID STRUCTURE
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid-item {
+  flex: 1 1 auto;
+  /* border: 1px solid #333333; */
+  /* text-align: center; */
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+}
+
+.g-item {
+  padding: 1em;
+  margin: 0.5rem 0.5rem;
+  background-color: #d4d9df;
+  color: #596068;
+}
+
+.basic-info .grid, .payment-methods .grid {
+  padding: 0;
+}
+
+.basic-info .grid-item, .payment-methods .grid-item {
+  box-sizing: inherit;
+  flex: 2 1 100%;
+  min-width: 0;
+  /* border: 1px solid #333333; */
+  /* text-align: center; */
+  margin: 0 !important;
+}
+
+@media (max-width: 65em){
+  .grid-item {
+   flex: 0 0 100%;
+  }
+
+  .select-plan .grid-item {
+   flex: 1 1 50%;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+  }
+  
+
+} 
+/*end of media query*/
