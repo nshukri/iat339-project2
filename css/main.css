@@ -1453,12 +1453,18 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   background-color: #fff;
   border-top: 1px solid #eee;
   padding: 1em;
+  text-align: center;
 }
 
 .legal-footer p, .legal-footer a {
   display: inline-block;
-  color: #d4d9df;
+  color: #596068;
   font-size: 0.8rem;
+  padding-left: 0.3em;
+}
+
+.legal-footer a:hover {
+  color: #cf5c36;
 }
 
 .footer-item:not(:first-child) {
