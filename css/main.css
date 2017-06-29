@@ -1010,7 +1010,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 .selected-menu, .shipping-info, .del-time {
   /*border: 1px solid red;*/
   margin: 0 auto;
-  width: 75%;
+  width: 65%;
 
 }
 
@@ -1020,7 +1020,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 
 .selected-items {
   margin: 0;
-  /*border: 1px solid green;*/
 }
 
 .selected-items .item-image {
@@ -1034,12 +1033,11 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   justify-content: center;
 }
 
-
 #item-image, #item-description {
   margin-right: 4em;
 }
 
-@media (max-width: 50em){
+@media (max-width: 56em){
   .selected-menu {
     min-width: 50%;
     margin: 0 auto;
@@ -1068,8 +1066,8 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 }
 
 .shipping-location li{
-    list-style-type: none;
-    margin-bottom: 0.5rem;
+  list-style-type: none;
+  margin-bottom: 0.5rem;
 }
 
 .shipping-location li input {
@@ -1093,7 +1091,23 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 }
 
 .del-time select {
-  width: 7em;
+   width: 7em;
+}
+
+/* -- ORDER REVIEW PAGE -- */
+.review-item, .review-location, .review-time {
+  padding: 1em;
+  background-color: #eee;
+  border: 1px solid #d4d9df;
+  margin-bottom: 1em;
+}
+
+.review-menu .grid-item {
+  padding: 1em !important;
+}
+
+.review-time .dropDown-menu {
+  width: 4em;
 }
 
 /* -- CONFIMRATION (REGISTER + ORDER) PAGE -- */
