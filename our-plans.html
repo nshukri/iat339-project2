@@ -16,30 +16,54 @@
 	</head>
 
 	<body>
-		<!-- Navigation code -->
-		<section class="header"> 
-			<nav class="navigation">
-				<nav class="wrapper">
-					<!-- Company Logo -->
+	<!-- Navigation code -->
+	<section class="header"> 
+		<nav class="navigation">
+			<nav class="wrapper">
+				<!-- Company Logo -->
 
-					<a class="nav-logo" href="index.html">MealBox</a> 
+				<a class="nav-logo" href="index.html">MealBox</a> 
 
-					<!-- mobile hamburger icon -->
-					<input type="checkbox" id="menu-toggle">
-		      			<label for="menu-toggle" class="label-toggle"></label>
-					</input>
+				<!-- mobile hamburger icon -->
+				<input type="checkbox" id="menu-toggle">
+	      			<label for="menu-toggle" class="label-toggle"></label>
+				</input>
 
-					<ul>
-						<li><a class="button-nav" href="menu.html">Menu</a></li>
-						<li><a class="button-nav" href="our-plans.html">Our Plans</a></li>
-						<li><a class="button-nav" href="contact.html">Contact</a></li>
-						<!-- Login button styling will be different -->
-						<li><a class="button-nav" href="account.html">My Account</a></li>
-					</ul>
-				</nav>
+				<ul>
+					<li><a class="button-nav" href="menu.html">Menu</a></li>
+					<li><a class="button-nav" href="our-plans.html">Our Plans</a></li>
+					<li><a class="button-nav" href="contact.html">Contact</a></li>
+					<li><a class="button-nav" onclick="loginPanel()">My Account</a></li>
+				</ul>
 			</nav>
-		</section>
-		<!-- end of Navigation code -->
+		</nav>
+	</section>
+	<!-- end of Navigation code -->
+
+	<!-- Login panel -->
+	<section class="login-panel" id="login-panel">
+
+		<!-- "x" icon -->
+		<svg id="x-icon" onclick="window.location.href='our-plans.html'" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+		    <desc>Created with Sketch.</desc>
+		    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g transform="translate(-344.000000, -32.000000)" fill="#FFFFFF">
+		            <path d="M357.363593,33.6970675 C357.651399,33.4092608 357.656854,32.9289322 357.363961,32.636039 C357.069026,32.3411038 356.596029,32.3433107 356.302932,32.6364074 L351,37.9393398 L345.697068,32.6364074 C345.409261,32.3486007 344.928932,32.3431458 344.636039,32.636039 C344.341104,32.9309742 344.343311,33.4039709 344.636407,33.6970675 L349.93934,39 L344.636407,44.3029325 C344.348601,44.5907392 344.343146,45.0710678 344.636039,45.363961 C344.930974,45.6588962 345.403971,45.6566893 345.697068,45.3635926 L351,40.0606602 L356.302932,45.3635926 C356.590739,45.6513993 357.071068,45.6568542 357.363961,45.363961 C357.658896,45.0690258 357.656689,44.5960291 357.363593,44.3029325 L352.06066,39 L357.363593,33.6970675 Z" id="Cancel"></path>
+		        </g>
+		    </g>
+		</svg>
+
+		<div class="login-component">
+			<h2 class="heading2 login-headings">login</h2>
+			<h3 class="heading3 login-headings">Email</h3>
+			<input type="text" class="textInput-field">
+			<h3 class="heading3 login-headings">Password</h3>
+			<input type="Password" class="textInput-field">
+			<button class="default-button login-button" onclick="window.location.href='account.html'">Login</button>
+			<a class="InText-Link" href="our-plans.html">Don't have an account? Register here</a>
+		</div>
+	</section>
 
 	<!-- Menu options -->
 		<section class="plan-options">
