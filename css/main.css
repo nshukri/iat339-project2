@@ -307,6 +307,10 @@ nav .wrapper {
   visibility: hidden;
 }
 
+.login-visible {
+  visibility: visible;
+}
+
 .login-headings {
   color: #fff;
 }
