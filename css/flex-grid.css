@@ -39,11 +39,11 @@
 }
 
 @media (max-width: 65em){
-  .grid-item{
+  .grid-item {
    flex: 0 0 100%;
   }
 
-  .select-plan .grid-item{
+  .select-plan .grid-item {
    flex: 1 1 50%;
   }
 

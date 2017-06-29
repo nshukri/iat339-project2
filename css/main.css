@@ -137,15 +137,19 @@ label {
   font-weight: 700;
 }
 
-.textInput-field, select {
+.textInput-field, .dropDown-menu {
   width: 20em;
   border: solid 0.05em #d4d9df;
   border-radius: 0.4em;
-  font-size: 1em;
+  font-size: 0.86em;
   padding: 0.5rem;
   margin-top: 0.3rem;
   margin-bottom: 1rem;
   display: block;
+}
+
+.dropDown-menu { 
+  width: 7em; 
 }
 
 /* ----
@@ -414,7 +418,7 @@ nav .wrapper {
 
 /* Menu Section */
 .home-menu {
-   background-color: #e4fde1; 
+  background-color: #e4fde1; 
   padding-top: 0.1em;
 }
 
@@ -801,27 +805,6 @@ page's input text*/
    }
  }
 
-/*.select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons { 
-  margin: 0em 15em; 
-} 
-
-@media (max-width: 1300px) { 
-  .select-plan, .basic-info, .payment-methods, ..checkbox-form, .buttons { 
-    margin: 0em 10em !important; 
-  } 
-} 
-
-@media (max-width: 750px){
-  .select-plan, .basic-info, .payment-methods, ..checkbox-form, .buttons { 
-    margin: 0em 5em !important;
-  }
-
-  .newsletter-form { 
-    margin-left: 5em !important;
-    font-size: 0.86rem;
-   }
-}*/
-
 .select-plan .plan-table {
   width: 25%;
   margin: 0 10em 3em 10em;
@@ -868,17 +851,6 @@ page's input text*/
 
 .col1of4 { 
   width: 25%;
-}
-
-.textInput-field, select { 
-  width: 20em; 
-  border: solid 0.05em #d4d9df; 
-  border-radius: 0.4em; 
-  font-size: 0.86em; 
-  padding: 0.5rem; 
-  margin-top: 0.3rem; 
-  margin-bottom: 1rem; 
-  display: block; 
 }
 
 .select-plan .sub-title, .basic-info .sub-title, .payment-methods .sub-title {
@@ -1013,31 +985,86 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 } 
 
 /* -- ORDER PAGE -- */
-.selected-menu, .shipping-info, .del-time {
+/*.selected-menu, .shipping-info, .del-time {
   margin: 0 15rem !important;
+}*/
+
+  /*.selected-menu, .shipping-info, .del-time {
+    margin: 0 !important;
+  }*/
 }
 
-@media (max-width: 1300px) {
-  .selected-menu, .shipping-info, .del-time {
-    margin: 0em 10em !important;
-  }
+.selected-menu .sub-title, .shipping-info .sub-title, .del-time .sub-title {
+  font-weight: 600 !important;
+  text-align: left !important;
 }
 
-@media (max-width: 750px){
-  .selected-menu, .shipping-info, .del-time {
-    margin: 0em 5em !important;
-  }
+/*this doesn't work*/
+
+.selected-menu, .shipping-info {
+  padding: 0 15em;
+  border: 1px solid red;
+}
+
+.selected-items, .shipping-info {
+  margin: 0;
+  border: 1px solid green;
+}
+
+.selected-items .item-image {
+  max-width: 15em;
 }
 
 .selected-items {
-  margin: 0 !important;
-  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.selected-items img {
-  overflow: hidden;
-  width: 75%;
+
+.item-column {
+  margin-right: 4em;
+
+  /*width: 33.33%;
+  flex: 0 0 100%;
+  text-align: left;
+  margin: 0 0.5em;*/
 }
+
+@media (max-width: 80em){
+  .selected-menu, .shipping-info  {
+    padding: 0 7em;
+  }
+
+  .item-column {
+
+  }
+} 
+
+@media (max-width: 62.5em){
+  .selected-menu, .shipping-info  {
+      padding: 0 3em;
+  }
+}
+
+  @media (max-width: 50em){
+  .selected-items {
+    flex-direction: column;
+  }
+
+  .selected-items .item-image {
+    align-items: center;
+  }
+
+  .item-column {
+    margin-left: 1em;
+    width: 15em;
+    justify-content: center;
+    algin-items: center;
+  }
+
+} 
 
 .selected-items p {
   font-size: .85rem;
@@ -1051,15 +1078,10 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 .shipping-location li{
     list-style-type: none;
     margin-bottom: 0.5rem;
-    padding-right: 5rem;
 }
 
 .shipping-location li input {
   margin-right: 0.86rem;
-}
-
-.selected-meals a, .shipping-location li a {
-  font-size: 0.75rem;
 }
 
 .quantity-field {
@@ -1078,6 +1100,11 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   display: inline;
 }
 
+.del-time select {
+  width: 7em;
+}
+
+/* -- CONFIMRATION (REGISTER + ORDER) PAGE -- */
 .message-container {
   width: 100%;
 }

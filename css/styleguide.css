@@ -131,8 +131,8 @@ a {
   background-color: #d4d9df;
 }
 
-/* Styling for the Text Input Field*/
-.textInput-field, select {
+/* Styling for the Text Input Field and Drop Down Menu*/
+.textInput-field, .dropDown-menu {
   width: 20em;
   border: solid 0.05em #d4d9df;
   border-radius: 0.4em;
@@ -141,6 +141,10 @@ a {
   margin-top: 0.3rem;
   margin-bottom: 1rem;
   display: block;
+}
+
+.dropDown-menu {
+  width: 7em;
 }
 
 /* 
