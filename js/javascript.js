@@ -269,7 +269,7 @@ function getPlan() {
    var params = {};
    var param_array = window.location.split('?')[1].split('&');
 
-   for (va i in param_array) {
+   for (var i in param_array) {
       x = param_array[1].split('=');
       params[x[0]] = x[1];
    } 
