@@ -303,25 +303,36 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 }
 
 /* Styling for Product Listing*/
-.item-content {
+.product-listing {
   width: 100%;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item img {
+  overflow: hidden;
+  height: 50%;
+}
+
+.item-content {
+  width: 50%;
  /* visibility: hidden;*/
   transition: bottom 0.5s ease;
   /*display: block;*/
   background: rgba( 0, 0, 0, 0.7);
-  bottom: -86%;
+  bottom: -90%;
   color: #fff;
   height: 100%;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   padding: 2em;
   position: absolute;
   transition: all 0.5s ease;
-  width: 100%;
-
   /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
-
 }
 
 .menu-item:hover .item-content{
@@ -338,17 +349,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   transition: ease 0.5s;
   cursor: pointer;
   word-wrap: break-word;
-}
-
-.review-link {
-  position: absolute;
-  cursor: pointer;
-  z-index: 2;
-  top: 4.1em;
-}
-
-.review-link:hover {
-  opacity: 0.8;
 }
 
 .item-content p {
@@ -373,79 +373,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   text-align: center;
   width: 70%;
 }
-
-.item-reviews{
-  width: 100%;
- /* visibility: hidden;*/
-  bottom: -100%;
-  transition: bottom 0.5s ease;
-  /*display: block;*/
-  background: rgba( 0, 0, 0, 0.7);
-  color: #fff;
-  height: 100%;
-  left: 100%;
-  right: 0;
-  margin: 0 auto;
-  padding: 2em;
-  position: absolute;
-  transition: all 0.5s ease;
-  width: 100%;
-
-  /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
-}
-
-.menu-item:hover .item-reviews{
-  bottom: 0%;
-}
-
-.review-title { /* title of product */
-  position: absolute;
-  /*background-color: rgba(0,0,0, 0.6);*/
-  z-index: 2;
-  color: white !important;
-  padding-right: 1em;
-  transition: ease 0.5s;
-  cursor: pointer;
-}
-
-.user-reviews {
-  position: absolute;
-  top: 4em;
-  margin: auto;
-}
-
-.rating {
-  height: 15px;
-  width: 80px;
-  padding-right: 0.3em;
-}
-
-.comment {
-  position: block;
-  color: white !important;
-  margin-bottom: 1.5em;
-  padding-right: 2em;
-}
-
-.review-back {
-  position: absolute;
-  z-index: 2;
-  top: 0.7em;
-  left: 1em;
-  text-align: center;
-  cursor: pointer;
-}
-
-.back-icon {
-  width: 0.688em;
-  height: 1.250em;
-  margin-bottom: -0.2em;
-}
-
-.review-back:hover{
-  opacity: 0.8;
-}
-
 /* */ 
 .contact {
   margin: auto;

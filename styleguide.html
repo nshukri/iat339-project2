@@ -196,7 +196,7 @@
 
       </section>
 
-      <!-- Bullet List styling section -->
+      <!-- Progress Bar styling section -->
       <section>
         <h2>Progress Bar</h2>
 
@@ -234,12 +234,13 @@
        </div>
       </section>
 
-      <!-- NUmbered list styling section -->
+      <!-- Plan Cards styling section -->
       <section>
-        <h2>Numbered Lists</h2>
+        <h2>Plan Cards</h2>
 
         <h3>CSS selector</h3>
-        <p>.numbered-list</p>
+        <p>.content-box</p>
+        <p>.plan-description/p>
 
         <h3>Sample code:</h3>
         <code>
@@ -344,51 +345,38 @@
 
         <h3>Sample code:</h3>
         <code>
-          &lt;div class="p-listing"&gt;<br>
-            &lt;img src="img/picture1.jpg" alt="buddha-bowl"&gt;<br>
-            &lt;h3 class="heading3">Buddha Bowl&lt;/h3&gt;<br>
-            &lt;p class="price"&gt;$47.00&lt;/p&gt;<br>
-            &lt;p class="description-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fringilla elit quis tincidunt. lam sed cursus diam, vel lofdsfad dfasd bortis felis.&lt;/p&gt;<br>
-            &lt;button class="subscribe-button">subscribe&lt;/button&gt;<br>
-            &lt;button class="learn-more-button">learn more&lt;/button&gt;<br>
+          &lt;div class="p-listing"&gt;
+          <br>
+            &lt;div class="grid-item menu-item container"&gt;
+            <br>
+            &lt;div class="item-content" id="foodContent-1"&gt;
+            <br>
+              &lt;h3 class="heading3 item-title"&gt;California Burger</h3&gt;
+              <br>
+              &lt;p class="paragraph"&gt;Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.&lt;/p&gt;
+              <Br>
+              &lt;button class="default-button add-item" onclick=""&gt;Add&lt;/button&gt;
+            &lt;/div&gt;
+            <br>
+            &lt;img class="image" src="img/burger.jpg" alt=""&gt;
+            <br>
+          &lt;/div&gt;
+          <br>
           &lt;/div&gt;
         </code>
 
         <h3>Rendered element:</h3>
-        <div class="grid">
+        <div class="product-listing">
           <div class="grid-item menu-item container">
             <div class="item-content" id="foodContent-1">
-            <h3 class="heading3 item-title">California Burger</h3>
-            <!-- <a class="InText-Link review-link" onclick="reviewOpen1();"><img class="rating" src="img/rating-full.png" alt="">Review</a> -->
-            <p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p>
+              <h3 class="heading3 item-title">California Burger</h3>
+              <p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p>
 
-            <button class="default-button add-item" onclick="window.location.href='order.html'">Add</button>
-        </div> 
-
-        <!-- <div class="item-reviews" id="itemReview-1" onmouseleave="resetContent1()">
-          <a class="InText-Link review-back" onclick="backContent1();">
-          <svg class="back-icon" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g transform="translate(-8.000000, -11.000000)" fill="#cf5c36">
-                        <g transform="translate(8.000000, 11.000000)">
-                            <polygon points="0.5 11 11 0.5 13 2.5 4.5 11 13 19.5 11 21.5"></polygon>
-                        </g>
-                    </g>
-                </g>
-                </svg>
-          Back</a>
-
-          <h3 class="heading3 review-title">Member Reviews</h3>
-          <article class="user-reviews">
-            <img class="rating" src="img/rating-full.png" alt="full-rating">
-            <p class="paragraph comment">I am surprised by how delicious this burger is! I'm usually someone who doesn't like burgers and sandwiches but this is the best burger I've ever had! Not to mention the burger was still hot when it arrived.</p>
-          </article> 
-        </div> -->
-
-        <img class="image" src="img/burger.jpg" alt="" >
-      </div>
-      </div>
+              <button class="default-button add-item" onclick="">Add</button>
+            </div> 
+            <img class="image" src="img/burger.jpg" alt="" >
+          </div>
+        </div>
       </section>
 
 
