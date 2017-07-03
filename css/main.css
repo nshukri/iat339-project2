@@ -584,16 +584,18 @@ nav .wrapper {
   margin: 0 auto;
 }
 
-.section-header .section-title {
+.section-title {
   width: 100%;
 }
 
-.section-header {
-  align-items: center;
+.info-description {
+  display: block;
+  width: 100%;
 }
 
-.section-heading {
-  display: inline;
+.info-description .body {
+  font-size: 0.8em;
+  margin-top: -1em;
 }
 
 .personal-info #province {
