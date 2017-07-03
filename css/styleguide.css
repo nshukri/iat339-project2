@@ -65,14 +65,15 @@ a {
   transition: color 0.5s ease-out;
 }
 
-.inText-Link:hover {
+.InText-Link:hover {
   text-decoration: underline;
   color: #aa4c2d;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
-/* Styling for the Submit/Reset button*/
-.default-button, .next-button {
-  background-color: #cf5c36;
+/* Styling for the button */
+button { 
   color: white; 
   font-weight: 600;
   font-size: 0.8rem;
@@ -84,51 +85,14 @@ a {
   text-transform: uppercase; /* referred to W3Schools*/
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
+}
+
+.default-button {
+  background-color: #cf5c36;
 }
 
 .default-button:hover {
   background-color: #aa4c2d;
-}
-
-/* Styling for the Subscribe button*/
-.subscribe-button {
-  background-color: #efc88b;
-  color: white; 
-  font-weight: 600;
-  font-size: 0.8rem;
-  border-radius: 0.4em;
-  border-style: none;
-  padding: 0.5rem 1.2rem;
-  margin-right: .75rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-transform: uppercase; /* referred to W3Schools*/
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.subscribe-button:hover {
-  background-color: #ecb35a;
-}
-
-/* Styling for the Learn More button*/
-.learn-more-button {
-  background-color: white;
-  color: #07080a; 
-  font-weight: 600;
-  font-size: 0.8rem;
-  border: 1px solid #d4d9df;
-  border-radius: 0.4em;
-  padding: 0.5rem 1.2rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-transform: uppercase; /* referred to W3Schools*/
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.learn-more-button:hover {
-  background-color: #d4d9df;
 }
 
 /* Styling for the Text Input Field and Drop Down Menu*/
@@ -179,29 +143,6 @@ a {
   width: 100%;
   color: #596068;
 }
- 
-/* Styling for Product Description Text*/
-.description-text {
-  font-weight: 300;
-  font-size: 0.85rem;
-  letter-spacing: 0.03rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.85rem;
-}
-
-/* Styling for the Bullet List*/
-.bullet-list {
-  line-height: 1.8em;
-  color: #596068;
-  padding-left: 2em;
-}
-
-
-/* Styling for Numbered List*/
-.numbered-list {
-  line-height: 1.8em;
-  color: #596068;
-}
 
 /* Styling for Price Numbers*/
 .price {
@@ -216,13 +157,6 @@ a {
 
 /* Styling for Navigation*/
 /* logotype */
-.header {
-  margin: 0;
-  padding: 0;
-  background-color: #8acb88;
-}
-
-
 .nav-logo {
   left: 0;
   font-size: 1.2em;
@@ -269,15 +203,10 @@ a {
   padding: 0 2%;
 }
 
-#menu-toggle {display: none;}
-
-.label-toggle {display: none;}
-
 nav .wrapper {
   align-items: center;
   display: flex;
   justify-content: space-between;
-
 }
 
 /* styling for Progress Step 
@@ -517,6 +446,62 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   opacity: 0.8;
 }
 
+/* */ 
+.contact {
+  margin: auto;
+  text-align: center;
+}
+
+.contact-container {
+  position: relative;
+}
+
+.contact h1, h2{
+  width: 100%;
+  margin: auto;
+  padding-top: 1em;
+  left:0;
+  right: 0;
+}
+
+.contact p {
+  width: 60em;
+  margin: auto;
+  line-height: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.contactForm label {
+  display: block;
+  width: 30em;
+  margin: auto;
+  padding: 0.5em 0;
+  text-align: left;
+}
+
+.contactForm input {
+  margin: auto;
+  width: 30em;
+}
+
+#contact-message {
+  width: 30em;
+  height: 15em;
+  margin: auto;
+}
+
+#contact-message-title {
+  width: 30em;
+  padding: 0.5em 0;
+  border-radius: 200px;
+}
+
+.contactForm button {
+  margin: 0 auto 2em;
+  width: 35em;
+  display: block;
+}
 
 /* Grid Structure */
 
@@ -546,7 +531,7 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 
 @media (max-width: 65em){
   .grid-item{
-  flex: 0 0 100%;
+  flex: 0 1 100%;
   }
 
   .grid {

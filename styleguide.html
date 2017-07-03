@@ -261,7 +261,7 @@
           <h3 class="heading3">1 Month Plan</h3>
           <h4 class="plan-price">$445.00</h4>
           <p class="plan-description body">Don’t have time to cook for the next month? Select this short 1 month plan to receive meal boxes and not worry about cooking.</p>
-          <button class="default-button" onclick="window.location.href='register-plan-2.html'">Select Plan</button>
+          <button class="default-button" onclick="window.location.href='#'">Select Plan</button>
         </div>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -355,24 +355,20 @@
         </code>
 
         <h3>Rendered element:</h3>
-        <!-- <div class="grid">
-        <div  class="grid-item menu-item container">
-        
-  
-        <div class="item-content" id="foodContent-1">
-          <h3 class="heading3 item-title">California Burger</h3>
-          <a class="InText-Link review-link" onclick="reviewOpen1();"><img class="rating" src="img/rating-full.png" alt="">Review</a>
-          <p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p> 
-          
-           <button class="default-button add-item" onclick="window.location.href='order.html'">Add</button>
+        <div class="grid">
+          <div class="grid-item menu-item container">
+            <div class="item-content" id="foodContent-1">
+            <h3 class="heading3 item-title">California Burger</h3>
+            <!-- <a class="InText-Link review-link" onclick="reviewOpen1();"><img class="rating" src="img/rating-full.png" alt="">Review</a> -->
+            <p class="paragraph">Topped with maple bacon, guacamole, mayo, lettuce, and tomato with double slices of pepper jack cheese.</p>
+
+            <button class="default-button add-item" onclick="window.location.href='order.html'">Add</button>
         </div> 
 
-        <div class="item-reviews" id="itemReview-1" onmouseleave="resetContent1()">
-          <a class="InText-Link review-back" onclick="backContent1();"> 
-
-            <svg class="back-icon" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- <div class="item-reviews" id="itemReview-1" onmouseleave="resetContent1()">
+          <a class="InText-Link review-back" onclick="backContent1();">
+          <svg class="back-icon" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch
-  
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(-8.000000, -11.000000)" fill="#cf5c36">
                         <g transform="translate(8.000000, 11.000000)">
@@ -380,19 +376,19 @@
                         </g>
                     </g>
                 </g>
-            </svg>
+                </svg>
           Back</a>
 
           <h3 class="heading3 review-title">Member Reviews</h3>
           <article class="user-reviews">
             <img class="rating" src="img/rating-full.png" alt="full-rating">
             <p class="paragraph comment">I am surprised by how delicious this burger is! I'm usually someone who doesn't like burgers and sandwiches but this is the best burger I've ever had! Not to mention the burger was still hot when it arrived.</p>
-          </article>
-        </div>
+          </article> 
+        </div> -->
 
         <img class="image" src="img/burger.jpg" alt="" >
       </div>
-      </div> -->
+      </div>
       </section>
 
 
@@ -401,9 +397,8 @@
         <h2>Contact</h2>
 
         <h3>CSS selector</h3>
-        <p>input</p>
-        <p>textarea</p>
-        <p>.container</p>
+        <p>.form-container</p>
+        <p>.form</p>
 
         <h3>Sample code:</h3>
         <code>
@@ -427,13 +422,13 @@
         <!-- W3 Schools -->
         <h3>Rendered element:</h3>
         <div class="contactForm">
-              <div class="grid">
+            <div class="grid">
                 <div class="grid-item">
-              <label for="fname">*First Name</label>
+                  <label for="fname">*First Name</label>
                   <input type="text" id="fname" class="textInput-field" placeholder="" required>
-              </div>
-          </div>
-          <div class="grid">
+                </div>
+            </div>
+            <div class="grid">
               <div class="grid-item">
               <label for="lname">*Last Name</label>
                   <input type="text" id="lname" class="textInput-field" placeholder="">
@@ -540,6 +535,54 @@
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
-    <script type="text/javascript" src="js/javascript.js"></script>
+    <script>
+      //onclick in index.html when user click my account
+function loginPanel () {
+   var login = document.getElementById("login-panel");
+   login.style.visibility = "visible";
+   console.log("test login");
+
+   var nav = document.getElementById("nav-links");
+   nav.style.height = "0";
+
+}
+
+function loginClose () {
+   var login = document.getElementById("login-panel");
+   login.style.visibility = "hidden";
+   console.log("test login");
+}
+
+
+// ONlick functions in Menu.html
+
+//functions for food item 1 in Menu.html
+function reviewOpen1() {
+   var review = document.getElementById("itemReview-1");
+   review.style.left = "0";
+
+   var content = document.getElementById('foodContent-1');
+   content.style.left = "100%";
+ }
+
+
+ function backContent1() {
+  var review = document.getElementById('itemReview-1');
+   review.style.left = "0%";
+
+   var content = document.getElementById('foodContent-1');
+   content.style.left = "0";
+
+ }
+
+//source: https://www.w3schools.com/jsref/event_onmouseout.asp
+ function resetContent1() {
+  var review = document.getElementById('itemReview-1');
+   review.style.left = "50%";
+
+   var content = document.getElementById('foodContent-1');
+   content.style.left = "0";
+}
+    </script>
   </body>
 </html>

@@ -133,8 +133,8 @@ button {
 
 /* Styling for Forms */
 label {
-  font-size: 1em;
-  font-weight: 700;
+  font-size: 0.86em; 
+  font-weight: 700; 
 }
 
 .textInput-field, .dropDown-menu {
@@ -249,44 +249,6 @@ nav .wrapper {
 .label-toggle {
   display: none;
 }
-@media (max-width: 65em){
-  
-  .navigation ul {
-    display: block;
-    height: 0;
-    list-style-type: none;
-    opacity: 0;
-    text-align: center;
-    transition: all 1s ease;
-    width: 100%;
-    visibility: hidden;
-  }
-  .navigation li {
-    border-bottom: 1px solid #ffffff;
-    color: #53354A;
-    display: block;
-    font-size: 1.5em;
-    padding: 2em 0;
-  }
-  nav #menu-toggle:checked ~ ul {
-    opacity: 1;
-    height: 100vh;
-    visibility: visible;
-  }
-  nav .label-toggle {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%, #ffffff 100%);
-    cursor: pointer;
-    display: inline;
-    float: right;
-    height: 35px;
-    margin-top: 1em;
-    width: 35px;
-  }
-  nav .wrapper {
-    display: block;
-  }
-} 
-/*end of media query*/
 
 /*Login panel*/
 .login-panel {
@@ -349,15 +311,6 @@ nav .wrapper {
     background-repeat: no-repeat;*/
   position: relative;
   overflow: hidden;
-}
-
-@media (max-width: 65em){
-  .home-section, .home-container {
-    height: 89vh;
-  }
-  .home-content {
-    top: 18% !important;
-  }
 }
 
 #img-home {
@@ -479,6 +432,7 @@ nav .wrapper {
   padding-left: 2em;
 }*/
 
+ /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
 .item-content {
   width: 100%;
  /* visibility: hidden;*/
@@ -495,9 +449,6 @@ nav .wrapper {
   position: absolute;
   transition: all 0.5s ease;
   width: 100%;
-
-  /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
-
 }
 
 .menu-item:hover .item-content{
@@ -550,6 +501,7 @@ nav .wrapper {
   width: 70%;
 }
 
+ /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
 .item-reviews{
   width: 100%;
  /* visibility: hidden;*/
@@ -566,8 +518,6 @@ nav .wrapper {
   position: absolute;
   transition: all 0.5s ease;
   width: 100%;
-
-  /*https://stackoverflow.com/questions/38310853/make-a-div-slide-up-on-click-and-hover-using-css3-transitions */
 }
 
 .menu-item:hover .item-reviews{
@@ -612,14 +562,14 @@ nav .wrapper {
   cursor: pointer;
 }
 
+.review-back:hover{
+  opacity: 0.8;
+}
+
 .back-icon {
   width: 0.688em;
   height: 1.250em;
   margin-bottom: -0.2em;
-}
-
-.review-back:hover{
-  opacity: 0.8;
 }
 
 /* -- ACCOUNT PAGE -- */
@@ -627,12 +577,10 @@ nav .wrapper {
 .account-info {
   width: 100%;
   margin: 0 auto;
-  align-items: center; /*aligns save button to title */
-  padding:1.5em;
 }
 
 .personal-info, .password-info, .payment-details, .account-plan, .past-orders {
-  width: 50% !important;
+  width: 80% !important;
   margin: 0 auto;
 }
 
@@ -688,36 +636,13 @@ nav .wrapper {
   margin-left: 1em;
 }
 
-@media (max-width: 80em) {
-}
-
-/*make save button on account page 
-float to the right*/
-#saveButton{
-  float:right;
-}
-
 /* -- ORDER CONFIRMATION PAGE -- */
-/*styling for img in confirm page*/
-.confirm-img{
-  width: 300px;
-  height: auto;
-  float: left;
-  margin-top: 4rem;
-}
-
 /*styling for para in confirm page*/
 .confirm-msg {
   width: 50%;
   float: left;
   margin-left: 3em;
   margin-top: 2rem;
-}
-
-@media(max-width: 40em){
-  .confirm-msg{
-    margin-left: 1em;
-  }
 }
 
 /* -- FOOD REVIEW PAGE -- */
@@ -739,9 +664,10 @@ float to the right*/
   left:0;
   right:0;
   margin: auto;
-  width: 40em;
+  width: 30em;
   height: 2.5em;
 }
+
 .food-review textarea {
   width: 40em;
   height: 20em;
@@ -749,6 +675,7 @@ float to the right*/
   left:0;
   right:0;
 }
+
 .star-container {
   width: 40em;
   margin: auto;
@@ -786,45 +713,7 @@ float to the right*/
   visibility: hidden;
 }
 
-@media (max-width: 50em){
-  .food-review h1 {
-    width: 100%;
-  }
-  .food-review select{
-    width: 80%;
-  }
-
-  .star-container {
-    width: 100%;
-  }
-  .food-review textarea {
-    width: 90%;
-  }
-}
-
-/* -- ORDER (WRITE A) REVIEWS PAGE -- */
-
-/*set size for order review image
-not sure if this is needed*/
-.order-confirm-img{
-  width:160px;
-  height:160px;
-}
-
-/*styling for order review 
-page's input text*/
-.order-review{
-  width: 100%;
-  height: 10em;
-  border: solid 0.05em #d4d9df;
-  border-radius: 0.4em;
-  font-size: 1em;
-  margin-top: 0.8em;
-  margin-bottom: 1em;
-}
-
 /* -- CONTACT PAGE -- */
-
 .contact {
   margin: auto;
   text-align: center;
@@ -850,20 +739,21 @@ page's input text*/
   text-align: center;
 }
 
-
-
 .contactForm label {
   display: block;
   width: 30em;
   margin: auto;
-  padding: 0.5em 2.1em;
+  padding: 0.5em 0;
   text-align: left;
 }
-
 
 .contactForm input {
   margin: auto;
   width: 30em;
+}
+
+.contactForm .grid-item {
+  padding: 0 !important;
 }
 
 #contact-message {
@@ -874,38 +764,13 @@ page's input text*/
 
 #contact-message-title {
   width: 30em;
-  padding: 0.5em 2em;
+  padding: 0.5em 0;
   border-radius: 200px;
 }
 
 .contactForm button {
   margin: 0 auto 2em;
   width: 30em;
-}
-
-
-@media (max-width: 50em){
-  .contact p {
-    width: 100%;
-  }
-    .contactForm label {
-    width: 20em;
-  }
-
-  .contactForm input {
-    width: 20em;
-  }
-
-  #contact-message {
-    width: 20em;
-  }
-
-  #contact-message-title {
-    width: 20em;
-  }
-  .contactForm button {
-    width: 20em;
-  }
 }
 
 #contact-submit {
@@ -917,17 +782,6 @@ page's input text*/
   right: 0;
   visibility: hidden;
 }
-
-
-
-
-/*set input boxes' location on the center as well*/
-/*learnt from https://stackoverflow.com/questions/1281403/place-input-box-at-the-center-of-div*/
-/*#fname,#lname, .contactForm #email, .contactForm #message,
-#phone,#question{
-  position: relative;
-  margin:0 auto;
-}*/
 
 /* -- OUR PLANS PAGE -- */
 .plan-options .title {
@@ -950,75 +804,6 @@ page's input text*/
   width: 23%;
 }
 
-@media (max-width: 80em) {
-  .plan-table .plan-column {
-    width: 46%;
-    margin-bottom: 1em;
-  }
-
-  .plan-description {
-    min-height: 5em;
-  }
-}
-
-@media (max-width: 60em) {
-  .plan-table .plan-column {
-    width: 100%;
-  }
-
-  .plan-description {
-    min-height: 3em;
-  }
-
-  .plan-table .plan-column .image {
-    display: none;
-  }
-}
-
-/*.plan-column {
-  text-align: center;
-  float: left;
-  margin: 0 1%;
-}
-
-.plan-table .plan-column {
-  width: 23%;
-}
-
-.content-box {
-  background-color: white;
-  border: 1px solid #eee;
-  padding: 2em;
-}
-
-.plan-description {
-  min-height: 8em;
-  font-size: 0.86em;
-  margin: 1.5rem 0 2rem 0;
-}
-
-@media (max-width: 65em){
-    .plan-table {
-      width: 100%;
-      margin: 0;
-    }
-}
-
-/* -- REGISTRATION PAGE -- */
-/*#plan-1-content {
-  background-color: #e4fde1;
-}*/
-
-/*select plan*/
-.select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons {
-  width: 65%;
-  margin: 0 auto;
-}
-
-.select-plan .plan-table {
-  width: 100%;
-}
-
 .plan-table {
   margin: 0 !important;
   padding: 0 !important;
@@ -1030,113 +815,14 @@ page's input text*/
   margin: 0 0.5em;
 }
 
-.select-plan .plan-table .plan-column {
-  width: 23%;
-}
-
 .content-box {
   background-color: white;
   border: 1px solid #eee;
   padding: 2em;
 }
 
-.select-plan .plan-description {
-  min-height: 10em;
-}
-
 .plan-column .heading3 {
   font-size: 1em;
-}
-
-/*pre-selected plans in register*/
-.pre-selected {
-  background-color: #efc88b;
-}
-
-.pre-selected .selected-btn {
-  background-color: #596068;
-}
-
-@media (max-width: 85em) {
-  .select-plan .plan-table .plan-column {
-    min-width: 100%;
-  }
-
-  .select-plan .plan-column {
-    margin: 0.5em 0;
-  }
-
-  .select-plan .plan-description {
-    min-height: 0em;
-  }
-
-  .content-box {
-    padding: 1.5em;
-  }
-}
-
-
-.buttons {
-  margin-bottom: 2em;
-  margin-bottom: 3em;
-
-}
-
-#right-button {
- float: right;
-}
-
-#left-button {
-  float: left;
-}
-
-.basic-info label, .payment-methods label, .personal-info label {  
-  width: 100%;  
-  display: block;  
-  margin-right: -7em; 
-  font-size: 0.86em; 
-  font-weight: 700; 
-}
-
-.basic-info input[type="text"], .payment-methods input[type="text"], 
-.basic-info select. .payment-methods select, 
-.personal-info input, .personal-info select {  
-  float: left;  
-  margin-right: 0.5em; 
-} 
- 
-.gutter { 
-  margin: 0 -0.3em; 
-} 
- 
-.gutter>.grid-item { 
-  padding: 0 0.3em; 
-} 
- 
-.col1of2 { 
-  flex-basis: auto; 
-  width: 50%; 
-}
-
-.col1of4 { 
-  width: 25%;
-}
-
-.plan-text {
-  width: 15em;
-  padding: 1.5em !important;
-  margin-left: 0 !important;
-  margin-right: 0.8em;
-  background-color: #eee;
-}
-
-.plan-text p {
-  font-size: 0.8rem;
-  margin-top: 0.75rem;
-}
-
-.plan-text:hover, .plan-text:target {
-  background-color: #efc88b;
 }
 
 .plan-price {
@@ -1144,44 +830,7 @@ page's input text*/
   margin-bottom: 0.1rem;
 }
 
-#postal-code, #city, #province, #cvv {
-  width: 7em;
-}
-
-.basic-info {
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #eee;
-}
-
-.select-plan, .account-plan, .payment-details {
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #eee;
-}
-
-
-.method p {
-  font-size: 0.76rem;
-  font-weight: 600;
-}
-
-.method img { /*credit card image */
-  min-width: 10rem;
-  max-width: 10rem;
-}
-
-.exp-date select {
-  display: inline;
-}
-
-.checkbox-form {
-  font-size: 0.86em;
-  margin-top: 1em;
-}
-
-.checkbox-form input {
-  margin-bottom: 0.75em;
-  margin-right: 0.75em;
-}
+/* -- REGISTRATION PAGE -- */
 
 /* step progress bar 
 Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
@@ -1262,6 +911,107 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   background-color: #cf5c36;
 } 
 
+/*select plan*/
+.select-plan, .basic-info, .payment-methods, .checkbox-form, .buttons {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.select-plan .plan-description {
+  min-height: 10em;
+}
+
+/*pre-selected plans in register*/
+.pre-selected {
+  background-color: #efc88b;
+}
+
+.pre-selected .selected-btn {
+  background-color: #596068;
+}
+
+/* placement of back and next buttons on registration / ordfer pages */
+.buttons {
+  min-height: 3em;
+}
+
+#right-button {
+ float: right;
+}
+
+#left-button {
+  float: left;
+}
+
+.basic-info label, .payment-methods label, .personal-info label {  
+  width: 100%;  
+  display: block;  
+  margin-right: -7em; 
+}
+
+.basic-info input[type="text"], .payment-methods input[type="text"], 
+.basic-info select. .payment-methods select, 
+.personal-info input, .personal-info select {  
+  float: left;  
+  margin-right: 0.5em; 
+} 
+ 
+.gutter { 
+  margin: 0 -0.3em; 
+} 
+ 
+.gutter>.grid-item { 
+  padding: 0 0.3em; 
+} 
+ 
+.col1of2 { 
+  flex-basis: auto; 
+  width: 50%; 
+}
+
+.col1of4 { 
+  width: 25%;
+}
+
+#postal-code, #city, #province, #cvv {
+  width: 7em;
+}
+
+.basic-info {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+}
+
+.select-plan, .account-plan, .payment-details {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #eee;
+}
+
+.method p {
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.method img { /*credit card image */
+  min-width: 10rem;
+  max-width: 10rem;
+  margin-bottom: 0.5em;
+}
+
+.exp-date select {
+  display: inline;
+}
+
+.checkbox-form {
+  font-size: 0.86em;
+  margin-top: 1em;
+}
+
+.checkbox-form input {
+  margin-bottom: 0.75em;
+  margin-right: 0.75em;
+}
+
 /* -- ORDER PAGE -- */
 .selected-menu, .shipping-info, .del-time {
   margin: 0 auto;
@@ -1292,25 +1042,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 #item-image, #item-description {
   margin-right: 4em;
 }
-
-@media (max-width: 56em){
-  .selected-menu {
-    min-width: 50%;
-    margin: 0 auto;
-  }
-
-  .selected-items .item-image {
-    max-width: 100%;
-  }
-
-  .selected-items {
-    flex-direction: column;
-  }
-
-  #item-image, #item-description {
-    margin-right: 0;
-  }
-} 
 
 .selected-items h4 {
   text-transform: uppercase;
@@ -1361,9 +1092,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 }
 
 .review-item, .review-location, .review-time {
-  /*padding: 1em;
-  background-color: #eee;
-  border: 1px solid #d4d9df;*/
   padding-bottom: 0;
   margin-bottom: 1em;
 }
@@ -1389,7 +1117,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   width: 4em;
 }
 
-
 /* -- CONFIMRATION (REGISTER + ORDER) PAGE -- */
 .message-container {
   width: 100%;
@@ -1411,12 +1138,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   display: block;
 }
 
-@media(max-width: 62.5em) {
-  .message {
-    max-width: 80%;
-  }
-}
-
 /* Footer */
 .footer {
   border-top: 1px solid #eee;
@@ -1432,45 +1153,6 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
   padding-left: 2em;
   padding-right: 2em;
 }
-
-/* trying out a different footer
-.footer .footer-container {
-  height: 4em;
-}
-
-.footer-section {
-  list-style: none;
-  margin-bottom: 0;
-}
-
-@media (min-width: 544px) {
-  .col-sm-2 {
-   width: 16.667%;
-   float: left; bad
-  }
-}
-
-.footer-section ul {
-  margin-top: 0;
-  display: inline-block;
-}
-
-.footer-section-header {
-  padding-bottom: 0.85em;
-  font-size: 0.85em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #70B481;
-}
-
-.footer-section li {
-  display: list-item;
-}
-
-.footer-section li a, .footer-section li a:visited, .footer-section li a:focus {
-  color: #24272b;
-  font-size: 0.8em;
-} */
 
 .legal-container .footer-container {
   height: 1.5em;
@@ -1496,4 +1178,157 @@ Tutorial: https://www.youtube.com/watch?v=DYevj6UGNWA */
 
 .footer-item:not(:first-child) {
   padding-left: 1em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 85em) {
+  .select-plan .plan-table .plan-column {
+    min-width: 100%;
+  }
+
+  .select-plan .plan-column {
+    margin: 0.5em 0;
+  }
+
+  .plan-table .plan-column {
+    margin-bottom: 1em;
+  }
+
+  .select-plan .plan-description {
+    min-height: 0em;
+  }
+
+  .content-box {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 65em){
+  /* mobile nav */
+  .navigation ul {
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+
+  .navigation li {
+    border-bottom: 1px solid #ffffff;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+  }
+
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%, #ffffff 100%);
+    cursor: pointer;
+    display: inline;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+
+  .home-section, .home-container {
+    height: 89vh;
+  }
+
+  .home-content {
+    top: 18% !important;
+  }
+
+  /* confirmation pages */
+  .message {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 60em) {
+  .plan-table .plan-column {
+    width: 100%;
+  }
+
+  .plan-description {
+    min-height: 0em;
+  }
+
+  .plan-table .plan-column .image {
+    display: none;
+  }
+
+  /* order page */
+  .selected-menu, .shipping-info, .del-time, .buttons {
+    min-width: 80%;
+    margin: 0 auto;
+  }
+
+  .selected-items .item-image {
+    max-width: 100%;
+  }
+
+  .selected-items {
+    flex-direction: column;
+  }
+
+  #item-image, #item-description {
+    margin-right: 0;
+  }
+} 
+
+@media (max-width: 50em){
+  /*contat page*/
+  .contact p {
+    width: 100%;
+  }
+  
+  .contactForm label {
+    width: 20em;
+  }
+
+  .contactForm input {
+    width: 20em;
+  }
+
+  #contact-message {
+    width: 20em;
+  }
+
+  #contact-message-title {
+    width: 20em;
+  }
+
+  .contactForm button {
+    width: 20em;
+  }
+
+  /* food review page */
+  .food-review h1 {
+    width: 100%;
+  }
+
+  .food-review select{
+    width: 80%;
+  }
+
+  .star-container {
+    width: 100%;
+  }
+
+  .food-review textarea {
+    width: 90%;
+  }
 }
